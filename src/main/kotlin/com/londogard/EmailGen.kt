@@ -71,7 +71,7 @@ print(html)
 fun DIV.createHeader(number: String, introduction: String, pinned: List<PinnedItem>) {
     header {
         nav {
-            a("https://afry-south.github.io/", target="blank") {
+            a("https://afry-south.github.io/", target = "blank") {
                 img {
                     height = "70"
                     src = "https://afry.com/sites/default/files/2019-11/AFRY_Logotyp_Liggande_PNG.png"
@@ -79,33 +79,42 @@ fun DIV.createHeader(number: String, introduction: String, pinned: List<PinnedIt
             }
             ul {
                 pinned.forEach { pinnedItem ->
-                    li { a(pinnedItem.url, target="blank") { +pinnedItem.title } }
+                    li { a(pinnedItem.url, target = "blank") { +pinnedItem.title } }
                 }
             }
         }
     }
     section {
         header {
-            h2 { +"Tipsrundan #$number" }
+            h1 { +"Tipsrundan #$number" }
             p { +introduction }
         }
     }
 }
+
 fun DIV.createBody(issue: Issue): Unit = main {
     createSection(issue.regional, "Regional", REGIONAL)
-
 }
 
 fun MAIN.createSection(items: List<Item>, title: String, colors: String): Unit = when (items) {
     emptyList<Item>() -> Unit
-    else -> section {
-        h3 { +title }
-        items.forEach {
-            // TODO createCard
+    else -> {
+        hr { }
+        section {
+            header { h2 { +title } }
+            items.forEach(::createCard)
         }
     }
 }
 
+fun SECTION.createCard(item: Item): Unit = aside {
+    p {
+        b { +item.title }
+        br
+        small { +item.description }
+    }
+    a(item.link, target = "blank") { +"Read more" }
+}
 
 
 /**
