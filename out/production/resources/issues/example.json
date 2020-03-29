@@ -8,11 +8,10 @@
       "link": "A non-required URL to the article"
     }
   ],
-  "videos": [],
-  "podcast": [],
-  "conferences": [],
-  "frontEnd": [],
-  "backEnd": [],
+  "videosAndPodcasts": [],
+  "conferenceAndLearning": [],
+  "frontendAndMobile": [],
+  "backendAndBigData": [],
   "testing": [],
   "machineLearning": [],
   "softValues": []

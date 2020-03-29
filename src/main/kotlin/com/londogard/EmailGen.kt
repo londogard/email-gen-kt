@@ -1,25 +1,29 @@
 package com.londogard
 
-import com.londogard.Colors.Companion.REGIONAL
+import com.londogard.SectionTitles.Companion.BACKEND
+import com.londogard.SectionTitles.Companion.CONFERENCESANDLEARNING
+import com.londogard.SectionTitles.Companion.FRONTEND
+import com.londogard.SectionTitles.Companion.MACHINELEARNING
+import com.londogard.SectionTitles.Companion.REGIONAL
+import com.londogard.SectionTitles.Companion.SOFTVALUES
+import com.londogard.SectionTitles.Companion.TESTING
+import com.londogard.SectionTitles.Companion.VIDEOPODCASTS
 import com.londogard.EmailGen.buSlackArchive
-import kotlinx.serialization.ImplicitReflectionSerializer
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonConfiguration
 import kotlinx.html.*
 import kotlinx.html.stream.appendHTML
-import kotlinx.serialization.parse
 import java.io.File
 import java.lang.StringBuilder
 
 object EmailGen {
     fun emailStyle(number: String): String = """
-    <link rel="stylesheet" href="https://andybrewer.github.io/mvp/mvp.css">
-
+    <style>
+    ${javaClass.getResourceAsStream("/email.css").bufferedReader().readText()}
+    </style>
     <meta charset="utf-8">
-    <meta name="description" content="My description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Tipsrundan $number</title>"""
+    """
 
     fun getFullFileText(path: String): String =
         javaClass.getResourceAsStream(path).bufferedReader().readText()
@@ -37,10 +41,13 @@ fun main() {
     val json = Json(JsonConfiguration.Stable)
     val issue = json.parse(Issue.serializer(), EmailGen.getFullFileText("/issues/$filename"))
 
-    val b = StringBuilder().appendHTML().div {
-        unsafe { raw(EmailGen.emailStyle(issue.number.toString())) }
-        createHeader(issue.number.toString(), issue.introduction, pinned)
-        createBody(issue)
+    val b = StringBuilder().appendHTML().html {
+        head { unsafe { raw(EmailGen.emailStyle(issue.number.toString())) } }
+        body {
+
+            createHeader(issue.number.toString(), issue.introduction, pinned)
+            createBody(issue)
+        }
     }
     File("a.html").writeText(b.toString())
 }
@@ -68,7 +75,7 @@ print(html)
 
 // https://andybrewer.github.io/mvp/mvp.html
 
-fun DIV.createHeader(number: String, introduction: String, pinned: List<PinnedItem>) {
+fun BODY.createHeader(number: String, introduction: String, pinned: List<PinnedItem>) {
     header {
         nav {
             a("https://afry-south.github.io/", target = "blank") {
@@ -92,11 +99,18 @@ fun DIV.createHeader(number: String, introduction: String, pinned: List<PinnedIt
     }
 }
 
-fun DIV.createBody(issue: Issue): Unit = main {
-    createSection(issue.regional, "Regional", REGIONAL)
+fun BODY.createBody(issue: Issue): Unit = main {
+    createSection(issue.regional, REGIONAL)
+    createSection(issue.conferenceAndLearning, CONFERENCESANDLEARNING)
+    createSection(issue.softValues, SOFTVALUES)
+    createSection(issue.backendAndBigData, BACKEND)
+    createSection(issue.frontendAndMobile, FRONTEND)
+    createSection(issue.testing, TESTING)
+    createSection(issue.machineLearning, MACHINELEARNING)
+    createSection(issue.videosAndPodcasts, VIDEOPODCASTS)
 }
 
-fun MAIN.createSection(items: List<Item>, title: String, colors: String): Unit = when (items) {
+fun MAIN.createSection(items: List<Item>, title: String): Unit = when (items) {
     emptyList<Item>() -> Unit
     else -> {
         hr { }

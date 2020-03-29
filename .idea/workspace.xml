@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43bf6c19-4edf-422a-9511-422185994565" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/email-gen-kt.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/londogard/StyledParts.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a.html" beforeDir="false" afterPath="$PROJECT_DIR$/a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/email.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/email.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/issues/2020-03-26.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/issues/2020-03-26.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/issues/example.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/issues/example.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/londogard/Colors.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/londogard/SectionTitles.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/londogard/EmailGen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/londogard/EmailGen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/londogard/Model.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/londogard/Model.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/email.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/email.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/issues/2020-03-26.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/issues/2020-03-26.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/issues/example.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/issues/example.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +63,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/issues" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle.kts" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -91,6 +96,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -108,26 +125,26 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="259" key="GridCell.Tab.0.bottom" timestamp="1585489041896">
+    <state width="1878" height="275" key="GridCell.Tab.0.bottom" timestamp="1585505542114">
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
     <state width="1874" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1585476015718" />
-    <state width="1358" height="259" key="GridCell.Tab.0.bottom/0.32.1920.1048@0.32.1920.1048" timestamp="1585489041896" />
-    <state width="1358" height="259" key="GridCell.Tab.0.center" timestamp="1585489041895">
+    <state width="1878" height="275" key="GridCell.Tab.0.bottom/0.32.1920.1048@0.32.1920.1048" timestamp="1585505542114" />
+    <state width="1878" height="275" key="GridCell.Tab.0.center" timestamp="1585505542112">
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
     <state width="1874" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1585476015716" />
-    <state width="1358" height="259" key="GridCell.Tab.0.center/0.32.1920.1048@0.32.1920.1048" timestamp="1585489041895" />
-    <state width="1358" height="259" key="GridCell.Tab.0.left" timestamp="1585489041893">
+    <state width="1878" height="275" key="GridCell.Tab.0.center/0.32.1920.1048@0.32.1920.1048" timestamp="1585505542112" />
+    <state width="1878" height="275" key="GridCell.Tab.0.left" timestamp="1585505542112">
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
     <state width="1874" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1585476015716" />
-    <state width="1358" height="259" key="GridCell.Tab.0.left/0.32.1920.1048@0.32.1920.1048" timestamp="1585489041893" />
-    <state width="1358" height="259" key="GridCell.Tab.0.right" timestamp="1585489041895">
+    <state width="1878" height="275" key="GridCell.Tab.0.left/0.32.1920.1048@0.32.1920.1048" timestamp="1585505542112" />
+    <state width="1878" height="275" key="GridCell.Tab.0.right" timestamp="1585505542113">
       <screen x="0" y="32" width="1920" height="1048" />
     </state>
     <state width="1874" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1585476015717" />
-    <state width="1358" height="259" key="GridCell.Tab.0.right/0.32.1920.1048@0.32.1920.1048" timestamp="1585489041895" />
+    <state width="1878" height="275" key="GridCell.Tab.0.right/0.32.1920.1048@0.32.1920.1048" timestamp="1585505542113" />
     <state x="443" y="133" width="1024" height="852" key="SettingsEditor" timestamp="1585488305340">
       <screen x="0" y="32" width="1920" height="1048" />
     </state>

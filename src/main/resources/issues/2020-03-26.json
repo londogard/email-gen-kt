@@ -8,12 +8,78 @@
       "link": "A non-required URL to the article"
     }
   ],
-  "videos": [],
-  "podcast": [],
-  "conferences": [],
-  "frontEnd": [],
-  "backEnd": [],
-  "testing": [],
-  "machineLearning": [],
-  "softValues": []
+  "videosAndPodcasts": [
+    {
+      "title": "Some Regional News For Ya'll",
+      "description": "This is some very important news that you all want to get!",
+      "link": "A non-required URL to the article"
+    }
+  ],
+  "conferenceAndLearning": [
+    {
+      "title": "Some Regional News For Ya'll",
+      "description": "This is some very important news that you all want to get!",
+      "link": "A non-required URL to the article"
+    }
+  ],
+  "frontendAndMobile": [
+    {
+      "title": "Some Regional News For Ya'll",
+      "description": "This is some very important news that you all want to get!",
+      "link": "A non-required URL to the article"
+    }
+  ],
+  "backendAndBigData": [
+    {
+      "title": "Some Regional News For Ya'll",
+      "description": "This is some very important news that you all want to get!",
+      "link": "A non-required URL to the article"
+    }
+  ],
+  "testing": [
+    {
+      "title": "Some Regional News For Ya'll",
+      "description": "This is some very important news that you all want to get!",
+      "link": "A non-required URL to the article"
+    }
+  ],
+  "machineLearning": [
+    {
+      "title": "Some Regional News For Ya'll",
+      "description": "This is some very important news that you all want to get!",
+      "link": "A non-required URL to the article"
+    }
+  ],
+  "softValues": [
+    {
+      "title": "Some Regional News For Ya'll",
+      "description": "This is some very important news that you all want to get!",
+      "link": "A non-required URL to the article"
+    },
+    {
+      "title": "Some Regional News For Ya'll",
+      "description": "This is some very important news that you all want to get!",
+      "link": "A non-required URL to the article"
+    },
+    {
+      "title": "Some Regional News For Ya'll",
+      "description": "This is some very important news that you all want to get!",
+      "link": "A non-required URL to the article"
+    },
+    {
+      "title": "Some Regional News For Ya'll",
+      "description": "This is some very important news that you all want to get!",
+      "link": "A non-required URL to the article"
+    },
+    {
+      "title": "Some Regional News For Ya'll",
+      "description": "This is some very important news that you all want to get!",
+      "link": "A non-required URL to the article"
+    },
+    {
+      "title": "Some Regional News For Ya'll",
+      "description": "This is some very important news that you all want to get!",
+      "link": "A non-required URL to the article"
+    }
+  ]
 }
