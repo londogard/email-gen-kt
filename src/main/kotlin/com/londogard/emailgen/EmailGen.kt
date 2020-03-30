@@ -46,7 +46,6 @@ fun main() {
     // Toolkit.getDefaultToolkit().systemClipboard.setContents(StringSelection(html.toString()), null)
     File("$filename.html").writeText(html.toString())
 }
-// https://andybrewer.github.io/mvp/mvp.html
 // TODO Pinned --> DropDown!
 
 fun BODY.createHeader(number: String, introduction: String, pinned: List<PinnedItem>) {

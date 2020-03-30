@@ -1,6 +1,6 @@
 plugins {
     kotlin("jvm") version "1.3.71"
-    kotlin("plugin.serialization") version "1.3.70"
+    kotlin("plugin.serialization") version "1.3.71"
 }
 
 group = "com.londogard"
