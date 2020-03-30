@@ -1,4 +1,4 @@
-package com.londogard
+package com.londogard.emailgen
 
 class SectionTitles {
     companion object {
