@@ -26,7 +26,7 @@ fun main() {
             url = "$buSlackArchive/CPK80KX0W/p1571639001000400"
         )
     )
-    val filename = "2020-03-26"
+    val filename = "2020-04-07"
     val json = Json(JsonConfiguration.Stable)
     val issue = json.parse(
         Issue.serializer(),

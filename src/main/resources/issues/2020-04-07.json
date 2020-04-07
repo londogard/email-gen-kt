@@ -1,0 +1,51 @@
+{
+  "number": 11,
+  "introduction": "Welcome to the 11th (!) of Tipsrundan! We hope that everyone is doing good out there in your homes and offices considering the current circumstances. We also want to remind all of you to make sure that you prioritize people first and forthmost - it's important to help eachother out, especially in times like this. For today we've a new email where we'd love some feedback on the look & what improvements we could possibly do.",
+  "regional": [
+    {
+      "title": "Learn how this Tipsrundan was generated from a JSON using Kotlin",
+      "description": "A short (6 minutes) read about how we now genereate Tipsrundan from JSON. The post briefly goes through the history of Tipsrundan, explains the tools used and finally puts it all together. Open to do a more in-depth post if interest exist (it's not complicated though).",
+      "link": "https://afry-south.github.io/kotlin/email/css/html/2020/03/31/how-i-created-tipsrundan-email-generator.html"
+    },
+    {
+      "title": "Afry South #bokcirkel",
+      "description": "Fredrik Strandin created a great initiative #bokcirkel in an effort to do something else than rewatching your favorite tv-show for the 10th time. The first book out is 'The Mythical Man-Month', make sure to join the slack group and perhaps start your own #bokcirkel-group!",
+      "link": "https://buitsouth.slack.com/archives/C010WHF80RF"
+    }
+  ],
+  "videosAndPodcasts": [],
+  "conferenceAndLearning": [
+    {
+      "title": "Pluralsight courses are temporary free (COVID-19)!",
+      "description": "#FREEapril. Stay home. Skill up. As Pluralsight themself want to put it. They're currently offering 7000+ expert-led videos for free during April because of COVID-19, take a moment and figure out if there's something for you!",
+      "link": "https://www.pluralsight.com/"
+    }
+  ],
+  "frontendAndMobile": [],
+  "backendAndBigData": [
+    {
+      "title": "Going over Xmx32G heap boundary means you will have less memory available",
+      "description": "Let me begin with that this blog is good for every JVM developer out there, and most likely others. In this short post Mikhail goes through what happens with the heap as we go past 32 GB, a interesting read that might not have a practical impact for you - but interesting nontheless!",
+      "link": "http://java-performance.info/over-32g-heap-java/"
+    },
+    {
+      "title": "Python Fire: Generate Command Line Interface from any Python Object",
+      "description": "This was something that Konrad Gjertsson shared during the working week, a really cool library by Google! Basically it allows you to generate a CLI from any method in Python. Check it out!",
+      "link": "https://github.com/google/python-fire"
+    },
+    {
+      "title": "Exploring the Mediator Pattern",
+      "description": "This is a pattern which solves coupling between objects and makes every object independent. It's a recommended pattern to use when you're dealing with big monolithic systems and event using event driven architecture",
+      "link": "https://medium.com/@andrewMacmurray/exploring-the-mediator-pattern-eadaebc871b4"
+    }
+  ],
+  "testing": [],
+  "machineLearning": [],
+  "softValues": [
+    {
+      "title": "7 habits to become more productive",
+      "description": "I think that this post has some really good points, especially the first. I'll summarize the 7 habits for the lazy readers: 1. Create a Daily To-Do List the Night Before, 2. Create Weekly Recurring Goals, 3. Physically Warm Up Before Working, 4. Read a Book Instead of Social Media, 5. Journaling, 6. Read the News of Your Interests, 7. Research Something Outside of Your Interests",
+      "link": "https://www.theproductiveyou.com/7-habits-productive-happy-life/"
+    }
+  ]
+}
