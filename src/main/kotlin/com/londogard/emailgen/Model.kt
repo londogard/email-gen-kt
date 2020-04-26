@@ -13,7 +13,8 @@ data class Issue(
     val backendAndBigData: List<Item>,
     val testing: List<Item>,
     val machineLearning: List<Item>,
-    val softValues: List<Item>
+    val softValues: List<Item>,
+    val random: List<Item>
 )
 
 @Serializable
@@ -22,5 +23,8 @@ data class Item(
     val description: String,
     val link: String?
 )
+
+@Serializable
+data class InlineHtml(val html: String)
 
 data class PinnedItem(val title: String, val url: String)

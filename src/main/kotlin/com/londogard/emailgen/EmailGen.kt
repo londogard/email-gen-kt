@@ -1,10 +1,14 @@
 package com.londogard.emailgen
 
+import com.github.kittinunf.fuel.Fuel
+import com.github.kittinunf.fuel.core.extensions.jsonBody
+import com.github.kittinunf.fuel.serialization.responseObject
 import com.londogard.emailgen.EmailHelper.buSlackArchive
 import com.londogard.emailgen.SectionTitles.Companion.BACKEND
 import com.londogard.emailgen.SectionTitles.Companion.CONFERENCESANDLEARNING
 import com.londogard.emailgen.SectionTitles.Companion.FRONTEND
 import com.londogard.emailgen.SectionTitles.Companion.MACHINELEARNING
+import com.londogard.emailgen.SectionTitles.Companion.RANDOM
 import com.londogard.emailgen.SectionTitles.Companion.REGIONAL
 import com.londogard.emailgen.SectionTitles.Companion.SOFTVALUES
 import com.londogard.emailgen.SectionTitles.Companion.TESTING
@@ -26,7 +30,7 @@ fun main() {
             url = "$buSlackArchive/CPK80KX0W/p1571639001000400"
         )
     )
-    val filename = "2020-04-07"
+    val filename = "2020-04-21"
     val json = Json(JsonConfiguration.Stable)
     val issue = json.parse(
         Issue.serializer(),
@@ -44,9 +48,23 @@ fun main() {
 
     // Add this if you want to put the content in your clipboard (ctrl+v to paste the raw html)
     // Toolkit.getDefaultToolkit().systemClipboard.setContents(StringSelection(html.toString()), null)
+
     File("$filename.html").writeText(html.toString())
+    val jsBody = """
+        {"preserve_inline_attachments":true,"exclude_pseudoclasses":false,"strip_important":true,"method":"html","cache_css_parsing":true,"align_floating_images":true,"remove_unset_properties":true,"html":$html}
+    """.trimIndent()
+    run {
+        val r = Fuel.post("https://premailer.io/api/transform")
+            .jsonBody(jsBody)
+            .responseObject(InlineHtml.serializer()){ _, _, result ->
+                println(result.get().html.subSequence(0, 10))
+                File("$filename-inline.html").writeText(result.get().html)
+            }
+        println(r.join().statusCode)
+    }
+
 }
-// TODO Pinned --> DropDown!
+
 
 fun BODY.createHeader(number: String, introduction: String, pinned: List<PinnedItem>) {
     header {
@@ -81,6 +99,7 @@ fun BODY.createBody(issue: Issue): Unit = main {
     createSection(issue.testing, TESTING)
     createSection(issue.machineLearning, MACHINELEARNING)
     createSection(issue.videosAndPodcasts, VIDEOPODCASTS)
+    createSection(issue.random, RANDOM)
 }
 
 fun BODY.createFooter() = footer {
@@ -109,7 +128,7 @@ fun SECTION.createCard(item: Item): Unit = aside {
     p {
         b { +item.title }
         br
-        small { +item.description }
+        p { +item.description }
     }
     a(item.link, target = "blank") { +"Read more" }
 }

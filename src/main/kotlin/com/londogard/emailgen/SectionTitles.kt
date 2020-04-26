@@ -10,5 +10,6 @@ class SectionTitles {
         val BACKEND = "Back-End & Big Data \uD83C\uDF92"
         val TESTING = "Testing & Quality Assurance ✅"
         val MACHINELEARNING = "Machine Learning & Data Understanding \uD83D\uDCC8"
+        val RANDOM = "Random \uD83D\uDCF0"
     }
 }
