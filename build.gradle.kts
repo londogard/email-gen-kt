@@ -1,6 +1,6 @@
 plugins {
-    kotlin("jvm") version "1.3.71"
-    kotlin("plugin.serialization") version "1.3.71"
+    kotlin("jvm") version "1.4.0"
+    kotlin("plugin.serialization") version "1.4.0"
 }
 
 group = "com.londogard"
@@ -12,12 +12,10 @@ repositories {
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
+    implementation(kotlin("stdlib"))
 
-    implementation("com.github.kittinunf.fuel:fuel:2.2.2")
-    implementation("com.github.kittinunf.fuel:fuel-kotlinx-serialization:2.2.2")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-html-jvm:0.7.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.0.0-RC")
+    implementation("org.jetbrains.kotlinx:kotlinx-html-jvm:0.7.2")
 }
 
 tasks {

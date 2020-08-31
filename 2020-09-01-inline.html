@@ -1,0 +1,462 @@
+<html>
+<head>
+    <style>
+    /* MVP.css v1.1 - https://github.com/andybrewer/mvp */
+
+:root {
+    --border-radius: 5px;
+    --box-shadow: 2px 2px 10px;
+    --color: #118bee;
+    --color-accent: #118bee0b;
+    --color-bg: #fff;
+    --color-bg-secondary: #e9e9e9;
+    --color-secondary: #920de9;
+    --color-secondary-accent: #920de90b;
+    --color-shadow: #f4f4f4;
+    --color-text: #000;
+    --color-text-secondary: #999;
+    --hover-brightness: 1.2;
+    --justify-important: center;
+    --justify-normal: left;
+    --line-height: 150%;
+    --width-card: 285px;
+    --width-card-medium: 460px;
+    --width-card-wide: 800px;
+    --width-content: 1080px;
+}
+
+/* Layout */
+article aside {
+    background: #920de90b;
+    border-left: 4px solid #920de9;
+    padding: 0.01rem 0.4rem;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 150%;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 1rem 0;
+}
+
+footer,
+header,
+main {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 1rem 0.5rem;
+}
+
+hr {
+    background-color: #e9e9e9;
+    border: none;
+    height: 1.5px;
+    margin: 1rem 0;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section aside {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #f4f4f4;
+    margin: 0.5rem;
+    padding: 1.25rem;
+    width: 460px;
+}
+
+section aside:hover {
+    box-shadow: 2px 2px 10px #e9e9e9;
+}
+
+section aside img {
+    max-width: 100%;
+}
+
+/* Headers */
+article header,
+div header,
+main header {
+    padding-top: 0;
+}
+
+header {
+    text-align: center;
+}
+
+header a b,
+header a em,
+header a i,
+header a strong {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+header nav img {
+    margin: 1rem 0;
+}
+
+section header {
+    padding-top: 0;
+    width: 100%;
+}
+
+/* Nav */
+nav {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+/* Typography */
+code,
+samp {
+    background-color: #118bee0b;
+    border-radius: 5px;
+    color: #000;
+    display: inline-block;
+    margin: 0 0.1rem;
+    padding: 0rem 0.5rem;
+    text-align: left;
+}
+
+details {
+    margin: 1.3rem 0;
+}
+
+details summary {
+    font-weight: bold;
+}
+
+details summary:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 150%;
+}
+
+mark {
+    padding: 0.1rem;
+}
+
+ol li,
+ul li {
+    padding: 0.2rem 0;
+}
+
+p {
+    margin: 0.75rem 0;
+    padding: 0;
+}
+
+pre {
+    white-space: normal;
+}
+
+pre code,
+pre samp {
+    display: block;
+    margin: 1rem 0;
+    max-width: 800px;
+    padding: 1rem;
+}
+
+small {
+    color: #999;
+}
+
+sup {
+    background-color: #920de9;
+    border-radius: 5px;
+    color: #fff;
+    font-size: xx-small;
+    font-weight: bold;
+    margin: 0.2rem;
+    padding: 0.2rem 0.3rem;
+    position: relative;
+    top: -2px;
+}
+
+/* Links */
+a {
+    color: #920de9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    filter: brightness(1.2);
+    text-decoration: underline;
+}
+
+a b,
+a em,
+a i,
+a strong,
+button {
+    border-radius: 5px;
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+    margin: 1.5rem 0 0.5rem 0;
+    padding: 1rem 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+a b,
+a strong,
+button {
+    background-color: #118bee;
+    border: 2px solid #118bee;
+    color: #fff;
+}
+
+a em,
+a i {
+    border: 2px solid #118bee;
+    border-radius: 5px;
+    color: #118bee;
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+/* Images */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+figure figcaption {
+    color: #999;
+}
+
+/* Forms */
+form {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #f4f4f4;
+    display: block;
+    max-width: 800px;
+    min-width: 285px;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+form header {
+    margin: 1.5rem 0;
+    padding: 1.5rem 0;
+}
+
+input,
+label,
+select,
+textarea {
+    display: block;
+    font-size: inherit;
+    max-width: 800px;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.8rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* Non Below Implemented */
+
+/* Tables */
+table {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    border-spacing: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0;
+}
+
+table td,
+table th,
+table tr {
+    padding: 0.4rem 0.8rem;
+    text-align: center;
+}
+
+table thead {
+    background-color: #118bee;
+    border-collapse: collapse;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+table thead th:first-child {
+    border-top-left-radius: 5px;
+}
+
+table thead th:last-child {
+    border-top-right-radius: 5px;
+}
+
+table thead th:first-child,
+table tr td:first-child {
+    text-align: left;
+}
+
+/* Quotes */
+blockquote {
+    display: block;
+    font-size: x-large;
+    line-height: 150%;
+    margin: 1rem auto;
+    max-width: 460px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+blockquote footer {
+    color: #999;
+    display: block;
+    font-size: small;
+    line-height: 150%;
+    padding: 1.5rem 0;
+}
+
+/* Custom styles */
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background: #fff;color: #000;font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif;line-height: 150%;margin: 0;overflow-x: hidden;padding: 1rem 0;">
+<header style="margin: 0 auto;max-width: 1080px;padding: 1rem 0.5rem;text-align: center;">
+    <nav style="align-items: center;display: flex;font-weight: bold;justify-content: space-between;margin-bottom: 0.5rem;"><a href="https://afry-south.github.io/" target="blank" style="color: #920de9;font-weight: bold;text-decoration: none;"><img height="70" src="https://afry.com/sites/default/files/2019-11/AFRY_Logotyp_Liggande_PNG.png" style="margin: 1rem 0;"></a>
+        <ul style="list-style: none;padding: 0;">
+            <li style="padding: 0.2rem 0;display: inline-block;margin: 0 0.5rem;"><a href="https://buitsouth.slack.com/archives/CPK80KX0W/p1576416425001400" target="blank" style="color: #920de9;font-weight: bold;text-decoration: none;">Recommended Online Courses</a></li>
+            <li style="padding: 0.2rem 0;display: inline-block;margin: 0 0.5rem;"><a href="https://buitsouth.slack.com/archives/CPK80KX0W/p1571639001000400" target="blank" style="color: #920de9;font-weight: bold;text-decoration: none;">Competence Groups</a></li>
+        </ul>
+    </nav>
+</header>
+<section style="display: flex;flex-wrap: wrap;justify-content: center;">
+    <header style="margin: 0 auto;max-width: 1080px;padding: 1rem 0.5rem;text-align: center;padding-top: 0;width: 100%;">
+        <h1 style="line-height: 150%;">Tipsrundan #18</h1>
+        <p style="margin: 0.75rem 0;padding: 0;">Welcome back everybody! This is the first Tipsrundan post-summer 2020 and we're happy to be here! For everyone who's new at AFRY - welcome! We need your help to keep Tipsrundan going, if we want a diverse newsletter we need everyones inspiration and ideas!</p>
+    </header>
+</section>
+<main style="margin: 0 auto;max-width: 1080px;padding: 1rem 0.5rem;">
+    <hr style="background-color: #e9e9e9;border: none;height: 1.5px;margin: 1rem 0;">
+    <section style="display: flex;flex-wrap: wrap;justify-content: center;">
+        <header style="margin: 0 auto;max-width: 1080px;padding: 1rem 0.5rem;text-align: center;padding-top: 0;width: 100%;">
+            <h2 style="line-height: 150%;">Regional News 🗞</h2>
+        </header>
+        <aside style="border: 1px solid #e9e9e9;border-radius: 5px;box-shadow: 2px 2px 10px #f4f4f4;margin: 0.5rem;padding: 1.25rem;width: 460px;">
+            <p style="margin: 0.75rem 0;padding: 0;"><b>Competence Evening Machine Learning: 9/10 2020 17:00</b><br>
+            </p><p style="margin: 0.75rem 0;padding: 0;">The first Machine Learning Competence Evening since before April is finally here! Make sure to join in either virtually or in Office, talk to Hampus Londögård for more information.</p>
+
+            <a href="https://buitsouth.slack.com/archives/CPMRY5JBZ" target="blank" style="color: #920de9;font-weight: bold;text-decoration: none;">Read more</a></aside>
+    </section>
+    <hr style="background-color: #e9e9e9;border: none;height: 1.5px;margin: 1rem 0;">
+    <section style="display: flex;flex-wrap: wrap;justify-content: center;">
+        <header style="margin: 0 auto;max-width: 1080px;padding: 1rem 0.5rem;text-align: center;padding-top: 0;width: 100%;">
+            <h2 style="line-height: 150%;">Soft Values 👥</h2>
+        </header>
+        <aside style="border: 1px solid #e9e9e9;border-radius: 5px;box-shadow: 2px 2px 10px #f4f4f4;margin: 0.5rem;padding: 1.25rem;width: 460px;">
+            <p style="margin: 0.75rem 0;padding: 0;"><b>Everything I knew about reading was wrong</b><br>
+            </p><p style="margin: 0.75rem 0;padding: 0;">This title might sound clickbaty, but it's worth it. I think the ideas brought up, originally from Naval Ravikant, is brilliant. It's a new mindset that has helped me through the summer as I've tried to apply it. It feels a little bit like I finally get around to reading again!</p>
+
+            <a href="https://hackernoon.com/everything-i-knew-about-reading-was-wrong-bde7e57fbfdc" target="blank" style="color: #920de9;font-weight: bold;text-decoration: none;">Read more</a></aside>
+    </section>
+    <hr style="background-color: #e9e9e9;border: none;height: 1.5px;margin: 1rem 0;">
+    <section style="display: flex;flex-wrap: wrap;justify-content: center;">
+        <header style="margin: 0 auto;max-width: 1080px;padding: 1rem 0.5rem;text-align: center;padding-top: 0;width: 100%;">
+            <h2 style="line-height: 150%;">Back-End &amp; Big Data 🎒</h2>
+        </header>
+        <aside style="border: 1px solid #e9e9e9;border-radius: 5px;box-shadow: 2px 2px 10px #f4f4f4;margin: 0.5rem;padding: 1.25rem;width: 460px;">
+            <p style="margin: 0.75rem 0;padding: 0;"><b>piwheels: building a faster Python package repository for Raspberry Pi users</b><br>
+            </p><p style="margin: 0.75rem 0;padding: 0;">Ben Nuttall created an impressive repository that you'd make good in using on your Pi. I manually installed Numpy and it sure wasn't fun, by using this it's really fast as the Python Wheel is pre-built for the Pi! :D</p>
+
+            <a href="https://bennuttall.com/piwheels-building-a-faster-python-package-repository-for-raspberry-pi-users/" target="blank" style="color: #920de9;font-weight: bold;text-decoration: none;">Read more</a></aside>
+    </section>
+    <hr style="background-color: #e9e9e9;border: none;height: 1.5px;margin: 1rem 0;">
+    <section style="display: flex;flex-wrap: wrap;justify-content: center;">
+        <header style="margin: 0 auto;max-width: 1080px;padding: 1rem 0.5rem;text-align: center;padding-top: 0;width: 100%;">
+            <h2 style="line-height: 150%;">Videos &amp; Podcasts 💻🎧</h2>
+        </header>
+        <aside style="border: 1px solid #e9e9e9;border-radius: 5px;box-shadow: 2px 2px 10px #f4f4f4;margin: 0.5rem;padding: 1.25rem;width: 460px;">
+            <p style="margin: 0.75rem 0;padding: 0;"><b>KotlinConf 2019: Gradient Descent: The Ultimate Optimizer by Erik Meijer</b><br>
+            </p><p style="margin: 0.75rem 0;padding: 0;">Erik Meijer has helped shape languages such as Haskell, Kotlin &amp; C# - and also the Reactive Paradigm. Even involved in LINQ. Here he's back talking about what Machine Learning and Deep Learning in words that a programmer understands, abstracting math into normal programming (Test-Driven Development). It's a great talk for anyone interested!</p>
+
+            <a href="https://www.youtube.com/watch?v=13eYMhuvmXE" target="blank" style="color: #920de9;font-weight: bold;text-decoration: none;">Read more</a></aside>
+    </section>
+    <hr style="background-color: #e9e9e9;border: none;height: 1.5px;margin: 1rem 0;">
+    <section style="display: flex;flex-wrap: wrap;justify-content: center;">
+        <header style="margin: 0 auto;max-width: 1080px;padding: 1rem 0.5rem;text-align: center;padding-top: 0;width: 100%;">
+            <h2 style="line-height: 150%;">Random 📰</h2>
+        </header>
+        <aside style="border: 1px solid #e9e9e9;border-radius: 5px;box-shadow: 2px 2px 10px #f4f4f4;margin: 0.5rem;padding: 1.25rem;width: 460px;">
+            <p style="margin: 0.75rem 0;padding: 0;"><b>Oh Shit, Git?</b><br>
+            </p><p style="margin: 0.75rem 0;padding: 0;">Did you just mess up? Don't know how to update? Then go here when in doubt, and save yourself!</p>
+
+            <a href="https://ohshitgit.com/" target="blank" style="color: #920de9;font-weight: bold;text-decoration: none;">Read more</a></aside>
+        <aside style="border: 1px solid #e9e9e9;border-radius: 5px;box-shadow: 2px 2px 10px #f4f4f4;margin: 0.5rem;padding: 1.25rem;width: 460px;">
+            <p style="margin: 0.75rem 0;padding: 0;"><b>Semantic Search on the Web</b><br>
+            </p><p style="margin: 0.75rem 0;padding: 0;">First off, what is Semantic Search? Semantic Search is basically what google does for you when you search. So basically your CTRL+F becomes 'aware' and can search your page way smarter than ever before!</p>
+
+            <a href="https://github.com/model-zoo/shift-ctrl-f" target="blank" style="color: #920de9;font-weight: bold;text-decoration: none;">Read more</a></aside>
+    </section>
+</main>
+<footer style="margin: 0 auto;max-width: 1080px;padding: 1rem 0.5rem;">
+    <hr style="background-color: #e9e9e9;border: none;height: 1.5px;margin: 1rem 0;">
+    <section style="display: flex;flex-wrap: wrap;justify-content: center;">
+        <p style="margin: 0.75rem 0;padding: 0;"><b>Thank you for this time see you in two weeks</b><br>Hampus &amp; Hassan</p>
+    </section>
+</footer>
+</body>
+</html>

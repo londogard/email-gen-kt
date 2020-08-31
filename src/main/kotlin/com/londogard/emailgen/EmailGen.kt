@@ -1,8 +1,5 @@
 package com.londogard.emailgen
 
-import com.github.kittinunf.fuel.Fuel
-import com.github.kittinunf.fuel.core.extensions.jsonBody
-import com.github.kittinunf.fuel.serialization.responseObject
 import com.londogard.emailgen.EmailHelper.buSlackArchive
 import com.londogard.emailgen.SectionTitles.Companion.BACKEND
 import com.londogard.emailgen.SectionTitles.Companion.CONFERENCESANDLEARNING
@@ -16,7 +13,7 @@ import com.londogard.emailgen.SectionTitles.Companion.VIDEOPODCASTS
 import kotlinx.html.*
 import kotlinx.html.stream.appendHTML
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.JsonConfiguration
+import kotlinx.serialization.parse
 import java.io.File
 
 // https://emailframe.work/
@@ -31,9 +28,10 @@ fun main() {
             url = "$buSlackArchive/CPK80KX0W/p1571639001000400"
         )
     )
-    val filename = "2020-06-30"
-    val json = Json(JsonConfiguration.Stable)
-    val issue = json.parse(
+    val filename = "2020-09-01"
+    //val json = Json(JsonConfiguration.Stable)
+
+    val issue = Json.decodeFromString(
         Issue.serializer(),
         EmailHelper.getFullFileText("/issues/$filename.json")
     )
@@ -51,19 +49,6 @@ fun main() {
     // Toolkit.getDefaultToolkit().systemClipboard.setContents(StringSelection(html.toString()), null)
 
     File("$filename.html").writeText(html.toString())
-    val jsBody = """
-        {"preserve_inline_attachments":true,"exclude_pseudoclasses":false,"strip_important":true,"method":"html","cache_css_parsing":true,"align_floating_images":true,"remove_unset_properties":true,"html":$html}
-    """.trimIndent()
-    run {
-        val r = Fuel.post("https://premailer.io/api/transform")
-            .jsonBody(jsBody)
-            .responseObject(InlineHtml.serializer()){ _, _, result ->
-                println(result.get().html.subSequence(0, 10))
-                File("$filename-inline.html").writeText(result.get().html)
-            }
-        println(r.join().statusCode)
-    }
-
 }
 
 
