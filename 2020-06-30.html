@@ -1,0 +1,485 @@
+<html>
+  <head>
+    <style>
+    /* MVP.css v1.1 - https://github.com/andybrewer/mvp */
+
+:root {
+    --border-radius: 5px;
+    --box-shadow: 2px 2px 10px;
+    --color: #118bee;
+    --color-accent: #118bee0b;
+    --color-bg: #fff;
+    --color-bg-secondary: #e9e9e9;
+    --color-secondary: #920de9;
+    --color-secondary-accent: #920de90b;
+    --color-shadow: #f4f4f4;
+    --color-text: #000;
+    --color-text-secondary: #999;
+    --hover-brightness: 1.2;
+    --justify-important: center;
+    --justify-normal: left;
+    --line-height: 150%;
+    --width-card: 285px;
+    --width-card-medium: 460px;
+    --width-card-wide: 800px;
+    --width-content: 1080px;
+}
+
+/* Layout */
+article aside {
+    background: #920de90b;
+    border-left: 4px solid #920de9;
+    padding: 0.01rem 0.4rem;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 150%;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 1rem 0;
+}
+
+footer,
+header,
+main {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 1rem 0.5rem;
+}
+
+hr {
+    background-color: #e9e9e9;
+    border: none;
+    height: 1.5px;
+    margin: 1rem 0;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section aside {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #f4f4f4;
+    margin: 0.5rem;
+    padding: 1.25rem;
+    width: 460px;
+}
+
+section aside:hover {
+    box-shadow: 2px 2px 10px #e9e9e9;
+}
+
+section aside img {
+    max-width: 100%;
+}
+
+/* Headers */
+article header,
+div header,
+main header {
+    padding-top: 0;
+}
+
+header {
+    text-align: center;
+}
+
+header a b,
+header a em,
+header a i,
+header a strong {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+header nav img {
+    margin: 1rem 0;
+}
+
+section header {
+    padding-top: 0;
+    width: 100%;
+}
+
+/* Nav */
+nav {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+/* Typography */
+code,
+samp {
+    background-color: #118bee0b;
+    border-radius: 5px;
+    color: #000;
+    display: inline-block;
+    margin: 0 0.1rem;
+    padding: 0rem 0.5rem;
+    text-align: left;
+}
+
+details {
+    margin: 1.3rem 0;
+}
+
+details summary {
+    font-weight: bold;
+}
+
+details summary:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 150%;
+}
+
+mark {
+    padding: 0.1rem;
+}
+
+ol li,
+ul li {
+    padding: 0.2rem 0;
+}
+
+p {
+    margin: 0.75rem 0;
+    padding: 0;
+}
+
+pre {
+    white-space: normal;
+}
+
+pre code,
+pre samp {
+    display: block;
+    margin: 1rem 0;
+    max-width: 800px;
+    padding: 1rem;
+}
+
+small {
+    color: #999;
+}
+
+sup {
+    background-color: #920de9;
+    border-radius: 5px;
+    color: #fff;
+    font-size: xx-small;
+    font-weight: bold;
+    margin: 0.2rem;
+    padding: 0.2rem 0.3rem;
+    position: relative;
+    top: -2px;
+}
+
+/* Links */
+a {
+    color: #920de9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    filter: brightness(1.2);
+    text-decoration: underline;
+}
+
+a b,
+a em,
+a i,
+a strong,
+button {
+    border-radius: 5px;
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+    margin: 1.5rem 0 0.5rem 0;
+    padding: 1rem 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+a b,
+a strong,
+button {
+    background-color: #118bee;
+    border: 2px solid #118bee;
+    color: #fff;
+}
+
+a em,
+a i {
+    border: 2px solid #118bee;
+    border-radius: 5px;
+    color: #118bee;
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+/* Images */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+figure figcaption {
+    color: #999;
+}
+
+/* Forms */
+form {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #f4f4f4;
+    display: block;
+    max-width: 800px;
+    min-width: 285px;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+form header {
+    margin: 1.5rem 0;
+    padding: 1.5rem 0;
+}
+
+input,
+label,
+select,
+textarea {
+    display: block;
+    font-size: inherit;
+    max-width: 800px;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.8rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* Non Below Implemented */
+
+/* Tables */
+table {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    border-spacing: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0;
+}
+
+table td,
+table th,
+table tr {
+    padding: 0.4rem 0.8rem;
+    text-align: center;
+}
+
+table thead {
+    background-color: #118bee;
+    border-collapse: collapse;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+table thead th:first-child {
+    border-top-left-radius: 5px;
+}
+
+table thead th:last-child {
+    border-top-right-radius: 5px;
+}
+
+table thead th:first-child,
+table tr td:first-child {
+    text-align: left;
+}
+
+/* Quotes */
+blockquote {
+    display: block;
+    font-size: x-large;
+    line-height: 150%;
+    margin: 1rem auto;
+    max-width: 460px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+blockquote footer {
+    color: #999;
+    display: block;
+    font-size: small;
+    line-height: 150%;
+    padding: 1.5rem 0;
+}
+
+/* Custom styles */
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+  <body>
+    <header>
+      <nav><a href="https://afry-south.github.io/" target="blank"><img height="70" src="https://afry.com/sites/default/files/2019-11/AFRY_Logotyp_Liggande_PNG.png"></a>
+        <ul>
+          <li><a href="https://buitsouth.slack.com/archives/CPK80KX0W/p1576416425001400" target="blank">Recommended Online Courses</a></li>
+          <li><a href="https://buitsouth.slack.com/archives/CPK80KX0W/p1571639001000400" target="blank">Competence Groups</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <header>
+        <h1>Tipsrundan #17</h1>
+        <p>The final Tipsrundan before summer, issue #17! We have everything from our first Competence Sharing Lunch slides to internal pro-tips on new tools to enhance your everyday! Buckle in and get ready for the final Tipsrundan until post-summer!</p>
+      </header>
+    </section>
+    <main>
+      <hr>
+      <section>
+        <header>
+          <h2>Regional News 🗞</h2>
+        </header>
+        <aside>
+          <p><b>Competence Sharing Lunch: Regex</b><br>
+            <p>Afry IT Souths first lunch presentation with 16 people tuning in! It was really fun that we could do something remotely as our activities this far has pretty much been on hold. Here comes the slides as promised, so that everyone can view them!</p>
+          </p>
+<a href="https://github.com/afry-south/afry-south.github.io/blob/master/lunches/lunch_regex.pdf" target="blank">Read more</a></aside>
+        <aside>
+          <p><b>Internal pro-tip: RegExr</b><br>
+            <p>Erik Andersson recommends regexr - a cheat sheet, live feedback and since not too long ago, test cases!</p>
+          </p>
+<a href="https://regexr.com/" target="blank">Read more</a></aside>
+        <aside>
+          <p><b>Internal pro-tip: shellcheck</b><br>
+            <p>Patric Greco recommends shellcheck - check your shell scripts for common mishaps etc!</p>
+          </p>
+<a href="https://github.com/koalaman/shellcheck" target="blank">Read more</a></aside>
+        <aside>
+          <p><b>Internal pro-tip: awk</b><br>
+            <p>Patric Greco recommends awk - helps you extract data since 1970s. Does way more than just awk '{ print $2 }' , just takes a while to get a hang of it. 'The AWK Programming Language' was pretty ok.</p>
+          </p>
+<a target="blank">Read more</a></aside>
+        <aside>
+          <p><b>Internal pro-tip: editorconfig.org</b><br>
+            <p>Erik Andersson recommends editorconfig.org - Style guides should not need to be read for more than those soft things that are on the edge of personal preference, i.e. “passable”</p>
+          </p>
+<a href="https://editorconfig.org/" target="blank">Read more</a></aside>
+        <aside>
+          <p><b>Internal pro-tip: WKB/WKT/GeoJson conversion</b><br>
+            <p>Kasper Bratz recommends kostas krevataz online conversion tool for WKB/WKT/GeoJSON - Very handy if you find yourself working with WKB’s /WKT’s.</p>
+          </p>
+<a href="http://kostas.krevatas.net/wkt-wkb-geojson-convert-online/" target="blank">Read more</a></aside>
+        <aside>
+          <p><b>Internal pro-tip: Z Shell + Autosuggestion</b><br>
+            <p>Hannes Sandberg recommends you all to get Z Shell and add some autosuggestions on top of that! Patric Greco adds that by also grabbing 'oh my zsh' (https://github.com/ohmyzsh/ohmyzsh) you can easier extend zsh and have a better day, Hannes also added a theme (https://github.com/agnoster/agnoster-zsh-theme) for those that like it prettier! Kasper added that he was in love with it too ;)</p>
+          </p>
+<a href="https://github.com/zsh-users/zsh-autosuggestions" target="blank">Read more</a></aside>
+        <aside>
+          <p><b>Internal pro-tip: tmux</b><br>
+            <p>Patric Greco recommends tmux - terminal multiplexer. Split panes, get tabs etc. move around with your keyboard. Like screen but way better.</p>
+          </p>
+<a href="https://github.com/tmux/tmux/wiki" target="blank">Read more</a></aside>
+        <aside>
+          <p><b>Internal pro-tip: SilverSearcher (ag)</b><br>
+            <p>Hans Peter recommends SilverSearcher which is a program in the terminal to search code really fast!</p>
+          </p>
+<a href="https://github.com/ggreer/the_silver_searcher" target="blank">Read more</a></aside>
+        <aside>
+          <p><b>Internal pro-tip Jq</b><br>
+            <p>Hampus recommends jq - 'Parse Jsons like a God! Basically sed for jsons'. It's incredibly useful if you work with JSONs!</p>
+          </p>
+<a href="https://stedolan.github.io/jq/" target="blank">Read more</a></aside>
+      </section>
+      <hr>
+      <section>
+        <header>
+          <h2>Soft Values 👥</h2>
+        </header>
+        <aside>
+          <p><b>The importance of a handbook-first approach to documentation</b><br>
+            <p>GitLab is one of few companies that are full-remote and (almost a bit of PR, but good nonetheless) love to share their learnings to help you out. Ideas like having Slack messages only persist 90 days might seem weird but there's a good reason to why, more interesting ideas and thoughts are brought up in this blog on how to improve remote work. I really enjoyed learning more about team communication and how simple small things can affect the greater org by simply being built a certain way! Personally this feels like a re-occuring theme, a solid foundation is incredibly important in all we do.</p>
+          </p>
+<a href="https://about.gitlab.com/company/culture/all-remote/handbook-first-documentation/" target="blank">Read more</a></aside>
+      </section>
+      <hr>
+      <section>
+        <header>
+          <h2>Random 📰</h2>
+        </header>
+        <aside>
+          <p><b>Biohacking Lite - Karpathy</b><br>
+            <p>Karpathy is one of the most famous names in the Machine Learning community currently, but today it's not about Machine Learning (but a little statistics). In this post we'll get to follow how he tracked the last few years of different diets, workouts and also learn a bit biology (or have a refresher!). All in all a pretty light but very interesting and fun read with cool graphs and awesome biology informatics!</p>
+          </p>
+<a href="https://karpathy.github.io/2020/06/11/biohacking-lite/" target="blank">Read more</a></aside>
+        <aside>
+          <p><b>The Magnetic Amplifier - A Lost Technology of the 1950s The Magnetic Amplifier – A Lost Technology of the 1950s</b><br>
+            <p>A really fun read if you enjoy random things! Excerpt: 'Most folks believe that first came the vacuum tube and right on its heels came its successor, the transistor — an historical fact, correct? Not really.'</p>
+          </p>
+<a href="https://www.nutsvolts.com/magazine/article/the_magnetic_amplifier" target="blank">Read more</a></aside>
+      </section>
+    </main>
+    <footer>
+      <hr>
+      <section>
+        <p><b>Thank you for this time see you in two weeks</b><br>Hampus &amp; Hassan</p>
+      </section>
+    </footer>
+  </body>
+</html>

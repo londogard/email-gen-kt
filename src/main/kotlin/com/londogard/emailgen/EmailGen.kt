@@ -19,6 +19,7 @@ import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonConfiguration
 import java.io.File
 
+// https://emailframe.work/
 fun main() {
     val pinned = listOf(
         PinnedItem(
@@ -30,7 +31,7 @@ fun main() {
             url = "$buSlackArchive/CPK80KX0W/p1571639001000400"
         )
     )
-    val filename = "2020-04-21"
+    val filename = "2020-06-30"
     val json = Json(JsonConfiguration.Stable)
     val issue = json.parse(
         Issue.serializer(),

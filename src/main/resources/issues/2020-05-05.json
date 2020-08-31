@@ -1,0 +1,56 @@
+{
+  "number": 13,
+  "introduction": "Welcome to the 13th (!) edition of Tipsrundan! As Corona keeps us at home some of the Competence Groups decided to reboot virtually, make sure to join in for a pizza and a ton of fun!",
+  "regional": [
+    {
+      "title": "Kompetenskväll Deep Learning",
+      "link": "https://buitsouth.slack.com/archives/CPMRY5JBZ",
+      "description": "Wednesday 6/5 a new Kompetenskväll will take place virtually! You'll be able to get some pizza on Afry and have fun engaging in the task at hands - Named Entity Recognition in Swedish. Reach out to Hampus Londögård to tune in!"
+    },
+    {
+      "title": "Kompetenskväll Algoritmer",
+      "link": "https://buitsouth.slack.com/archives/CPE14G5LH",
+      "description": "The Algorithms and Problem Solving competence group is re-booting. The next meeting will take place on the 12th of May, make sure to join in and crack the latest challenging problem!"
+    }
+
+  ],
+  "videosAndPodcasts": [],
+  "conferenceAndLearning": [],
+  "frontendAndMobile": [],
+  "backendAndBigData": [
+  ],
+  "testing": [],
+  "machineLearning": [
+    {
+      "title": "A Swedish FAQ Search Engine (Covid-19 + Folkhälsomyndigheten)",
+      "link": "https://github.com/londogard/nlp-projects/blob/master/python/CoViD_19_QA.ipynb",
+      "description": "A weekend or two ago Hampus decided to finally implement something he had been thinking of for a while, a search engine for anything text-related that does not require manually annotated data. The result ended up good enough (and improvements are on their way!)."
+    },
+    {"title": "Torchserve - Pytorch (Facebook) & Amazons response to TensorFlow serving", "link": "https://aws.amazon.com/blogs/aws/announcing-torchserve-an-open-source-model-server-for-pytorch/",
+      "description": "Simplify the deployment of models on the cloud. Using Torcheserve it's a breeze to create a low-latency web server with ready-to-use modules for the most common classifiers. Basically what you do is download model to cluster, then run `torchserve` with the model as a param and you're good to go!"}
+  ],
+  "softValues": [
+    {
+      "title": "Tips för effektiva möten & workshops online del 2",
+      "link": "https://www.konsultbolag1.se/bloggen/tips-for-effektiva-moten-och-workshops-online-del-2-beteende",
+      "description": "Chris has been working all night to get the second part of his series out! Jokes aside, this post includes some great stuff that are good to know they exist and has a focus on MS Teams. Such as how do I create a laser-pointer? Highlight? Get your own wonderful background image? Chris got you covered!"
+    }
+  ],
+  "random": [
+    {
+      "title": "QRCP: QR Code, Terminal & Files Transfer",
+      "link": "https://github.com/claudiodangelis/qrcp",
+      "description": "'Transfer files over wifi from your computer to your mobile device by scanning a QR code without leaving the terminal'. AWESOME! I think this is a really cool concept which I'd like to expand upon myself someday. Really cool random concept :D"
+    },
+    {
+      "title": "How are Unix pipes implemented?",
+      "link": "https://toroid.org/unix-pipe-implementation",
+      "description": "Very interesting learning for the ones who enjoy to actually know what is happening under the hood!"
+    },
+    {
+      "title": "5 years of aggregated TIL",
+      "link": "https://github.com/jbranchaud/til/blob/master/README.md",
+      "description": "Someone took their sweet time to aggregate 'Today I Learned' (TIL) in a README which is pretty damn awesome. You might not read this file but I really liked the idea of doing this myself and created my own repository on GitHub to aggregate my own TILs. Having a knowledge bank is very handy!"
+    }
+  ]
+}

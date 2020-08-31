@@ -1,0 +1,86 @@
+{
+  "number": 17,
+  "introduction": "The final Tipsrundan before summer, issue #17! We have everything from our first Competence Sharing Lunch slides to internal pro-tips on new tools to enhance your everyday! Buckle in and get ready for the final Tipsrundan until post-summer!",
+  "regional": [
+    {
+      "title": "Competence Sharing Lunch: Regex",
+      "description": "Afry IT Souths first lunch presentation with 16 people tuning in! It was really fun that we could do something remotely as our activities this far has pretty much been on hold. Here comes the slides as promised, so that everyone can view them!",
+      "link": "https://github.com/afry-south/afry-south.github.io/blob/master/lunches/lunch_regex.pdf"
+    },
+    {
+      "title": "Internal pro-tip: RegExr",
+      "description": "Erik Andersson recommends regexr - a cheat sheet, live feedback and since not too long ago, test cases!",
+      "link": "https://regexr.com/"
+    },
+    {
+      "title": "Internal pro-tip: shellcheck",
+      "description": "Patric Greco recommends shellcheck - check your shell scripts for common mishaps etc!",
+      "link": "https://github.com/koalaman/shellcheck"
+    },
+    {
+      "title": "Internal pro-tip: awk",
+      "description": "Patric Greco recommends awk - helps you extract data since 1970s. Does way more than just awk '{ print $2 }' , just takes a while to get a hang of it. 'The AWK Programming Language' was pretty ok."
+    },
+    {
+      "title": "Internal pro-tip: editorconfig.org",
+      "description": "Erik Andersson recommends editorconfig.org - Style guides should not need to be read for more than those soft things that are on the edge of personal preference, i.e. “passable”",
+      "link": "https://editorconfig.org/"
+    },
+    {
+      "title": "Internal pro-tip: WKB/WKT/GeoJson conversion",
+      "description": "Kasper Bratz recommends kostas krevataz online conversion tool for WKB/WKT/GeoJSON - Very handy if you find yourself working with WKB’s /WKT’s.",
+      "link": "http://kostas.krevatas.net/wkt-wkb-geojson-convert-online/"
+    },
+    {
+      "title": "Internal pro-tip: Z Shell + Autosuggestion",
+      "description": "Hannes Sandberg recommends you all to get Z Shell and add some autosuggestions on top of that! Patric Greco adds that by also grabbing 'oh my zsh' (https://github.com/ohmyzsh/ohmyzsh) you can easier extend zsh and have a better day, Hannes also added a theme (https://github.com/agnoster/agnoster-zsh-theme) for those that like it prettier! Kasper added that he was in love with it too ;)",
+      "link": "https://github.com/zsh-users/zsh-autosuggestions"
+    },
+    {
+      "title": "Internal pro-tip: tmux",
+      "description": "Patric Greco recommends tmux - terminal multiplexer. Split panes, get tabs etc. move around with your keyboard. Like screen but way better.",
+      "link": "https://github.com/tmux/tmux/wiki"
+    },
+    {
+      "title": "Internal pro-tip: SilverSearcher (ag)",
+      "description": "Hans Peter recommends SilverSearcher which is a program in the terminal to search code really fast!",
+      "link": "https://github.com/ggreer/the_silver_searcher"
+    },
+    {
+      "title": "Internal pro-tip Jq",
+      "description": "Hampus recommends jq - 'Parse Jsons like a God! Basically sed for jsons'. It's incredibly useful if you work with JSONs!",
+      "link": "https://stedolan.github.io/jq/"
+    }
+  ],
+  "videosAndPodcasts": [
+  ],
+  "conferenceAndLearning": [
+  ],
+  "frontendAndMobile": [
+  ],
+  "backendAndBigData": [
+  ],
+  "testing": [
+  ],
+  "machineLearning": [
+  ],
+  "softValues": [
+    {
+      "title": "The importance of a handbook-first approach to documentation",
+      "description": "GitLab is one of few companies that are full-remote and (almost a bit of PR, but good nonetheless) love to share their learnings to help you out. Ideas like having Slack messages only persist 90 days might seem weird but there's a good reason to why, more interesting ideas and thoughts are brought up in this blog on how to improve remote work. I really enjoyed learning more about team communication and how simple small things can affect the greater org by simply being built a certain way! Personally this feels like a re-occuring theme, a solid foundation is incredibly important in all we do.",
+      "link": "https://about.gitlab.com/company/culture/all-remote/handbook-first-documentation/"
+    }
+  ],
+  "random": [
+    {
+      "title": "Biohacking Lite - Karpathy",
+      "description": "Karpathy is one of the most famous names in the Machine Learning community currently, but today it's not about Machine Learning (but a little statistics). In this post we'll get to follow how he tracked the last few years of different diets, workouts and also learn a bit biology (or have a refresher!). All in all a pretty light but very interesting and fun read with cool graphs and awesome biology informatics!",
+      "link": "https://karpathy.github.io/2020/06/11/biohacking-lite/"
+    },
+    {
+      "title": "The Magnetic Amplifier - A Lost Technology of the 1950s The Magnetic Amplifier – A Lost Technology of the 1950s",
+      "description": "A really fun read if you enjoy random things! Excerpt: 'Most folks believe that first came the vacuum tube and right on its heels came its successor, the transistor — an historical fact, correct? Not really.'",
+      "link": "https://www.nutsvolts.com/magazine/article/the_magnetic_amplifier"
+    }
+  ]
+}

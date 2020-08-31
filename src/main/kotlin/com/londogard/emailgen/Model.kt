@@ -21,7 +21,8 @@ data class Issue(
 data class Item(
     val title: String,
     val description: String,
-    val link: String?
+    val link: String? = null,
+    val afry: Boolean? = null
 )
 
 @Serializable
