@@ -72,6 +72,10 @@ fun BODY.createHeader(number: String, introduction: String, pinned: List<PinnedI
         header {
             h1 { +"Tipsrundan #$number" }
             p { +introduction }
+            p {
+                + "As always, read the pretty version "
+                a(href="https://afry-south.github.io/tipsrundan/Tipsrundan_$number.html") { +"here" }
+            }
         }
     }
 }
