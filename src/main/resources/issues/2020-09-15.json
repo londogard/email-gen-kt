@@ -1,0 +1,47 @@
+{
+  "number": 19,
+  "introduction": "Welcome to Tipsrundan 19! In this edition we introduce Dennis, Nellie & Oscar who have joined AFRY recently! As always, please reach out if you have got any tips, ideas or anything really!",
+  "regional": [
+    {
+      "title": "Welcome Dennis, Nellie & Oscar!",
+      "description": "Wanna learn a little more about some of our newest recruits? Make sure to read about Dennis, Nellie & Oscar here!",
+      "link": "https://afry-south.github.io/meet/new%20recruits/2020/09/11/intervju-dennis-nellie-oscar.md.html"
+    },
+    {
+      "title": "#bokcirkel - 'Clean code'",
+      "description": "Bokcirkeln is back at it, this time with Clean Code. Make sure to join the Slack Channel!"
+    },
+    {
+      "title": "Machine Learning Competence Evening #1 Autumn 2020",
+      "description": "For the first meeting of the Competence Group we ran through, almost, two chapters of fastai's new course from July 2020. If you wish to join in make sure to ping Hampus Londögård on email, slack or really anywhere - it'll be fun, I promise you!"
+    }
+  ],
+  "videosAndPodcasts": [
+  ],
+  "conferenceAndLearning": [],
+  "frontendAndMobile": [],
+  "backendAndBigData": [
+    {
+      "title": "Leiflands last Tipsrundan suggestion: Disruptor by LMAX-Exchange",
+      "description": "Disruptor is a low-latency hight-throughoutput messaging which is the result of years of research (with its own technical paper). It reduces the amount of cache-misses to optimize on modern hardware, as they themself put it: '... we created a framework which has \"mechanical sympathy\" for the hardware it's running on, and that's lock-free'. Thank you Leifland!",
+      "link": "https://lmax-exchange.github.io/disruptor/"
+    },
+    {
+      "title": "Poetry - Python packaging and dependency management made easy",
+      "description": "I haven't actually gotten around to try this out yet, but I hope any reader could and review. There's been a lot of good talk about Poetry at both Reddit and Hacker News, by a quick overview it seems like a really good thing to simplify Python!",
+      "link": "https://python-poetry.org/"
+    }
+  ],
+  "testing": [
+  ],
+  "machineLearning": [],
+  "softValues": [
+  ],
+  "random": [
+    {
+      "title": "Croc - magic-wormhole but better!",
+      "description": "croc is a tool that allows any two computers to simply and securely transfer files and folders. If you know about magic-wormhole you should really check croc out as it's even faster, and if you don't you should check it out to learn how to send file from A to B simpler than anytime before!",
+      "link": "https://github.com/schollz/croc"
+    }
+  ]
+}
