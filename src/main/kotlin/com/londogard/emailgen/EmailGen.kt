@@ -28,7 +28,7 @@ fun main() {
             url = "$buSlackArchive/CPK80KX0W/p1571639001000400"
         )
     )
-    val filename = "2020-09-15"
+    val filename = "2020-09-29"
     //val json = Json(JsonConfiguration.Stable)
 
     val issue = Json.decodeFromString(

@@ -1,0 +1,43 @@
+{
+  "number": 20,
+  "introduction": "Welcome to Tipsrundan 20! The frontend competence group is coming back, we're introducing some new peeps & finally some really cool tools introduced!",
+  "regional": [
+    {
+      "title": "Welcome Anders & Nguyen!",
+      "description": "Welcoming a new member & older one forward, read more about Anders & Nguyen!",
+      "link": "https://afry-south.github.io/meet/2020/09/25/intervju-anders-nguyen.html"
+    },
+    {
+      "title": "Frontend Competence Group",
+      "description": "The Frontend Competence Group is rebooting under Nguyen. Please make sure to add your feedback on what you'd like to do through this form!",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLScXZMHvYjeXw2O9vcXbAz36NjaET9n4v0LjjuDYp2jg9bHa5A/viewform "
+    }
+  ],
+  "videosAndPodcasts": [
+  ],
+  "conferenceAndLearning": [],
+  "frontendAndMobile": [],
+  "backendAndBigData": [
+  ],
+  "testing": [
+  ],
+  "machineLearning": [],
+  "softValues": [
+    {
+      "title": "Work on what matters",
+      "description": "A brilliant, well-thought article that also references a ton of other awesome articles. It lays out important things to think about the next time you pick up your task! I'll read it myself a second time after taking a few days thinking about it.",
+      "link": "https://staffeng.com/guides/work-on-what-matters"
+    }
+  ],
+  "random": [
+    {
+      "title": "Programming Challenges - Project Euler & others",
+      "description": "Anders Hagsten and others added some cool websites to practise your coding skill. projecteuler.net & open.kattis.com where the top recommendations, do you know another site? Please share!"
+    },
+    {
+      "title": "GitHub CLI 1.0",
+      "description": "Have you ever wished that git worked a liiiittle better with GitHub? Here you go! GitHub CLI wraps the GitHub API making it incredibly easy to do everything from your fingertips. This might not seem that awesome to begin with, but for automation this is great!",
+      "link": "https://github.blog/2020-09-17-github-cli-1-0-is-now-available/"
+    }
+  ]
+}
