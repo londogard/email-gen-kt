@@ -1,0 +1,49 @@
+{
+  "number": 21,
+  "introduction": "Welcome to Tipsrundan 21! First off, check your email religously the next few days! Second, make sure to read Tipsrundan. Enjoy!",
+  "regional": [
+    {
+      "title": "Teaser...",
+      "description": "I am barely able to keep this secret anymore! Hopefully by tomorrow a calendar invite will drop down your mail. Make sure to keep track of your email. :)"
+    },
+    {
+      "title": "Competence Evening: Machine Learning (14th of Oct)",
+      "description": "Do you want to understand what Machine Learning is? Do you want to learn how it works? Would you like to create your own? Make sure to join the next Competence Evening on Machine Learning! Reach out to Hampus Londögård for more information."
+    },
+    {
+      "title": "Competence Evening: Algorithms",
+      "description": "Do you want to compete in coding challenges? Do you enjoy creating highly optimized code? Make sure to check out Linus & Carls reboot of the #competence_algorithms_problem_solving!"
+    },
+    {
+      "title": "Competence Evening: Front-end",
+      "description": "Do you want to create applications end-to-end? Do you enjoy designing not only beautiful interfaces but also usable ones? Make sure to check out #competence_front_end and ping Nguyen Lam!"
+    }
+  ],
+  "videosAndPodcasts": [
+  ],
+  "conferenceAndLearning": [],
+  "frontendAndMobile": [],
+  "backendAndBigData": [
+  ],
+  "testing": [
+  ],
+  "machineLearning": [
+  ],
+  "softValues": [
+    {
+      "title": "Being Glue",
+      "description": "This articles was actually referenced in last weeks 'Work on what matters', which simply states something most of us already know. But it works really well as a reflection and lifts some issues that exists around workspaces. All in all a great recommendation!",
+      "link": "https://noidea.dog/glue"
+    }
+  ],
+  "random": [
+    {
+      "title": "Rcloud - Sync your file to a cloud storage","description": "A simple tool to sync your data to a huge amount of cloud providers (Google, Amazon, Nextcloud & 37 more!). It's basically rsync for the cloud!", "link" : "https://rclone.org/"
+    },
+    {
+      "title": "Gron - Grep for your jsons",
+      "description": "A tip Leifland added quickly as a reply-all once the great tool 'jq' was recommended. These two actually works really good together! Huge recommendation to everyone working a lot with JSON.",
+      "link": "https://github.com/tomnomnom/gron"
+    }
+  ]
+}

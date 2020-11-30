@@ -1,0 +1,55 @@
+{
+  "number": 25,
+  "introduction": "Welcome to Tipsrundan #25! For December 2020 we've packed a lot of fun for you all in regards to competence to end a less fun year. Make sure to take a look at the Regional news today!",
+  "regional": [
+    {
+      "title": "AFRY IT South Blog Refreshed",
+      "description": "Want to find the latest issue(s) of Tipsrundan? You got it. Want to read about Competence? You got it! The fresh update makes our blog a little easier and better to use! Please provide feedback.",
+      "link": "http://afry-south.github.io/"
+    },
+    {
+      "title": "Lunchbox (10/12 12:00): Transfer Learning (Machine Learning)",
+      "description": "The 10th of December Hampus Londögård from IT South will do a presentation on Transfer Learning. No prior knowledge required, everything will be explained from what Machine Learning is to how you generally apply Transfer Learning to achieve better results even with little data."
+    },
+    {
+      "title": "Algorithms & Computer Security Night: Capture The Flag",
+      "description": "On December 2 17:00 the Algorithm Competence Group and Computer Security Competence Group will do a collaborative virtual meeting. As a team, we will join up to tackle some of the beginner challenges from this year's Google CTF. See https://capturetheflag.withgoogle.com. No previous experience is required! Link to Teams meeting will be published before the meeting."
+    },
+    {
+      "title": "Machine Learning: Copy Paste Image to Text",
+      "description": "Ever dreamed of taking a screenshot and then being able to extract the text, easily? Then join in on the next Competence Night for Machine Learning during week 51. See slack for more info!"
+    }
+  ],
+  "videosAndPodcasts": [],
+  "conferenceAndLearning": [],
+  "frontendAndMobile": [
+    
+  ],
+  "backendAndBigData": [
+    
+  ],
+  "testing": [],
+  "machineLearning": [
+    {
+      "title": "AI Camera Ruins Soccer Game For Fans After Mistaking Referee's Bald Head For Ball",
+      "description": "Dick Max-Hansens recommends some fun AI, a true show-case of how important it is to consider more than just accuracy when developing a model.",
+      "link": "https://www.iflscience.com/technology/ai-camera-ruins-soccar-game-for-fans-after-mistaking-referees-bald-head-for-ball/"
+    },
+    {
+      "title": "Paving the way for Software 2.0 with Kotlin",
+      "description": "A few weeks ago I shared a really interesting video in regards to Automatic Differentation. Today I'm happy to share the continuation of that, Eric Meijer and his team has been working hard at Facebook and now shows the first part. A interesting, but little short read. Would've loved to get the code too!",
+      "link": "https://ai.facebook.com/blog/paving-the-way-for-software-20-with-kotlin/"
+    }
+
+  ],
+  "softValues": [
+    {
+      "title": "How to lead with clarity and empathy in the remote world",
+      "description": "2020 has brought changes and challenges for everyone—including those in leadership roles. Management style and decision-making have taken on new significance during these testing times as staff’s quality of life—as well as company growth—hang in the balance. In this newly remote world, it can be difficult to figure out the best ways to support and...",
+      "link": "https://stackoverflow.blog/2020/11/05/how-to-lead-with-clarity-and-empathy-in-the-remote-world/"
+    }
+  ],
+  "random": [
+   
+  ]
+}
