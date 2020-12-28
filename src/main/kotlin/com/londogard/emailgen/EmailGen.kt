@@ -12,19 +12,15 @@ import com.londogard.emailgen.SectionTitles.Companion.TESTING
 import com.londogard.emailgen.SectionTitles.Companion.VIDEOPODCASTS
 import io.ktor.client.*
 import io.ktor.client.engine.cio.*
-import io.ktor.client.request.*
 import io.ktor.client.request.forms.*
 import io.ktor.http.*
 import kotlinx.coroutines.runBlocking
 import kotlinx.html.*
 import kotlinx.html.stream.appendHTML
+import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.parse
 import java.io.File
-import kotlin.system.exitProcess
 
-// https://emailframe.work/
-// https://htmlemail.io/inline/
 fun main() = runBlocking {
     val pinned = listOf(
         PinnedItem(
@@ -36,15 +32,9 @@ fun main() = runBlocking {
             url = "$buSlackArchive/CPK80KX0W/p1571639001000400"
         )
     )
-    val filename = "2020-12-01"
+    val filename = "2020-12-15"
 
-
-    //val json = Json(JsonConfiguration.Stable)
-
-    val issue = Json.decodeFromString(
-        Issue.serializer(),
-        EmailHelper.getFullFileText("/issues/$filename.json")
-    )
+    val issue = Json.decodeFromString<Issue>(EmailHelper.getFullFileText("/issues/$filename.json"))
     val htmlFilename = "$filename-tipsrundan-${issue.number}.html"
     val html = StringBuilder()
         .appendHTML().html {
@@ -55,17 +45,13 @@ fun main() = runBlocking {
                 createFooter()
             }
         }.toString()
-    // .append("""
-    //            ---
-    //            title: "Tipsrundan ${issue.number}"
-    //            excerpt: "${issue.introduction}"
-    //            ---
-    //        """.trimIndent())
+
     val inlinedHtml = HttpClient(CIO).use { client ->
         client.submitForm<String>(
             url = "https://templates.mailchimp.com/services/inline-css/",
             formParameters = parametersOf("html", html))
     }
+
     val fullHtml = """
 ---
 title: "Tipsrundan ${issue.number}"
@@ -74,9 +60,6 @@ excerpt: "${issue.introduction}"
 
 $inlinedHtml
     """.trimIndent()
-
-    // Add this if you want to put the content in your clipboard (ctrl+v to paste the raw html)
-    // Toolkit.getDefaultToolkit().systemClipboard.setContents(StringSelection(html.toString()), null)
 
     File(htmlFilename).writeText(fullHtml)
 }
@@ -104,7 +87,7 @@ fun BODY.createHeader(number: String, introduction: String, pinned: List<PinnedI
             p { +introduction }
             p {
                 +"As always, read the pretty version "
-                a(href = "https://afry-south.github.io/tipsrundan/$htmlFilename") { +"here" }
+                a(href = "https://afry-south.github.io/tipsrundan/${htmlFilename.removeSuffix(".html")}") { +"here" }
             }
         }
     }
