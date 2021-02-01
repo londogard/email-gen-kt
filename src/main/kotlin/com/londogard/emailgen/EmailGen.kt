@@ -32,7 +32,7 @@ fun main() = runBlocking {
             url = "$buSlackArchive/CPK80KX0W/p1571639001000400"
         )
     )
-    val filename = "2020-12-15"
+    val filename = "2021-01-26"
 
     val issue = Json.decodeFromString<Issue>(EmailHelper.getFullFileText("/issues/$filename.json"))
     val htmlFilename = "$filename-tipsrundan-${issue.number}.html"
