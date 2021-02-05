@@ -32,6 +32,7 @@ fun main() = runBlocking {
             url = "$buSlackArchive/CPK80KX0W/p1571639001000400"
         )
     )
+
     val filename = "2021-01-26"
 
     val issue = Json.decodeFromString<Issue>(EmailHelper.getFullFileText("/issues/$filename.json"))
@@ -41,6 +42,7 @@ fun main() = runBlocking {
             head { unsafe { raw(EmailHelper.getEmailStyle()) } }
             body {
                 createHeader(issue.number.toString(), issue.introduction, pinned, htmlFilename)
+                createTipsBox()
                 createBody(issue)
                 createFooter()
             }
@@ -49,7 +51,8 @@ fun main() = runBlocking {
     val inlinedHtml = HttpClient(CIO).use { client ->
         client.submitForm<String>(
             url = "https://templates.mailchimp.com/services/inline-css/",
-            formParameters = parametersOf("html", html))
+            formParameters = parametersOf("html", html)
+        )
     }
 
     val fullHtml = """
@@ -84,8 +87,9 @@ fun BODY.createHeader(number: String, introduction: String, pinned: List<PinnedI
     section {
         header {
             h1 { +"Tipsrundan #$number" }
-            p { +introduction }
             p {
+                +introduction
+                br {}
                 +"As always, read the pretty version "
                 a(href = "https://afry-south.github.io/tipsrundan/${htmlFilename.removeSuffix(".html")}") { +"here" }
             }
@@ -93,16 +97,41 @@ fun BODY.createHeader(number: String, introduction: String, pinned: List<PinnedI
     }
 }
 
+fun BODY.createTipsBox() {
+    val mailLink = "mailto:it.south.competence@afconsult.com?subject=Tipsbox&body=Title%0D%0ASummary%0D%0ALink"
+
+    section {
+        aside {
+            b { +"\uD83D\uDDF3️ Tipsboxen" }
+            br {  }
+            p {
+                +"Email:"
+                a(href = mailLink) { +" \uD83D\uDCE7" }
+                +" - GitHub: "
+                a(href = "https://github.com/afry-south/afry-south.github.io/issues/1", target="_blank") {
+                    img(src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"){ width = "24px" }
+                }
+                br {  }
+                +"All tips and recommendations are appreciated! \uD83D\uDE4F"
+            }
+        }
+    }
+}
+
 fun BODY.createBody(issue: Issue): Unit = main {
-    createSection(issue.regional, REGIONAL)
-    createSection(issue.conferenceAndLearning, CONFERENCESANDLEARNING)
-    createSection(issue.softValues, SOFTVALUES)
-    createSection(issue.backendAndBigData, BACKEND)
-    createSection(issue.frontendAndMobile, FRONTEND)
-    createSection(issue.testing, TESTING)
-    createSection(issue.machineLearning, MACHINELEARNING)
-    createSection(issue.videosAndPodcasts, VIDEOPODCASTS)
-    createSection(issue.random, RANDOM)
+    listOf(
+        issue.regional to REGIONAL,
+        issue.conferenceAndLearning to CONFERENCESANDLEARNING,
+        issue.softValues to SOFTVALUES,
+        issue.backendAndBigData to BACKEND,
+        issue.frontendAndMobile to FRONTEND,
+        issue.testing to TESTING,
+        issue.machineLearning to MACHINELEARNING,
+        issue.videosAndPodcasts to VIDEOPODCASTS,
+        issue.random to RANDOM
+    )
+        .filterNot { (items, _) -> items.isEmpty() }
+        .forEach { (items, type) -> createSection(items, type) }
 }
 
 fun BODY.createFooter() = footer {
@@ -111,19 +140,16 @@ fun BODY.createFooter() = footer {
         p {
             b { +"Thank you for this time see you in two weeks" }
             br { }
-            +"Hampus & Hassan"
+            +"Hampus"
         }
     }
 }
 
-fun MAIN.createSection(items: List<Item>, title: String): Unit = when (items) {
-    emptyList<Item>() -> Unit
-    else -> {
-        hr { }
-        section {
-            header { h2 { +title } }
-            items.forEach(::createCard)
-        }
+fun MAIN.createSection(items: List<Item>, title: String) {
+    hr { }
+    section {
+        header { h2 { +title } }
+        items.forEach(::createCard)
     }
 }
 
