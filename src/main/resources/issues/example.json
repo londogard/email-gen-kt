@@ -1,18 +1,17 @@
 {
-  "number": 0,
-  "introduction": "This is our 0th issue of Tipsrundan. Welcome to the jungle baby!",
-  "regional": [
+  "number": 29,
+  "introduction": "...",
+  "supertips": {
+    "title": "..",
+    "description": ".."
+  },
+  "godisboxen": [
     {
-      "title": "Some Regional News For Ya'll",
-      "description": "This is some very important news that you all want to get!",
-      "link": "A non-required URL to the article"
+      "title": "..",
+      "description": "Markdown",
+      "afry": true,
+      "category": "REGIONAL || VIDEOPODCASTS || CONFERENCESANDLEARNING || SOFTVALUES || FRONTEND || BACKEND || TESTING || MACHINELEARNING || RANDOM",
+      "link": "https://..."
     }
-  ],
-  "videosAndPodcasts": [],
-  "conferenceAndLearning": [],
-  "frontendAndMobile": [],
-  "backendAndBigData": [],
-  "testing": [],
-  "machineLearning": [],
-  "softValues": []
+  ]
 }

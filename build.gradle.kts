@@ -9,11 +9,13 @@ version = "1.0-SNAPSHOT"
 repositories {
     mavenCentral()
     jcenter()
+    maven(url="https://dl.bintray.com/jetbrains/markdown")
 }
 
 dependencies {
     implementation(kotlin("stdlib"))
 
+    implementation("org.jetbrains:markdown:0.2.0.pre-61")
     implementation("io.ktor:ktor-client-cio:1.4.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.0.0-RC")
     implementation("org.jetbrains.kotlinx:kotlinx-html-jvm:0.7.2")

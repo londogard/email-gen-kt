@@ -1,0 +1,430 @@
+---
+title: "Tipsrundan 29"
+excerpt: "Happy Tipsrundan Tuesday! Tipsrundan today supports markdown which hopefully gives a little better experience reading! :)"
+---
+
+<html>
+  <head>
+    <style>
+    /* MVP.css v1.1 - https://github.com/andybrewer/mvp */
+
+:root {
+    --border-radius: 5px;
+    --box-shadow: 2px 2px 10px;
+    --color: #118bee;
+    --color-accent: #118bee0b;
+    --color-bg: #fff;
+    --color-bg-secondary: #e9e9e9;
+    --color-secondary: #920de9;
+    --color-secondary-accent: #920de90b;
+    --color-shadow: #f4f4f4;
+    --color-text: #000;
+    --color-text-secondary: #999;
+    --hover-brightness: 1.2;
+    --justify-important: center;
+    --justify-normal: left;
+    --line-height: 150%;
+    --width-card: 285px;
+    --width-card-medium: 460px;
+    --width-card-wide: 800px;
+    --width-content: 1080px;
+}
+
+/* Layout */
+article aside {
+    background: #920de90b;
+    border-left: 4px solid #920de9;
+    padding: 0.01rem 0.01rem;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 150%;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0.5rem 0;
+}
+
+footer,
+header,
+main {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 0.5rem 0.25rem;
+}
+
+hr {
+    background-color: #e9e9e9;
+    border: none;
+    height: 1.5px;
+    margin: 1rem 0;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section aside {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #f4f4f4;
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 460px;
+}
+
+section aside:hover {
+    box-shadow: 2px 2px 10px #e9e9e9;
+}
+
+section aside img {
+    max-width: 100%;
+}
+
+/* Headers */
+article header,
+div header,
+main header {
+    padding-top: 0;
+}
+
+header {
+    text-align: center;
+}
+
+header a b,
+header a em,
+header a i,
+header a strong {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+header nav img {
+    margin: 1rem 0;
+}
+
+section header {
+    padding-top: 0;
+    width: 100%;
+}
+
+/* Nav */
+nav {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+/* Typography */
+code,
+samp {
+    background-color: #118bee0b;
+    border-radius: 5px;
+    color: #000;
+    display: inline-block;
+    margin: 0 0.1rem;
+    padding: 0rem 0.5rem;
+    text-align: left;
+}
+
+details {
+    margin: 1.3rem 0;
+}
+
+details summary {
+    font-weight: bold;
+}
+
+details summary:focus {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 150%;
+}
+
+mark {
+    padding: 0.1rem;
+}
+
+ol li,
+ul li {
+    padding: 0.2rem 0;
+}
+
+p {
+    margin: 0.75rem 0;
+    padding: 0;
+}
+
+pre {
+    white-space: normal;
+}
+
+pre code,
+pre samp {
+    display: block;
+    margin: 1rem 0;
+    max-width: 800px;
+    padding: 1rem;
+}
+
+small {
+    color: #999;
+}
+
+sup {
+    background-color: #920de9;
+    border-radius: 5px;
+    color: #fff;
+    font-size: xx-small;
+    font-weight: bold;
+    margin: 0.2rem;
+    padding: 0.2rem 0.3rem;
+    position: relative;
+    top: -2px;
+}
+
+/* Links */
+a {
+    color: #920de9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    filter: brightness(1.2);
+    text-decoration: underline;
+}
+
+a b,
+a em,
+a i,
+a strong,
+button {
+    border-radius: 5px;
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+    margin: 1.5rem 0 0.5rem 0;
+    padding: 1rem 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+a b,
+a strong,
+button {
+    background-color: #118bee;
+    border: 2px solid #118bee;
+    color: #fff;
+}
+
+a em,
+a i {
+    border: 2px solid #118bee;
+    border-radius: 5px;
+    color: #118bee;
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+/* Images */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+figure figcaption {
+    color: #999;
+}
+
+/* Forms */
+form {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #f4f4f4;
+    display: block;
+    max-width: 800px;
+    min-width: 285px;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+form header {
+    margin: 1.5rem 0;
+    padding: 1.5rem 0;
+}
+
+input,
+label,
+select,
+textarea {
+    display: block;
+    font-size: inherit;
+    max-width: 800px;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.8rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+/* Non Below Implemented */
+
+/* Tables */
+table {
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    border-spacing: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0;
+}
+
+table td,
+table th,
+table tr {
+    padding: 0.4rem 0.8rem;
+    text-align: center;
+}
+
+table thead {
+    background-color: #118bee;
+    border-collapse: collapse;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+table thead th:first-child {
+    border-top-left-radius: 5px;
+}
+
+table thead th:last-child {
+    border-top-right-radius: 5px;
+}
+
+table thead th:first-child,
+table tr td:first-child {
+    text-align: left;
+}
+
+/* Quotes */
+blockquote {
+    display: block;
+    font-style: italic;
+    line-height: 150%;
+    max-width: 460px;
+    text-align: center;
+}
+
+blockquote footer {
+    color: #999;
+    display: block;
+    font-size: small;
+    line-height: 150%;
+    padding: 1.5rem 0;
+}
+
+/* Custom styles */
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+  <body style="background: #fff;color: #000;font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif;line-height: 150%;margin: 0;overflow-x: hidden;padding: 0.5rem 0;">
+    <section style="display: flex;flex-wrap: wrap;justify-content: center;">
+      <header style="margin: 0 auto;max-width: 1080px;padding: 0.5rem 0.25rem;text-align: center;padding-top: 0;width: 100%;">
+        <h1 style="line-height: 150%;"><a href="https://afry-south.github.io/" target="blank" style="color: #920de9;font-weight: bold;text-decoration: none;">    <svg width="64pt" height="64pt" version="1.0" viewbox="0 0 359 359" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(0 359) scale(.1 -.1)">
+<path d="m1620 3543c-266-28-556-134-785-288-399-267-661-661-757-1137-19-96-23-144-23-328 0-185 3-231 23-328 146-721 683-1259 1398-1403 137-27 401-37 541-20 766 94 1370 657 1525 1423 20 97 23 143 23 328s-3 231-23 328c-152 753-740 1310-1493 1417-94 13-336 18-429 8zm408-184c176-21 377-87 547-180 90-49 271-176 263-185-11-11-2523-701-2526-693-5 13 56 158 103 244 109 201 292 408 475 537 117 83 303 177 430 216 239 75 444 93 708 61zm784-603c-20-18-368-313-772-656-404-342-743-631-753-640-18-16-10-40 212-630 127-337 231-614 231-616 0-9-92-3-175 11-447 73-830 324-1077 705-181 278-272 622-251 942l6 98 424-216c273-139 429-213 441-209 9 3 43 29 75 58l57 52-432 222c-244 125-433 227-433 235 0 18 2455 699 2472 686 8-7 1-19-25-42zm162-114c8-14-1061-2327-1077-2330-8-2-17 3-19 10-163 425-399 1061-396 1068 4 11 1470 1259 1480 1260 4 0 9-4 12-8zm266-167c175-364 203-782 78-1175-152-475-539-863-1016-1019-100-33-218-58-228-49-3 4 241 540 542 1193 496 1077 549 1186 562 1169 7-11 35-64 62-119z"></path>
+</g>
+</svg></a> Tipsrundan #29</h1>
+        <p style="margin: 0.75rem 0;padding: 0;">Happy Tipsrundan Tuesday! Tipsrundan today supports markdown which hopefully gives a little better experience reading! :)<br>As always, read the pretty version <a href="https://afry-south.github.io/tipsrundan/2021-03-09-tipsrundan-29" style="color: #920de9;font-weight: bold;text-decoration: none;">here</a></p>
+      </header>
+    </section>
+    <section style="display: flex;flex-wrap: wrap;justify-content: center;">
+      <aside style="border: 1px solid #e9e9e9;border-radius: 5px;box-shadow: 2px 2px 10px #f4f4f4;margin: 0.5rem;padding: 1rem;width: 460px;">
+        <p style="margin: 0.75rem 0;padding: 0;"><b>🗳️ Tipsboxen</b><br>Email:<a href="mailto:it.south.competence@afconsult.com?subject=Tipsbox&amp;body=Title%0D%0ASummary%0D%0ALink" style="color: #920de9;font-weight: bold;text-decoration: none;"> 📧</a> - GitHub: <a href="https://github.com/afry-south/afry-south.github.io/issues/1" target="_blank" style="color: #920de9;font-weight: bold;text-decoration: none;"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="24px" style="max-width: 100%;"></a><br>All tips and recommendations are appreciated! 🙏</p>
+      </aside>
+    </section>
+    <section style="display: flex;flex-wrap: wrap;justify-content: center;">
+      <aside style="border: 1px solid #e9e9e9;border-radius: 5px;box-shadow: 2px 2px 10px #f4f4f4;margin: 0.5rem;padding: 1rem;width: 460px;">
+        <p style="margin: 0.75rem 0;padding: 0;"><b>💡 Supertipset - Tired of googling timestamps? Become a terminal 🧙 and solve it directly, each time!</b></p>
+<p style="margin: 0.75rem 0;padding: 0;">Have you googled &quot;timestamp to date&quot; a thousand times and just picked the first best? Perhaps it's even bookmarked? Hannes Sandberg has some happy news for you!<br>
+There's a great way to actually get the date straight from the terminal, using the built-in date (which differs between BSD/GNU).</p><p style="margin: 0.75rem 0;padding: 0;"><strong>BSD/MacOS:</strong> <code style="background-color: #118bee0b;border-radius: 5px;color: #000;display: inline-block;margin: 0 0.1rem;padding: 0rem 0.5rem;text-align: left;">date -r 1609755036</code><br>
+<strong>GNU/Linux:</strong> <code style="background-color: #118bee0b;border-radius: 5px;color: #000;display: inline-block;margin: 0 0.1rem;padding: 0rem 0.5rem;text-align: left;">date -d @1614956312</code><br>
+<strong>Windows</strong>: I tried to google &amp; gave up 🤷 (if you know how - please share!)</p>      </aside>
+    </section>
+    <main style="margin: 0 auto;max-width: 1080px;padding: 0.5rem 0.25rem;">
+      <hr style="background-color: #e9e9e9;border: none;height: 1.5px;margin: 1rem 0;">
+      <section style="display: flex;flex-wrap: wrap;justify-content: center;">
+        <header style="margin: 0 auto;max-width: 1080px;padding: 0.5rem 0.25rem;text-align: center;padding-top: 0;width: 100%;">
+          <h2 style="line-height: 150%;">Godisboxen 🍭</h2>
+        </header>
+        <aside style="border: 1px solid #e9e9e9;border-radius: 5px;box-shadow: 2px 2px 10px #f4f4f4;margin: 0.5rem;padding: 1rem;width: 460px;">
+          <p style="margin: 0.75rem 0;padding: 0;"><b>📈 The dangers of deploying AI into a uncurated environment.</b></p>
+<p style="margin: 0.75rem 0;padding: 0;">People wonder sometimes why AI Ethic departments exists (and perhaps why Google themself royally messed up theirs lately), and I like to say that there's a huge reason for it to exist. Deploying AI into an unknown environment (real world) <em>without</em> any curation is really dangerous as we cannot enforce what it does in edge-cases. This article is a prime example of this where GPT-3 tells a fake patient to kill themselves as a solution...</p><blockquote style="display: block;font-style: italic;line-height: 150%;max-width: 460px;text-align: center;"><p style="margin: 0.75rem 0;padding: 0;">Medical chatbot using OpenAI’s GPT-3 told a fake patient to kill themselves Medical chatbot using OpenAI’s GPT-3 told a fake patient to kill themselves (<a href="https://artificialintelligence-news.com/2020/10/28/medical-chatbot-openai-gpt3-patient-kill-themselves/" style="color: #920de9;font-weight: bold;text-decoration: none;">link</a>)</p></blockquote><p style="margin: 0.75rem 0;padding: 0;">It's clear that AI still has a long way to go and that we need to understand deeper what actually happens in models, tools like <a href="https://github.com/marcotcr/lime" style="color: #920de9;font-weight: bold;text-decoration: none;">Lime</a> are part of the solutions but gathering better understanding of the math and perhaps even being able to unfold neural networks to pure math statements (like with word2vec post its release) would make great progress.</p>        </aside>
+        <aside style="border: 1px solid #e9e9e9;border-radius: 5px;box-shadow: 2px 2px 10px #f4f4f4;margin: 0.5rem;padding: 1rem;width: 460px;">
+          <p style="margin: 0.75rem 0;padding: 0;"><b>📱 Flutter 2.0 - Googles new endeavour of cross platform apps</b></p>
+<p style="margin: 0.75rem 0;padding: 0;">Have you used flutter? If so please share your experience!</p><p style="margin: 0.75rem 0;padding: 0;">Flutter 2.0 has been released where web-support now is ready for the masses &amp; a lot of stability has been added. Toyota, Canonical &amp; more have decided to move into Flutter which makes the project feel a tiny tiny bit safer for those that are afraid of the Google Graveyard (tm).</p><p style="margin: 0.75rem 0;padding: 0;"><strong>What is Flutter?</strong><br>
+Flutter is a App development framework that works by drawing the full UI through a canvas, that is no native components. This means that the GUI will look the same across all platforms (appreciated by big companies). And yes, all platforms - Flutter allows you to share codebase between Windows, Mac, Linux, Android, iOS &amp; now the Web (PWA or SPA).</p><a href="https://developers.googleblog.com/2021/03/announcing-flutter-2.html" target="blank" style="color: #920de9;font-weight: bold;text-decoration: none;">Read more</a></aside>
+        <aside style="border: 1px solid #e9e9e9;border-radius: 5px;box-shadow: 2px 2px 10px #f4f4f4;margin: 0.5rem;padding: 1rem;width: 460px;">
+          <p style="margin: 0.75rem 0;padding: 0;"><b> Software Engineering Laws Everybody Loves to Ignore</b></p>
+<p style="margin: 0.75rem 0;padding: 0;">A short, but worthwhile and fun read. I bet a lot of the points hit close to home!</p><a href="https://www.netmeister.org/blog/software-engineering-laws.html" target="blank" style="color: #920de9;font-weight: bold;text-decoration: none;">Read more</a></aside>
+      </section>
+    </main>
+    <footer style="margin: 0 auto;max-width: 1080px;padding: 0.5rem 0.25rem;">
+      <hr style="background-color: #e9e9e9;border: none;height: 1.5px;margin: 1rem 0;">
+      <section style="display: flex;flex-wrap: wrap;justify-content: center;">
+        <p style="margin: 0.75rem 0;padding: 0;"><b>Thank you for this time see you in two weeks</b><br>- Hampus Londögård @ IT South</p>
+      </section>
+    </footer>
+  </body>
+</html>

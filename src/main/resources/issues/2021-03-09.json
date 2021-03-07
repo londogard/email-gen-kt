@@ -1,0 +1,26 @@
+{
+  "number": 29,
+  "introduction": "Happy Tipsrundan Tuesday! Tipsrundan today supports markdown which hopefully gives a little better experience reading! :)",
+  "supertips": {
+    "title": "Tired of googling timestamps? Become a terminal \uD83E\uDDD9 and solve it directly, each time!",
+    "description": "Have you googled \"timestamp to date\" a thousand times and just picked the first best? Perhaps it's even bookmarked? Hannes Sandberg has some happy news for you!  \nThere's a great way to actually get the date straight from the terminal, using the built-in date (which differs between BSD/GNU).\n\n**BSD/MacOS:** `date -r 1609755036`   \n**GNU/Linux:** `date -d @1614956312`  \n**Windows**: I tried to google & gave up \uD83E\uDD37 (if you know how - please share!)"
+  },
+  "godisboxen": [
+    {
+      "title": "The dangers of deploying AI into a uncurated environment.",
+      "description": "People wonder sometimes why AI Ethic departments exists (and perhaps why Google themself royally messed up theirs lately), and I like to say that there's a huge reason for it to exist. Deploying AI into an unknown environment (real world) _without_ any curation is really dangerous as we cannot enforce what it does in edge-cases. This article is a prime example of this where GPT-3 tells a fake patient to kill themselves as a solution...  \n> Medical chatbot using OpenAI’s GPT-3 told a fake patient to kill themselves Medical chatbot using OpenAI’s GPT-3 told a fake patient to kill themselves ([link](https://artificialintelligence-news.com/2020/10/28/medical-chatbot-openai-gpt3-patient-kill-themselves/))\n\nIt's clear that AI still has a long way to go and that we need to understand deeper what actually happens in models, tools like [Lime](https://github.com/marcotcr/lime) are part of the solutions but gathering better understanding of the math and perhaps even being able to unfold neural networks to pure math statements (like with word2vec post its release) would make great progress.",
+      "category": "MACHINELEARNING"
+    },
+    {
+      "title": "Flutter 2.0 - Googles new endeavour of cross platform apps",
+      "description": "Have you used flutter? If so please share your experience!\n\nFlutter 2.0 has been released where web-support now is ready for the masses & a lot of stability has been added. Toyota, Canonical & more have decided to move into Flutter which makes the project feel a tiny tiny bit safer for those that are afraid of the Google Graveyard (tm).  \n\n**What is Flutter?**  \nFlutter is a App development framework that works by drawing the full UI through a canvas, that is no native components. This means that the GUI will look the same across all platforms (appreciated by big companies). And yes, all platforms - Flutter allows you to share codebase between Windows, Mac, Linux, Android, iOS & now the Web (PWA or SPA).",
+      "category": "FRONTEND",
+      "link": "https://developers.googleblog.com/2021/03/announcing-flutter-2.html"
+    },
+    {
+      "title": "Software Engineering Laws Everybody Loves to Ignore",
+      "description": "A short, but worthwhile and fun read. I bet a lot of the points hit close to home!",
+      "link": "https://www.netmeister.org/blog/software-engineering-laws.html"
+    }
+  ]
+}

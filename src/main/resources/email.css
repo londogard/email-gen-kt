@@ -26,7 +26,7 @@
 article aside {
     background: var(--color-secondary-accent);
     border-left: 4px solid var(--color-secondary);
-    padding: 0.01rem 0.4rem;
+    padding: 0.01rem 0.01rem;
 }
 
 body {
@@ -36,7 +36,7 @@ body {
     line-height: var(--line-height);
     margin: 0;
     overflow-x: hidden;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 footer,
@@ -44,7 +44,7 @@ header,
 main {
     margin: 0 auto;
     max-width: var(--width-content);
-    padding: 1rem 0.5rem;
+    padding: 0.5rem 0.25rem;
 }
 
 hr {
@@ -65,7 +65,7 @@ section aside {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow) var(--color-shadow);
     margin: 0.5rem;
-    padding: 1.25rem;
+    padding: 1rem;
     width: var(--width-card-medium);
 }
 
@@ -351,11 +351,9 @@ table tr td:first-child {
 /* Quotes */
 blockquote {
     display: block;
-    font-size: x-large;
+    font-style: italic;
     line-height: var(--line-height);
-    margin: 1rem auto;
     max-width: var(--width-card-medium);
-    padding: 1.5rem 1rem;
     text-align: var(--justify-important);
 }
 
