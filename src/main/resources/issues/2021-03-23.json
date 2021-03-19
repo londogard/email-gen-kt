@@ -1,0 +1,41 @@
+{
+  "number": 31,
+  "introduction": "Do you feel a sudden urge to become a hacker? Or perhaps wanna hang out with BERT, ELMO & the rest of the gang? Maybe you'd prefer the 'coolest' email to find which might or might not break multiple sign-up services?  \nToday we got you covered - dive in and enjoy! \uD83E\uDD17",
+  "supertips": {
+    "title": "",
+    "description": "_From Tipsrundan 30_   \n**Björn Stadig** is the Windows \uD83E\uDDB8 we all need. Here's how to convert timestamp to date (using PowerShell):  \n`Get-Date -UnixTimeSeconds 1577836800` \uD83C\uDF89\n\n --- \n\n###Tired of dropping your copy-paste? Clipboard History is here to save you! \uD83D\uDE3A\n\nWith this supercommand you'll never forget what you hade in your copy-base \uD83D\uDE04   \n**Windows:** `Windows Logo Key + V`   \n**MacOS:** You need to install a custom application   \n**Linx:** You need to install a custom application   \n**IntelliJ MacOS:** `cmd+sh+V`   \n**IntelliJ Windows/Linux:** `ctrl+sh+V`\n\n_Do you know another application that supports this? Or anything related? Reach out to me!_"
+  },
+  "godisboxen": [
+    {
+      "title": "Self-Attention, GPT/BERT & Transformers - how do they work?",
+      "description": "A few weeks ago we had a Machine Learning competence night where we went through Self-Attention & Transformers bottom up. We did the full implementation from the first matrix multiplication to the last.   \nThe code is written in PyTorch and very simple to follow, with some demos at the end which you can train if you grab enough data & GPU-power to actually run it in a good manner (non-pretrained Transformers usually takes a few days of training on GPUs).   \nAnyhow, here's the full workshop in a ready-to-run in the cloud Jupyter Notebook!",
+      "category": "REGIONAL",
+      "afry": true,
+      "link": "https://blog.londogard.com/nlp/deep-learning/2021/02/18/transformers-explained.html"
+    },
+    {
+      "title": "Emojis, emojis everywhere - the day for hampus@\uD83C\uDF89.kz & super-dev@\uD83D\uDD25.kz has come!",
+      "description": "Have you heard of _tinyprojects.dev_? No? Then it's time you where introduced to this highly creative dev!    \nA few days ago the latest project was announced where the dev bought 300 emoji domain names from Kazakhstan and built an email service! The post feels really on point, short but fun & interesting.   \n<sub><sup>P.S. I can hear developers out there who thought they had it all covered in their validation service of emails, the anguish and pain that comes out of finding out someone was as \"stupid\" as to do this \uD83D\uDE04</sub></sup>",
+      "category": "RANDOM",
+      "link": "https://tinyprojects.dev/projects/mailoji"
+    },
+    {
+      "title": "Embrace the hacker inside",
+      "description": "Dick Max-Hansen shared a really cool web-page if you wanna improve your \"hacker-skills\" From the webpage: _Access our labs through a browser-based Kali machine. No complicated setup, get hacking straight away all from your browser_.",
+      "category": "RANDOM",
+      "link": "https://tryhackme.com"
+    },
+    {
+      "title": "Shell scripts? Fredrik Strandin got you covered!",
+      "category": "RANDOM",
+      "description": "ShellCheck is a shell script static analysis tool which finds the most common pitfalls and errors you can do in Shell scripting. It even links to the wiki with some great information, e.g. [SC1000](https://github.com/koalaman/shellcheck/wiki/SC1000).",
+      "link": "https://github.com/koalaman/shellcheck"
+    },
+    {
+      "title": "Cookie runner... Are you quick enough?",
+      "category": "RANDOM",
+      "description": "Have you ever dreamed of the day where you could compete with your friends on how fast you're to press the right cookie-button?   \nNeither have I. But now that I know it exists I can't wait to compete! \uD83C\uDFC3   \n(P.S. holy *#% it's hard)",
+      "link": "https://cookieconsentspeed.run/"
+    }
+  ]
+}

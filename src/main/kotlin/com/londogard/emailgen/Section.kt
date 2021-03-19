@@ -12,5 +12,5 @@ enum class Section(val emoji: String) {
     BACKEND("\uD83C\uDF92"),
     TESTING("\uD83E\uDDEA"),
     MACHINELEARNING("\uD83D\uDCC8"),
-    RANDOM("")
+    RANDOM("\uD83D\uDD00")
 }

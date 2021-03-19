@@ -26,7 +26,7 @@ object EmailHelper {
         "--width-card" to "285px",
         "--width-card-medium" to "460px",
         "--width-card-wide" to "800px",
-        "--width-content" to "1080px"
+        "--width-content" to "800px"
     )
 
     fun getEmailStyle(): String = """
