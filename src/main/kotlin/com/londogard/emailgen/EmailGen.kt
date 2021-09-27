@@ -11,7 +11,7 @@ import kotlinx.serialization.json.Json
 import java.io.File
 
 fun main() = runBlocking {
-    val filenames = File("/Users/londogard/git/email-gen-kt/src/main/resources/issues")
+    val filenames = File("~/git/email-gen-kt/src/main/resources/issues")
         .listFiles()
         .map { it.nameWithoutExtension }
         .forEach { f -> println(f);generateMd(f) }
