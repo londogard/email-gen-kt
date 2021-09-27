@@ -6,7 +6,7 @@ import kotlinx.serialization.Serializable
 data class Issue(
         val number: Int,
         val introduction: String,
-        val supertips: Item,
+        val supertips: Item? = null,
         val godisboxen: List<Item>
 )
 
@@ -21,7 +21,3 @@ data class Item(
     fun getEmojifiedTitle(): String = if (afry) "[AFRY] ${category.emoji} $title" else "${category.emoji} $title"
 }
 
-@Serializable
-data class InlineHtml(val html: String)
-
-data class PinnedItem(val title: String, val url: String)

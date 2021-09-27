@@ -1,7 +1,6 @@
 package com.londogard.emailgen
 
 import io.ktor.client.*
-import io.ktor.client.engine.cio.*
 import io.ktor.client.request.forms.*
 import io.ktor.http.*
 import kotlinx.coroutines.runBlocking
@@ -12,8 +11,82 @@ import kotlinx.serialization.json.Json
 import java.io.File
 
 fun main() = runBlocking {
-    val filename = "2021-03-23"
+    val filenames = File("/Users/londogard/git/email-gen-kt/src/main/resources/issues")
+        .listFiles()
+        .map { it.nameWithoutExtension }
+        .forEach { f -> println(f);generateMd(f) }
+    //val filename = "2021-09-19"
+    //generateMd(filename)
+    // generateHtml(filename)
+}
 
+fun generateMd(filename: String) {
+    val issue = Json.decodeFromString<Issue>(EmailHelper.getFullFileText("/issues/$filename.json"))
+    val mdFilename = "$filename-tipsrundan-${issue.number}.md"
+    val md = """
+---
+title: "Tipsrundan ${issue.number}"
+description: "${issue.introduction}"
+slug: ${issue.number}
+authors: [hlondogard]
+---
+_👋 Welcome to [Tipsrundan](https://afry-south.github.io/tipsrundan/$filename-tipsrundan-${issue.number}/)! A biweekly newsletter by AFRY IT South with ❤️_  
+_${issue.introduction}_
+<!--truncate-->
+
+[Tipslådan 🗳](mailto:hampus.londogard@afry.com?subject=Tips)    
+
+---
+${
+        if (issue.supertips != null) {
+            """
+## Supertipset 💡
+###         ${issue.supertips.title}
+
+${issue.supertips.description}
+
+---
+    """.trimIndent()
+        } else ""
+    }
+
+
+
+## Godisboxen 🍭
+        
+${
+        issue
+            .godisboxen
+            .map(Item::toItemMd)
+            .joinToString("\n\n")
+    }   
+
+---
+
+**Thank you for this time see you in two weeks**   
+- Hampus Londögård @ AFRY IT South
+    """.trimIndent()
+
+    File(mdFilename).writeText(md)
+}
+
+fun Item.toItemMd(): String {
+    return """
+### ${this.getEmojifiedTitle()}
+
+${this.description}
+
+${this.link?.toLink() ?: ""}
+    """.trimIndent()
+}
+
+fun String.toLink(): String {
+    val simplifiedLink = this.replace("https?://(www.)?".toRegex(), "").split("/").first()
+
+    return "[$simplifiedLink↗]($this)"
+}
+
+fun generateHtml(filename: String) = runBlocking {
     val issue = Json.decodeFromString<Issue>(EmailHelper.getFullFileText("/issues/$filename.json"))
     val htmlFilename = "$filename-tipsrundan-${issue.number}.html"
     val html = StringBuilder()
@@ -24,7 +97,7 @@ fun main() = runBlocking {
                 div("section") {
                     div("aside") {
                         p {
-                            style="text-align: center;width:75%;margin: 0.75rem auto;"
+                            style = "text-align: center;width:75%;margin: 0.75rem auto;"
                             +"\uD83D\uDC4B"
                             i {
                                 +" Welcome to Tipsrundan! "
@@ -33,7 +106,7 @@ fun main() = runBlocking {
                             }
                         }
                         a(href = "https://afry-south.github.io/tipsrundan/${htmlFilename.removeSuffix(".html")}") {
-                            style="margin:0.5rem auto;"
+                            style = "margin:0.5rem auto;"
                             button {
                                 +"Take me to pretty version!"
                             }
@@ -43,13 +116,13 @@ fun main() = runBlocking {
 
 
                 hr { }
-                createSuperTips(issue.supertips)
+                createSuperTips(issue.supertips!!)
                 createBody(issue)
                 createFooter()
             }
         }.toString()
 
-    val inlinedHtml = HttpClient(CIO).use { client ->
+    val inlinedHtml = HttpClient().use { client ->
         client.submitForm<String>(
             url = "https://templates.mailchimp.com/services/inline-css/",
             formParameters = parametersOf("html", html)
@@ -85,7 +158,7 @@ fun BODY.createHeader(issue: String, date: String) {
             }
             h1 {
                 a("https://afry-south.github.io/", target = "blank") {
-                    img(src="https://raw.githubusercontent.com/afry-south/afry-south.github.io/master/afry.png")
+                    img(src = "https://raw.githubusercontent.com/afry-south/afry-south.github.io/master/afry.png")
                 }
                 +" Tipsrundan"
             }
@@ -93,21 +166,21 @@ fun BODY.createHeader(issue: String, date: String) {
                 +"Your biweekly newsletter of 'Tips' from "
                 b { +"IT South@AFRY" }
                 +" with ❤️ "
-                br {  }
+                br { }
                 small {
                     +"(\uD83D\uDDF3️ Tipsboxen ("
                     a(href = mailLink) { +"Email" } // 📧
                     +", "
                     a(href = "https://github.com/afry-south/afry-south.github.io/issues/1", target = "_blank") {
-                    +"GitHub"
-                    //img(src = "https://github.githubassets.com/images/modules/logos_page/Octocat.png") {
+                        +"GitHub"
+                        //img(src = "https://github.githubassets.com/images/modules/logos_page/Octocat.png") {
                         //    width = "24px"
                         //}
                     }
                     +" & "
                     a(href = "https://buitsouth.slack.com/archives/CPK80KX0W", target = "_blank") {
-                    +"Slack"
-                    //img(src = "https://assets.brandfolder.com/pl546j-7le8zk-afym5u/v/3033396/original/Slack_Mark_Web.png") {
+                        +"Slack"
+                        //img(src = "https://assets.brandfolder.com/pl546j-7le8zk-afym5u/v/3033396/original/Slack_Mark_Web.png") {
                         //    width = "24px"
                         //}
                     }
@@ -147,15 +220,15 @@ fun BODY.createFooter() = div("footer") {
 }
 
 fun DIV.createCard(item: Item): Unit = div("aside") {
-        h3 { +item.getEmojifiedTitle() }
+    h3 { +item.getEmojifiedTitle() }
     unsafe { raw(EmailHelper.markdownToHtml(item.description)) }
 
     item.link?.let { link ->
         val simplifiedLink = link.replace("https?://(www.)?".toRegex(), "").split("/").first()
         a(link, target = "blank") {
-            style="width:100%;"
+            style = "width:100%;"
             small { +"$simplifiedLink↗" }
         }
     }
-    hr { style="width:10%;" }
+    hr { style = "width:10%;" }
 }

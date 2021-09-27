@@ -1,30 +1,18 @@
 {
   "number": 23,
   "introduction": "Welcome to Tipsrundan #23! Time sure flies, it's around 1 year since Tipsrundan started and how much fun has been in-between (- covid). For today we got some great tips for terminal, Scala and much more!",
-  "regional": [
+  "godisboxen": [
     {
+      "category": "REGIONAL",
       "title": "Competence Evenings",
       "description": "Throughout the previous week we killed zombies using a coded bot (#competence_algorithms_problem_solving) and discussed how to actually write good, clean code (#bokcirkel). If you're interested to broaden your knowledge and learn more make sure to join in or ask around in #bu_competence on Slack!"
-    }
-  ],
-  "videosAndPodcasts": [
+    },
     {
+      "category": "VIDEOPODCASTS",
       "title": "Val vs Def functions in Scala",
       "description": "Fredrik Strandin shared a great video if you like to dig into Scala! So... what is the difference between a val (lambda/anonymous=Anonymous) and a def (method)?",
       "link": "https://www.youtube.com/watch?v=mqJ1W6w5ZZM"
-    }
-  ],
-  "conferenceAndLearning": [],
-  "frontendAndMobile": [
-    
-  ],
-  "backendAndBigData": [
-    
-  ],
-  "testing": [],
-  "machineLearning": [],
-  "softValues": [],
-  "random": [
+    },
     {
       "title": "pbcopy - your friend",
       "description": "Hannes Sandberg shared the tool 'pbcopy' which helps you copy data in the terminal into the clipboard. Example: `curl wttr.in/Malmö | pbcopy`. Really simple to use and very helpful!"

@@ -1,32 +1,25 @@
 {
   "number": 14,
   "introduction": "Welcome to the 14th edition of Tipsrundan! We hope that everyone is doing well at their home-office or real office. For today we've got a few selected articles / links that we'd like to share. :)",
-  "regional": [],
-  "videosAndPodcasts": [],
-  "conferenceAndLearning": [],
-  "frontendAndMobile": [],
-  "backendAndBigData": [],
-  "testing": [
+  "godisboxen": [
     {
+      "category": "TESTING",
       "title": "Kali Linux: The ultimate penetration testing distro available",
       "description": "Kali Linux has come a long way since its BackTrack days, and it's still widely considered the ultimate Linux distribution for penetration testing. The system has undergone quite the transformation since its old days and includes an updated look, improved performance, and some significant changes to how it's used.",
       "link": "https://null-byte.wonderhowto.com/how-to/get-started-with-kali-linux-2020-0231506/"
     },
     {
+      "category": "TESTING",
       "title": "Canary Tokens: What are they and how can they be used to track users?",
       "description": "Canary tokens are customizable tracking links useful for learning about who is clicking on a link and where it's being shared. Thanks to the way many apps fetch a URL preview for links shared in private chats, canary tokens can even phone home when someone checks a private chat without clicking the link. Canary tokens come in several useful types and can be used even through URL shorteners.",
       "link": "https://null-byte.wonderhowto.com/how-to/track-target-using-canary-token-tracking-links-0192830/"
-    }
-  ],
-  "machineLearning": [],
-  "softValues": [
+    },
     {
+      "category": "SOFTVALUES",
       "title": "The Conference Speaker Investment",
       "description": "I know that the Afry IT Conference has been post-poned and this might not be as relevant, but you gotta prepare in time! And it's good knowledge either way. In this short text Jake Wharton (experience Android Dev / Speaker) gives his best tips on how to present on a conference. There's some great information included, make sure to bookmark this for the day you need it!",
       "link": "https://jakewharton.com/the-conference-speaker-investment/"
-    }
-  ],
-  "random": [
+    },
     {
       "title": "The Overflow: StackOverflow Newsletter",
       "description": "I guess one shouldn't advertise their 'competition' but I still believe it's worthy of a shout-out. StackOverflow has run a newsletter for the last 21 weeks and are going strong. It contains everything from interesting questions to recenly trending repos/articles from the web. Make sure to subscribe if you feel sad that Tipsrundan will reduce it frequency and keep getting some goodies each week! :)",

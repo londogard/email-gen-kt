@@ -1,0 +1,27 @@
+{
+  "number": 41,
+  "introduction": "Today you'll learn about Dorking, Loom and Hyperlinks. For the next Tipsrundan I'll hopefully have some big surprises for you all! 🥳",
+  "supertips": {
+    "title": "Dorking your way through life",
+    "description": "Dorking is the concept of searching for something _special_. \n\nFind on a specific site:\n```bash\nsite:gumroad.com dynamodb\n```\n\nFind file type with something in the url and a special ending\n```\nsite:.edu filetype:xls inurl:\"email.xls\"\n```\n\nA blog post with title?\n```\ninposttitle:\"diy slime\"\n```\n\nWant a coupon from a special site?\n```\nsite:curology.com (\"coupon\" | \"referral code\" | \"affiliate code\" | \"discount code\" | \"VIP\")\n```\nFind more [here](https://www.alec.fyi/dorking-how-to-find-anything-on-the-internet.html)"
+  },
+  "godisboxen": [
+    {
+      "title": "Why don't you use Linux?",
+      "category": "BACKEND",
+      "description": "There's a slack thread on IT South which you should answer on!  \nRead what the Hacker News crowd had to say [here](https://news.ycombinator.com/item?id=28366644&utm_source=hackernewsletter&utm_medium=email&utm_term=ask_hn)"
+    },
+    {
+      "title": "Project Loom: On the Performance of User-Mode Threads and Coroutines",
+      "description": "Ever heard of _Project Loom_? If you haven't you should most likely [read up on it](https://cr.openjdk.java.net/~rpressler/loom/Loom-Proposal.html) if you're working on the JVM!\n\nRon Pressler talks us through coroutines & user-mode threads in a short technical post which is very interesting.  \nIn a way I'd wish for more content, but why don't we kick-off a discussion on the technical slack of AFRY IT South?",
+      "category": "BACKEND",
+      "link": "https://inside.java/2020/08/07/loomperformance/"
+    },
+    {
+      "title": "Why are hyperlinks blue?",
+      "description": "The internet exists almost everywhere today, a lot of it being taken for granted. Have you ever noted the blue hyperlinks? Why are they blue?  \nPersonally I didn't know until Mozilla posted this interesting blog on how it came to be that hyperlinks are blue!",
+      "category": "RANDOM",
+      "link": "https://blog.mozilla.org/en/internet-culture/deep-dives/why-are-hyperlinks-blue/"
+    }
+  ]
+}

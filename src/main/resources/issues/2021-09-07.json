@@ -1,0 +1,33 @@
+{
+  "number": 40,
+  "introduction": "\uD83D\uDCB3 \uD83D\uDCBB ",
+  "supertips": {
+    "title": "IFS by Lasse",
+    "description": "I cannot recall if I shared this earlier. \n\nLasse Heeman shared one amazing tip, copy project time.  \nWe all know the pain of IFS, and I hope I can soothe some of it for somebody out there.\n\nFollow this guide to copy your previous week to the current, and you'll only need to modify what's required!\n\n <img width=\"584\" alt=\"image\" src=\"https://user-images.githubusercontent.com/7490199/132257448-8d2b4fae-3fa9-4dd7-9d1e-1da7ba26943c.png\"><img width=\"449\" alt=\"image\" src=\"https://user-images.githubusercontent.com/7490199/132257486-9de6fdb2-64d7-4e00-a5ab-d0b8891f4e6f.png\">\n\nDo you have any other tricks up your sleeve? **Make sure to share it with Tipsrundan or Slack!**"
+  },
+  "godisboxen": [
+    {
+      "title": "[Youtube] Clickbaits is Unreasonable Effective",
+      "category": "RANDOM",
+      "description": "Have you ever wanted to learn a little more about why clickbaits work? Even if everyone seem to hate it.  \nIn these 19 minutes you'll learn  about clickrates, impressions and much more - even with a bit of research included! \uD83D\uDD0D",
+      "link": "https://youtu.be/S2xHZPH5Sng"
+    },
+    {
+      "title": "Skyrim Foxes - Clever or Stupid?",
+      "description": "In the Skyrim community shortly after launch people told eachother to follow wild foxes if you ever see them to find treasures.  \nWhy?\n\nThere was an actual informal investigation into this and it was shown that the navmesh used in AI navigation which uses the triangles of this navmesh.  \nThe interesting part is that in low-density areas we have few but large triangles, around Point of Interest the density increases and so do the triangles meaning that the fox are more likely to get stuck around here.  \n![skyrim](https://pbs.twimg.com/media/E9FKexIXsAI95V4?format=jpg&name=small)\n\nFor the full story read [this](https://twitter.com/joelburgess/status/1428008043556622336?utm_source=hackernewsletter&utm_medium=email&utm_term=fun) Twitter-thread!",
+      "category": "RANDOM"
+    },
+    {
+      "title": "Hackers, Testers & People - here's the O.MG Cable",
+      "description": "> To get a cable like this, you used to need a million dollar budget or to find a guy named MG at DEFCON. But Hak5 teamed up with MG to allow more people access to this previously clandestine attack hardware. \n\nThis cable is really crazy and clearly shows how fas the world moves. To have this at a consumer-level price is crazy. We got a web-server, 802.11 radio and pretty good memory / cpu inside a friggin' usb cable!\n\nDo you know more about things like this? Please share through Tipsrundan or on Slack! \uD83D\uDC68\u200D\uD83D\uDCBB",
+      "category": "RANDOM",
+      "link": "https://shop.hak5.org/products/o-mg-cable-usb-a"
+    },
+    {
+      "title": "Magic Windows - Hiding things in plain sight",
+      "description": "Physics? ✅\nClever? ✅\nMagic? ✅\n\nIn this blog post you'll see how it's possible to create a tiny acrylic window which seems transparent but when light falls it creates either a 2D image or 3D hologram depending on usage.  \nIt really is amazing and I highly recommend that you take the time to read!",
+      "category": "RANDOM",
+      "link": "https://mattferraro.dev/posts/caustics-engineering"
+    }
+  ]
+}

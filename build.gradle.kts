@@ -15,8 +15,8 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
 
-    implementation("org.jetbrains:markdown:0.2.0.pre-61")
-    implementation("io.ktor:ktor-client-cio:1.4.0")
+    implementation("org.jetbrains:markdown:0.2.4")
+    implementation("io.ktor:ktor-client-java:1.6.3")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.0.0-RC")
     implementation("org.jetbrains.kotlinx:kotlinx-html-jvm:0.7.2")
 }

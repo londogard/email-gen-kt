@@ -1,29 +1,19 @@
 {
   "number": 26,
   "introduction": "Welcome to the final Tipsrundan of 2020, #26! We wish for a better 2021 & that Tipsrundan grows even more. :)",
-  "regional": [],
-  "videosAndPodcasts": [],
-  "conferenceAndLearning": [],
-  "frontendAndMobile": [
+  "godisboxen": [
     {
+      "category": "FRONTEND",
       "title": "Liquid Core: JS (Node.js) in Android & iOS apps",
       "description": "Our very own Anders Hagsten solved a problem where he had to run Node.js in an Android App at his assignment, using LiquidCore! '..LiquidCore enables Node.js virtual machines to run inside Android and iOS apps. It provides a complete runtime environment, including a virtual file system.'.",
       "link": "https://github.com/LiquidPlayer/LiquidCore"
-    }
-  ],
-  "backendAndBigData": [],
-  "testing": [],
-  "machineLearning": [
+    },
     {
+      "category": "MACHINELEARNING",
       "title": "Explain Recurrent Neural Network with Neural Networks",
       "description": "Excerpt: '...My goal is to present an explanation that avoids the neural network metaphor, stripping it down to its essence—a series of vector transformations that result in embeddings for variable-length input vectors.'",
       "link": "https://explained.ai/rnn/index.html"
-    }
-  ],
-  "softValues": [
-    
-  ],
-  "random": [
+    },
    {
      "title": "Simulating RAM in Clojure Simulating RAM in Clojure",
      "description": "Wanna learn more about how computers work behind the screen? Then make sure to read this blog!",

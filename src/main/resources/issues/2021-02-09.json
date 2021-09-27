@@ -1,40 +1,29 @@
 {
     "number": 28,
     "introduction": "For the 28th (!) Tipsrundan we got a lot of competence coming your way!",
-    "regional": [
+    "godisboxen": [
         {
+            "category": "REGIONAL",
             "title": "Competence: Algorithms",
             "description": "Are you excited to improve your algorithmic skills in a competetive environment? Make sure to join in on the Algorithm Competence Evening the 3rd of March. Reach out to Slack or Linus.Roman@afry.com for an invite!"
         },
         {
+            "category": "REGIONAL",
             "title": "Competence: Deep Learning",
             "description": "Transformers & Self Attention - how do they work? Learn exactly how they work by implementing your own Self Attention & Transformer bottom up! Join in the 24th of February by pinging on Slack or Hampus.Londogard@afry.com for an invite!"
-        }
-    ],
-    "videosAndPodcasts": [],
-    "conferenceAndLearning": [
+        },
         {
+            "category": "CONFERENCESANDLEARNING",
             "title": "Scala 'LOVE IN THE CITY' Conference",
             "description": "AFRY are sponsoring a Scala conference the 13th-15th of February (yes, this weekend!) make sure to join in if you're excited. The cash earned are donated to good cause and the entry is £1 or what you like to give. Yes, Martin Odersky will be there, you don't have to ask :)",
             "link": "https://inthecity.scala.love/"
-        }
-    ],
-    "frontendAndMobile": [],
-    "backendAndBigData": [
-       
-    ],
-    "testing": [],
-    "machineLearning": [
+        },
         {
+            "category": "MACHINELEARNING",
             "title": "spaCy 3.0 release! 🥳🎉",
             "description": "One of the best NLP tools out there, built for the industry. For 3.0 better integration with PyTorch & Tensorflow and their own Transformers. Configurations and project workflows hits high also (important to create a even better engineering culture).",
             "link": "https://spacy.io/usage/v3"
-        }
-    ],
-    "softValues": [
-        
-    ],
-    "random": [
+        },
         {
             "title": "That XOR trick",
             "description": "A interesting and fun read about all the crazy problems you can solve simply through XOR. Might not be production code, but it's always fun with clever code!",

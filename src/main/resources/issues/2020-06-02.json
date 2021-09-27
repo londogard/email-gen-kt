@@ -1,37 +1,19 @@
 {
   "number": 15,
   "introduction": "Welcome to the 15th edition of Tipsrundan! For today we've got two (!) internal blogs added and some other awesome 'tips' :D Enjoy!",
-  "regional": [
-  ],
-  "videosAndPodcasts": [
-
-  ],
-  "conferenceAndLearning": [
-
-  ],
-  "frontendAndMobile": [
-
-  ],
-  "backendAndBigData": [
+  "godisboxen": [
     {
+      "category": "BACKEND",
       "title": "SQL - different abstraction levels and how I came to love SQLDelight",
       "description": "In this post a few different levels of abstraction and variants. Everything from raw drivers to ORMs are shown and my own personla favorite - SQLDelight.",
       "link": "https://afry-south.github.io/kotlin/sql/orm/2020/06/01/sql-abstractions.html"
-    }
-  ],
-  "testing": [
-
-  ],
-  "machineLearning": [
+    },
     {
+      "category": "MACHINELEARNING",
       "title": "A simple FAQ search engine in Swedish using fastText & Smooth Inverse Frequency",
       "description": "In this post a simple yet effective approach is laid out on how to unsupervised search a FAQ for the best answer on a custom request. It makes use of Word Embeddings to allow similar word to find similar words (cat / dog ~= pet) and embeds the sentences to find the nearest neighbour.",
       "link": "https://afry-south.github.io/python/nlp/faq/unsupervised/2020/06/01/faq-search.html"
-    }
-  ],
-  "softValues": [
-  ],
-  "random": [
+    },
     {
       "title": "Obsidian - A knowledge base that works on local Markdown-files",
       "description": "'Obsidian is a powerful knowledge base that works on top of\na local folder of plain text Markdown files.' - Obsidian is something I've tried out the last few days and am fond off. I really enjoy that it's based on raw MD so you can simply export the format by yourself and sync through git.",

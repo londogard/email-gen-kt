@@ -1,33 +1,25 @@
 {
     "number": 27,
     "introduction": "Welcome to the first Tipsrunda Tuesday of 2021! ",
-    "regional": [],
-    "videosAndPodcasts": [],
-    "conferenceAndLearning": [],
-    "frontendAndMobile": [],
-    "backendAndBigData": [
+    "godisboxen": [
         {
+            "category": "BACKEND",
             "title": "Audio from scratch in Go",
             "description": "Did you enjoy #go-conf2021? Do you have an itch for more Go? Why not read the full series of 'Audio from scratch' which is with Go.",
             "link": "https://dylanmeeus.github.io/posts/audio-from-scratch-pt7/"
         },
         {
+            "category": "BACKEND",
             "title": "The PGM-index - State of the Art index",
             "description": "Ever wondered if we had the best possible sorting and indexing methods done? It clearly isn't. Indexing using learning methods are coming in strong and PGM shows to be state-of-the-art, including a very fast build of the index.",
             "link": "https://pgm.di.unipi.it/"
-        }
-    ],
-    "testing": [],
-    "machineLearning": [
-    ],
-    "softValues": [
+        },
         {
+            "category": "SOFTVALUES",
             "title": "Zotero - Keep track of your mind",
             "description": "Ever been in need of a way to keep track of references and more? Keeping track of your information in the brain? This might be the tool for you!",
             "link": "https://www.zotero.org/"
-        }
-    ],
-    "random": [
+        },
         {
             "title": "User power, not power users",
             "description": "'... htop and its design philosophy User power, not power users: htop and its design philosophy' - A superb read and insight into the mind behind htop!",

@@ -1,29 +1,19 @@
 {
   "number": 24,
   "introduction": "Welcome to Tipsrundan #24! For this week there's some really awesome content. Everything from the (upcoming) workshop in blog-format to SCP deprecation to Snow White being a LOTR-story?",
-  "regional": [
+  "godisboxen": [
     {
+      "category": "REGIONAL",
       "title": "[Internal Blog] How to build (and play) Snake in Kotlin, deploying to Native Binary, JVM-app and JS/Browser",
       "description": "Interested in how it's possible to compile the same code to different target? How a game engine works in its simplicity? How to code something like Snake? Then this is for you! This blog is created from the workshop that'll be held in the future as soon as possible!",
       "link": "https://afry-south.github.io/kotlin/game/multiplatform/2020/11/07/snake-kotlin-multiplatform.html"
-    }
-  ],
-  "videosAndPodcasts": [],
-  "conferenceAndLearning": [],
-  "frontendAndMobile": [
+    },
     {
+      "category": "FRONTEND",
       "title": "Jetpack Compose for Desktop - Create Desktop GUIs in a breeze",
       "link": "https://blog.jetbrains.com/cross-post/jetpack-compose-for-desktop-milestone-1-released/",
       "description": "Desktop Application coded in a similar style to React, but in a JVM-language and without Electron? Yes please! Sign me up. If you know Compose from the Android-world this will be a breeze to get started!"
-    }
-  ],
-  "backendAndBigData": [
-    
-  ],
-  "testing": [],
-  "machineLearning": [],
-  "softValues": [],
-  "random": [
+    },
    {
      "title": "WinApps - WSL but the other way (Run Window Apps from Linux)",
      "description": "For everyone who wants to be on Linux, but keep the Windows Apps - 'Run Windows apps such as Microsoft Office/Adobe in Linux (Ubuntu/Fedora) and GNOME/KDE as if they were a part of the native OS, including Nautilus integration for right clicking on files of specific mime types to open them.'",

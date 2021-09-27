@@ -1,36 +1,30 @@
 {
   "number": 22,
   "introduction": "Welcome to Tipsrundan 22! I hope to bring something for everyone, but as always it'd be even better if more helped out!",
-  "regional": [
+  "godisboxen": [
     {
+      "category": "REGIONAL",
       "title": "HowTo: Dev using VSCode, Git, SSH in WSL1",
       "description": "Written by our very own Frank Camara! Frank shows how to set up WSL on your windows machine to get the best of two worlds (at least if locked into the Windows eco-system by AFRY ;))!",
       "link": "https://afry-south.github.io/terminal/2020/10/09/wsl-by-frank.html"
-    }
-  ],
-  "videosAndPodcasts": [],
-  "conferenceAndLearning": [],
-  "frontendAndMobile": [
+    },
     {
+      "category": "FRONTEND",
       "title": "Overmind - Frictionless State Management",
       "description": "Finally something for the frontend section! Overmindjs is the new kid on the block and brings some cool stuff to state management. From what I learned it's like redux but written more like react. If you got a better picture of what it is please make sure to share it with us!",
       "link": "https://overmindjs.org/"
-    }
-  ],
-  "backendAndBigData": [
+    },
     {
+      "category": "BACKEND",
       "title": "On the Performance of User-Mode Threads and Coroutines",
       "description": "Do you want to take threading to the next level? Join in on a walk-through of what coroutines are and how they can help your program unlock better performance!",
       "link": "https://inside.java/2020/08/07/loom-performance/"
     },
     {
+      "category": "BACKEND",
       "title": "kotlinx.serialization 1.0 released",
       "description": "Yet another serialization library? Yes. Kotlinx.serialization is actually a incredibly performant and easy-to-use serialization library that can serialize to multiple formats (json, protobuf, CBOR, HOCON & Properties + community added ones like XML, YAML etc). The library is fully written in Kotlin meaning that you can use it from JVM, JS & Native. Its performance on the JVM is on par or better than the most common ones such as Jackson & Moshi in all benchmarks I've read. Finally, it's pretty small and has great support for stuffs like Sealed Classes etc which makes it perfect!",
       "link": "https://blog.jetbrains.com/kotlin/2020/10/kotlinx-serialization-1-0-released/"
     }
-  ],
-  "testing": [],
-  "machineLearning": [],
-  "softValues": [],
-  "random": []
+  ]
 }

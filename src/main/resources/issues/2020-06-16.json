@@ -1,47 +1,36 @@
 {
   "number": 16,
   "introduction": "Tipsrundan 16 is here! Brace yourself, Competence Sharing Lunch is coming to a video conference near you! Yes that's right, you can stay home and be CoViD-safe!",
-  "regional": [
+  "godisboxen": [
     {
+      "category": "REGIONAL",
       "title": "Competence Sharing Lunch!",
       "description": "We're proud to announce that we're gonna launch a remote-friendly concept called 'Competence Sharing Lunch'. Currently the details are not clear in regards to what AFRY helps out with. What we do know is that it'll not only be awesome but seriously awesome! The sessions will begin at a monthly pace and we'll see how big the interest is to not only participate but also how many presenters can be found among us. See more in Slack!"
-    }
-  ],
-  "videosAndPodcasts": [
-  ],
-  "conferenceAndLearning": [
+    },
     {
+      "category": "CONFERENCESANDLEARNING",
       "title": "Free Textbooks from Springer",
       "description": "Free textbooks? Categorized? Free-time at home during CoViD? If this sounds like you then please check out the compiled list by Harish N., it's very good and contains a lot of interesting books!",
       "link": "https://hnarayanan.github.io/springer-books/"
-    }
-  ],
-  "frontendAndMobile": [
+    },
     {
+      "category": "FRONTEND",
       "title": "What the hell is Deno? The new JS Runtime",
       "description": "For anyone interested in JS I think this is a great fit. Deno is a new JS runtime that claims to be safer, if it actually is better or worse is up to anyone - but getting to know different ways of combating issues is the best way to learn and become a better programmer. Make sure to check it out!",
       "link": "https://breadth.substack.com/p/what-the-hell-is-a-deno"
-    }
-  ],
-  "backendAndBigData": [
+    },
     {
+      "category": "BACKEND",
       "title": "Kotlin and Exceptions",
       "description": "A brief history of Exceptions and how they where created in Java to combat the difficulties of C and how they now have become quite cumbersome. Finally a new way of thinking is explained.  This post is made by Roman Elizarov which in my humble opinion often hits the nail on the head and explains things incredibly clear!",
       "link": "https://medium.com/@elizarov/kotlin-and-exceptions-8062f589d07"
-    }
-  ],
-  "testing": [
-  ],
-  "machineLearning": [
-  ],
-  "softValues": [
+    },
     {
+      "category": "SOFTVALUES",
       "title": "Zettelkasten note-taking in 10 minutes Zettelkasten note-taking in 10 minutes",
       "description": "The general feeling during CoViD online on sites like Reddit & Hacker News has shifted towards optimizing time and focus. Zettelkasten is a method that has gotten a lot of hype from the book 'How to Take Smart Notes' by Sönke Ahrens, if you're interested in optimizing your notes make sure to check Zettelkasten out in this simple overview!",
       "link": "https://blog.viktomas.com/posts/slip-box/"
-    }
-  ],
-  "random": [
+    },
     {
       "title": "Tools that made people better programmer",
       "description": "This is simply a thread with great inputs on tools that can enhance your life for the better during development. If you're a new (or old) dev make sure you check this out to learn about great tooling that can save you hours or even days!",
