@@ -1,0 +1,46 @@
+{
+  "number": 34,
+  "introduction": "Kompetenslunches, git supertools and how many times does someone actually copy a snippet out of Stack Overflow? That's just a few of the items in todays Tipsrundan. I hope you enjoy it!",
+  "supertips": {
+    "title": "git diff main...branch",
+    "description": "Martin Furmanski recommends `git diff main...branch` which not only diffs main but actually diffs from the _latest common commit_, just like if you had rebased on top of `main`.   \nI've already used this one multiple times and love it! Read more on Matthew Bretts short explanation [here](https://matthew-brett.github.io/pydagogue/git_diff_dots.html)."
+  },
+  "godisboxen": [
+    {
+      "title": "Kompetenslunch: Seam Carving (Image Algorithms)",
+      "description": "**Seam Carving** is a way to resize an image by removing \"empty space\".  \nIn this Kompetenslunch we'll go through an algorithm doing exactly that.\n\nThe algorithm itself is very simple and clean, yet powerful and efficient enough for usage.\n\n**How:** ~25 minute presentation & a QA afterwards  \n**When:** Wednesday 12th of May  \n**Where:** [MS Teams Link](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZThkYTU4YjQtMDAzNC00NzczLTg0MDgtMTdiYmU3NzY2Mzkw%40thread.v2/0?context=%7b%22Tid%22%3a%2258af3eba-510e-4544-8cfd-85f5e0206382%22%2c%22Oid%22%3a%223c8ac053-b79d-4591-b946-b109a8a53bc0%22%7d)  \n<sub><sup>P.S. This is a competence activity \uD83C\uDF89 </sup></sub>  \n![seamcarvinggif](https://inst.eecs.berkeley.edu/~cs194-26/sp20/upload/files/projFinalAssigned/cs194-26-aea/left_death.gif)",
+      "category": "REGIONAL",
+      "afry": true
+    },
+    {
+      "title": "Don't know your bash commands? Linux Shell Powered By OpenAI (GPT-3)?",
+      "description": "David Everlöf recommends:   \nAsk and you shall receive! Not sure about the terminal command? Let this little fella help you out.\n",
+      "category": "RANDOM",
+      "link": "https://riveducha.onfabrica.com/openai-powered-linux-shell"
+    },
+    {
+      "title": "How often do someone actually copy something on Stack Overflow?",
+      "description": "40 million times in 2 weeks. Yes that's right. And more unanswered posts are copied than ones with answered questions. Without going in depth on how creepy this tracking is the statistics are really cool and is for sure worth looking at!",
+      "category": "RANDOM",
+      "link": "https://stackoverflow.blog/2021/04/19/how-often-do-people-actually-copy-and-paste-from-stack-overflow-now-we-know/"
+    },
+    {
+      "title": "Java for Everything",
+      "description": "Let's start with an excerpt, because I feel like it might be necessary:  \n> .. About a year ago, though, I started to form a strange idea: That Java is the right language for all jobs. (I pause here while you vomit in your mouth.)   \n\nWith this in mind I think the author brings forward some good arguments, especially on the good and bad parts. Personally I would trade Java for something like Kotlin or Java, but the argument would stay the same. Even inserting Go or something else.   \nA language with a solid foundation and good typing is always a good start.",
+      "category": "BACKEND",
+      "link": "https://www.teamten.com/lawrence/writings/java-for-everything.html"
+    },
+    {
+      "title": "Docker without Docker",
+      "description": "Huh? This actually is a huge use-case of [firecracker-VM](https://firecracker-microvm.github.io/) (or as they call it 'microVMs') which we included in Tipsrundan a while back.",
+      "category": "BACKEND",
+      "link": "https://fly.io/blog/docker-without-docker/"
+    },
+    {
+      "title": "Kotlin \"REPL\" with autocomplete - yes please! Introducing KI",
+      "description": "Who doesn't enjoy working in a REPL? I for sure do! But sometimes it's hard because you really really long for that autocomplete you get in a IDE. The Jetbrains team now introduces KI which is a interactive REPL, **including autocomplete**.  \n![image](https://blog.jetbrains.com/wp-content/uploads/2021/03/filter.gif)",
+      "category": "RANDOM",
+      "link": "https://blog.jetbrains.com/kotlin/2021/04/ki-the-next-interactive-shell-for-kotlin/"
+    }
+  ]
+}

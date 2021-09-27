@@ -1,0 +1,58 @@
+{
+  "number": 37,
+  "introduction": "Today we're **stacked** with content \uD83C\uDF89 So let's get this party started! \uD83E\uDD73 ",
+  "supertips": {
+    "title": "Temporary Notepad in the Web Browser",
+    "description": "Oscar Carlsson has a great little 'hack' that will have your friends turn their head.  \nStart of by having a Web Browser, then open a new tab and paste the following\n\n`data:text/html, <html contenteditable>`\n\nThen open the page. This will **give you a editable blank area**. \uD83C\uDF89 And you'll certainly feel a bit like a hacker \uD83D\uDC68\u200D\uD83D\uDCBB.\n\nOn a more serious note this is seriously a _really_ good way to have a notepad ready to quickly alter text before moving it somewhere else.  \nOscar suggests that you add this as a bookmark to simplify the usage!"
+  },
+  "godisboxen": [
+    {
+      "title": "Hosting SQLite databases on GitHub Pages or any static file host",
+      "description": "This is really mind-bending. I love it.  \nIt takes a lot of \"thinking outside of the box\", a pinch of genius and work to have made this and the blog. \n\nIf you're interested in understanding how a static file hoster  (like GitHub Pages) can be used in conjunction with a DB **without a backend** then make sure to check this out.\n\nIt really is a treat and left me amazed!",
+      "category": "BACKEND",
+      "link": "https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/"
+    },
+    {
+      "title": "Radio Garden – Explore live radio by rotating the globe",
+      "description": "Internet Radio has become a standard which every channel now supports. This has brought some awesome integrations with apps and everything, but one thing that is really cool is _radio.garden_ which allows you to listen to any channel available on the earth \uD83C\uDF0D! \n\nScroll around the earth and listen to some cool languages & their music.",
+      "category": "RANDOM",
+      "link": "https://radio.garden/"
+    },
+    {
+      "title": "Project Starline: Feel like you're there, together ",
+      "description": "A new cool project from Google where Spatial Audio and a large screen is supposed to make virtual communication much closer to real-life experience.\n\n> .. Project Starline — a technology project that combines advances in hardware and software to enable friends, families and coworkers to feel together, even when they're cities (or countries) apart.\n\nWho knows, it might end up in the famous [killedbygoogle.com](https://killedbygoogle.com/)-graveyard but it's pretty cool and I love the progress made on communication tech!",
+      "category": "RANDOM",
+      "link": "https://blog.google/technology/research/project-starline/"
+    },
+    {
+      "title": "Real World: CSS vs CSS-in-JS",
+      "description": "A lot of modern front-ender now supply JS inside the JS code through different tools like `styled-components` which is pretty awesome because it makes the CSS much simpler to reason and understand. \n\nBut is there _any drawbacks?_ What about size? What about load times?    \nIn this blog you'll learn all about the different approaches performance characteristics. **What do you prefer?**",
+      "category": "FRONTEND",
+      "link": "https://pustelto.com/blog/css-vs-css-in-js-perf/"
+    },
+    {
+      "title": "You Might Not Need jQuery",
+      "description": "Sometimes things happen in parallel, or you're using a tool because it has always existed. The browser itself has evolved a lot and so has the built-in methods & CSS. A lot of things previously done programatically, often through jQuery, is now possible with simple tools.\n\nMake sure to check out this page before you start implementing something complex!",
+      "category": "FRONTEND",
+      "link": "http://youmightnotneedjquery.com/"
+    },
+    {
+      "title": "The Twelve-Factor App: A methodology for building Software-as-a-Service (SaaS)",
+      "description": "A new cool project from Google where Spatial Audio and a large screen is supposed to make virtual communication much closer to real-life experience.\n\n> .. Project Starline — a technology project that combines advances in hardware and software to enable friends, families and coworkers to feel together, even when they're cities (or countries) apart.\n\nWho knows, it might end up in the famous [killedbygoogle.com](https://killedbygoogle.com/)-graveyard but it's pretty cool and I love the progress made on communication tech!",
+      "category": "BACKEND",
+      "link": "https://12factor.net/"
+    },
+    {
+      "title": "Adding git repositories as a dependency using PURE gradle",
+      "description": "The twelve-factor app is a methodology for building software-as-a-service apps that:\n\n    Use declarative formats for setup automation, to minimize time and cost for new developers joining the project;\n    Have a clean contract with the underlying operating system, offering maximum portability between execution environments;\n    Are suitable for deployment on modern cloud platforms, obviating the need for servers and systems administration;\n    Minimize divergence between development and production, enabling continuous deployment for maximum agility;\n    And can scale up without significant changes to tooling, architecture, or development practices.\n\nThe twelve-factor methodology can be applied to apps written in any programming language, and which use any combination of backing services (database, queue, memory cache, etc).\n\nEven if you don't end up reading this it's certainly a good thing to bookmark!",
+      "category": "BACKEND",
+      "link": "https://schlaubi.medium.com/did-you-know-you-can-add-git-repositories-as-gradle-dependencies-8bc414cb18b4"
+    },
+    {
+      "title": "Kotlin/Native Memory Management Update",
+      "description": "Native? Memory? Good writing?  \n✅ ✅ ✅ \n\nFor those that don't really know how memory/GC:s work I think this is a good introduction on some implementations and I'd be happy to find someone to discuss / work more in this field with!",
+      "category": "BACKEND",
+      "link": "https://blog.jetbrains.com/kotlin/2021/05/kotlin-native-memory-management-update/"
+    }
+  ]
+}

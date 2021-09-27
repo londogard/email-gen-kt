@@ -1,0 +1,44 @@
+{
+  "number": 38,
+  "introduction": "This is the last Tipsrundan before vacation! \uD83C\uDF1E\uD83C\uDFD6️\nWe'll be back in August \uD83E\uDD73",
+  "supertips": {
+    "title": "Git Checkout, Git Push, Git Checkout, Wait What Branch Was It Again?",
+    "description": "Lasse Heemann shared a small alias that might just make your life just a little bit easier.\n\n`alias branches='git branch -v --sort=-committerdate | head -n 10'` \n\nIn Lasses words:\n> This is very practical when you jump between branches and _never_ remember the names of them\n\nFor those that prefer this can also be made into a `git-alias`, see more on [git-scm/alias](http://git-scm.com/book/en/v2/Git-Basics-Git-Aliases). \n\nAnd I couldn't agree more (except that I often end up using the shell history through `ctrl+r`)\n\nAnd if you want to keep it extra fancy head over to [this StackOverflow post](https://stackoverflow.com/a/5188364) to learn how to make it colorful and structured!"
+  },
+  "godisboxen": [
+    {
+      "title": "AFRY at Almedalsveckan 2021",
+      "description": "The AI Global Competence Group (AIGCG) will do 4 sessions at Almedalsveckan.  \nOur very own **Hampus Londögård at IT South will do a session on \"Vikten att verkligen förstå AI\"** the 5th of July at 13:00, find the event on [Almedalen Play](https://www.almedalsveckanplay.info/62127).  \nAll the events:  \n5/7 11:30 (en) _The importance of AI education for children in the connected era_ (John Daley) ([link](https://www.almedalsveckanplay.info/62133))  \n5/7 13:00 (sv) _Vikten att verkligen förstå AI_ (Hampus Londögård) ([link](https://www.almedalsveckanplay.info/62127))  \n6/7 11:30 (en) _Harnessing Digital Transformation of the Pandemic Era and Setting Priorities in post-Covid World_ (Prajit Datta) ([link](https://www.almedalsveckanplay.info/62136))  \n6/7 13:00 (sv) _Deepfakes, kan vi lita på det vi ser?_ (Maria Erman) ([link](https://www.almedalsveckanplay.info/62148))",
+      "afry": true,
+      "category": "REGIONAL"
+    },
+    {
+      "title": "Hannes Sandbergs IntelliJ Pro-Tip",
+      "description": "Hannes left one final tip for all of us to try out.  \nWanna see all the recently edited files? Hit the following command and feel the glory!  \n`cmd+sh+e`\n\n![image](https://user-images.githubusercontent.com/7490199/123553986-4ea1a680-d77e-11eb-92b4-b4048caef064.png)",
+      "category": "BACKEND"
+    },
+    {
+      "title": "AFRY Innovation Day 2021 - when the dust settled",
+      "description": "During our Innovation Week we had some really exciting projects created such as a 'ParkingApp' & classifying Magic Cards. All of this can be found on the Teams Channel, but for those that want a little bit more juice and a blog you can find it!\n\nRead more about Scala 3.0 by Carl Ekeroth & Fredrik Strandin on [our blog](https://afry-south.github.io/new-features-in-scala3).     \nRead more about how we managed to match resumes to assignment with ~completely unlabeled~ data, also on [our blog](https://afry-south.github.io/machine-learning/mix-match-cv/) with the demo [here](https://share.streamlit.io/afry-south/mix-match-cv/main/deployment.py).",
+      "category": "REGIONAL",
+      "afry": true
+    },
+    {
+      "title": "Algorithm Competence: Escape Room",
+      "description": "During the last competence evening we had an awesome time completing a Escape Room that was done programatically. It was really interesting how CodinGame had managed to puzzle it together (and how we solved it!). ![image](https://user-images.githubusercontent.com/7490199/123124991-6dcfc980-d448-11eb-85e7-4efb3111fe5f.png)",
+      "category": "RANDOM"
+    },
+    {
+      "title": "Brave Search",
+      "description": "The new kid in town. Brave Search is unique on multiple fronts as in being kind to privacy (like DuckDuckGo), having its own index (DDG uses Bing), having a transparent and open ranking algorithm which will be open to community tweaking.  \nIt's really cool and can extract answers from StackOverflow and will in the future allow ad-free searching through a paid alternative.  \nOver all I feel like this is a great chanse to break Googles kingdom of search and I'm happy to try it out.\n\nCompare it right here: ![image](https://user-images.githubusercontent.com/7490199/123554104-d4255680-d77e-11eb-8e12-a5a342e2d441.png)\n![image](https://user-images.githubusercontent.com/7490199/123554113-dc7d9180-d77e-11eb-8c9a-63c8c8d4d293.png)",
+      "category": "RANDOM",
+      "link": "https://search.brave.com/"
+    },
+    {
+      "title": "Tech Writing by Google",
+      "description": "Writing technical documents can be a bit of a hassle and requires a special mindset.    \nTo document things is easy, but to correctly put the user into the right mindset and to fully understand the whole ecosystem is another thing.\n\nLearn a little more about how to sprinkle magic in your documentation and tech writing by Google.",
+      "category": "RANDOM",
+      "link": "https://developers.google.com/tech-writing"
+    }
+  ]
+}

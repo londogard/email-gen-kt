@@ -1,0 +1,40 @@
+{
+  "number": 35,
+  "introduction": "I hope everyone had a awesome (long) weekend! Tipsrundan is back with a mixed bag of fun. Enjoy!",
+  "supertips": {
+    "title": "MacOS Finder \uD83D\uDD0E",
+    "description": "(Only MacOS users, sorry!)  \nPersonally I was for a long time annoyed by the incredibly bad Finder UI (\"explorer\" on MacOS) and how hard it is to actually walk quickly somewhere.   \nSome might respond '_use the terminal_' and I agree, but sometimes you just happen to end up in the GUI. An old colleague that's unfortunately not among us anymore (Zuzanna) showed me how to do this:  \n\n`cmd+sh+g` \n\nand the address bar will open up for you to paste a path.   \nP.S. if anyone wants a keybind for Windows it's `alt+d`. "
+  },
+  "godisboxen": [
+    {
+      "title": "Tipsboxen \uD83D\uDDF3️",
+      "description": "Reminder to all of you that we need everyone to help us out sharing the best links, tools & ideas. Reach out to Hampus Londögård if you've something you'd like to share with the rest!",
+      "category": "REGIONAL",
+      "afry": true
+    },
+    {
+      "title": "HTTPie - A userfriendly http client in the terminal",
+      "description": ">HTTPie—aitch-tee-tee-pie—is a user-friendly command-line HTTP client for the API era. It comes with JSON support, syntax highlighting, persistent sessions, wget-like downloads, plugins, and more.\n\nI think bumping `curl` into something simpler is something a lot of us have been wishing for sometimes. This CLI will be your friend in need ;)",
+      "category": "RANDOM",
+      "link": "https://httpie.io/"
+    },
+    {
+      "title": "Akka much? Learn actor-frameworks in Scala",
+      "description": "Titled _Building a Reactive, Distributed Messaging Server in Scala and Akka with WebSockets_ I think this post is great in introducing yourself to Aktor-frameworks (Akka in Scala).",
+      "category": "BACKEND",
+      "link": "https://medium.com/@nnnsadeh/building-a-reactive-distributed-messaging-server-in-scala-and-akka-with-websockets-c70440c494e3"
+    },
+    {
+      "title": "Java 8 through 16 - a categorized summary of all updates",
+      "description": "Java has evolved a lot since the early days, and the last years the amount of features and improvements added are very large. A lot of organisations are stuck on Java 8. Since Java 8 there has been **180 JEPs added** which aims to improve Java.\n\nI feel like to be able to advocate the update you need to know about them and by knowing about them you realize what you're missing out on!  \nWhat's your favourite update?",
+      "category": "BACKEND",
+      "link": "https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-16/"
+    },
+    {
+      "title": "Web-scale (MongoDB) - A classic (funny)",
+      "description": "A few weeks ago during the _bokcirkel_ we talked about scaling databases and someone remembered this old fantastic youtube-clip. If you want 5m 35s of fun make sure to watch (or rewatch) this!\n\n...is Tipsrundan web-scale?",
+      "category": "RANDOM",
+      "link": "https://youtu.be/b2F-DItXtZs"
+    }
+  ]
+}

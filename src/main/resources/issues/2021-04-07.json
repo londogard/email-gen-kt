@@ -1,0 +1,41 @@
+{
+  "number": 32,
+  "introduction": "Lunch Presentations, Clusters on Pis at home and a lot more!",
+  "supertips": {
+    "title": "Slidesgo - Make your Powerpoints & Google Slides perfect each time",
+    "description": "For today it's _not_ a power-user tip but rather a great asset to give your presentations that extra edge.  \nSlidesgo shares free templates that you can use in either Google Slides or Powerpoint which are superb! Make sure to check it out on [slidesgo.com](https://slidesgo.com/)"
+  },
+  "godisboxen": [
+    {
+      "title": "Knowledge Distillation - Striking a balance between efficiency & performance",
+      "description": "A lunch presentation on _Knowledge Distillation_ which is the task to compress knowledge into a smaller and more efficient model. It's Machine Learning related.\n\n**When:** 6th of April (Wednesday) 12:00-12:45  \n**Where:** [MS Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NThmODk1OGYtZWY4YS00ZmFlLWFkOGMtMDhjNWU3YzZlY2M1%40thread.v2/0?context=%7b%22Tid%22%3a%2258af3eba-510e-4544-8cfd-85f5e0206382%22%2c%22Oid%22%3a%223c8ac053-b79d-4591-b946-b109a8a53bc0%22%7d)\n\nReach out to Hampus Londögård if you intend to join :)",
+      "category": "REGIONAL",
+      "afry": true
+    },
+    {
+      "title": "Raspberry Pis, Homelab & Clusters",
+      "description": "Ever thought about setting up a homelab with Raspberry Pis? If you wanna learn how follow Dick Max-Hansens guide on setting up Homelab!",
+      "category": "REGIONAL",
+      "afry": true,
+      "link": "https://afry-south.github.io/terminal/homelab-cluster/"
+    },
+    {
+      "title": "Building a Swedish Named Entity Recognition Model that's efficient and performant (State-of-the-Art)",
+      "category": "MACHINELEARNING",
+      "description": "Our very own Hampus did a write-up of how he trained and deployed a State-of-the-Art Neural Network that finds _entities_ in text (Swedish) that's also runnable on 'low-resource' environments!",
+      "link":"https://blog.londogard.com/nlp/deep-learning/2021/03/29/swedish-named-entity-recognition.html"
+    },
+    {
+      "title": "Morning Brew - Get the news to your coffee each day",
+      "category": "RANDOM",
+      "description": "Dennis Londögård recommends Morning Brew as a good way to keep up with the news, even if a bit US-centric.  \n**Do you know a Swedish or more European one?** Let us know!",
+      "link":"https://www.morningbrew.com/daily/issues/latest"
+    },
+    {
+      "title": "How to Improve CSS Performance",
+      "category": "FRONTEND",
+      "description": "It's said that the frontender who tries to optimize their app are _Gods walking amongst men_. Or perhaps not.\n\nAnyhow, Calibre shares their best tips and ideas in regards to how you can optimize CSS using either clever tricks or simply simple tools that people sometimes just don't care about.",
+      "link":"https://calibreapp.com/blog/css-performance"
+    }
+  ]
+}
