@@ -11,13 +11,9 @@ import kotlinx.serialization.json.Json
 import java.io.File
 
 fun main() = runBlocking {
-    val filenames = File("/Users/londogard/git/email-gen-kt/src/main/resources/issues")
-        .listFiles()
-        .map { it.nameWithoutExtension }
-        .forEach { f -> println(f);generateMd(f) }
-    //val filename = "2021-09-19"
-    //generateMd(filename)
-    // generateHtml(filename)
+    val filename = "2021-10-05"
+    generateMd(filename)
+    generateHtml(filename)
 }
 
 fun generateMd(filename: String) {
@@ -130,12 +126,6 @@ fun generateHtml(filename: String) = runBlocking {
     }
 
     val fullHtml = """
----
-layout: splash
-title: "Tipsrundan ${issue.number}"
-excerpt: "${issue.introduction}"
----
-
 <table border="0" cellspacing="0" width="100%">
 <tr>
 <td></td>

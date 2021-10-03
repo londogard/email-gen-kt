@@ -1,0 +1,39 @@
+{
+  "number": 42,
+  "introduction": "Free online IDEs, PostgreSQL hickups & sustainable lab-grown ☕ is just a few of the key articles for today!",
+  "supertips": {
+    "title": "GitHub Codespaces Publicly Available",
+    "description": "Let's start by clarifying something:  \nGitHub Codespaces full version is only available for paying GitHub Teams (orgs) and GitHub Enterprise edition. \n\n**But**, we can use the free version which is a much simpler variant that excludes the environment. This means that you cannot run the code.  \nThen what's the point you might ask?  \nThe point is that we can edit our files and upload them to GitHub through a VS Code interface directly in the browser. No more pesky webUI that's annoying without a filesystem. \n\n<img src=\"https://user-images.githubusercontent.com/7490199/135758528-675abf2e-6bfb-4428-925d-bc6d901e9201.png\" width=\"50%\"/>\n\n**How do I activate this mode?**\n\n1. Replace `github.com` with `github.dev` on your filepath in your repository\n2. When having a folder or file open in GitHub press `.` and the `github.dev` will open up with a VS Code GUI.\n\n_Pro-Tip_ if you want to take this a step further make sure to try out [gitpod.io](https://gitpod.io/) which gives 50h runtime freely."
+  },
+  "godisboxen": [
+    {
+      "title": "Linux or not?",
+      "category": "REGIONAL",
+      "description": "Last Tipsrundan I asked you all if you used Linux, and if not why?  \nI'm happy to say that I got _a lot_ of answers, so thanks! \uD83E\uDD73\n\nSo what are the reasons to, or not to, have Linux?\n\n1. **Gaming** - This is the 1st reason to have Windows\n2. **WSL** - WSL is pretty good today and allows you to game and develop\n\nBut a few of us are happy with the classical Dual-Booting, the main reasons being for fun \nor Deep Learning. I know _PopOS!_ got a vote or two. Got a favorite distro? Ping the #technical_discussions with your favorite!"
+    },
+    {
+      "title": "10x10% - Closing Emacs Bugs",
+      "category": "BACKEND",
+      "description": "It's _the 10th time_ that Lars closes 10% of all bugs in Emacs.  \nThroughout this blog-post by the Emacs co-maintainer Lars goes through \nsome of his goals and also gives some insightful **visualization** that I think \na lot of us could make use of to show leadership more clearly \nwhat is happening.\n\nIt's also rather interesting following his thoughts and thinking further \nabout bug-squashing (maintenance).",
+      "link": "https://lars.ingebrigtsen.no/2021/08/14/10x10/?utm_source=hackernewsletter&utm_medium=email&utm_term=code"
+    },
+    {
+      "title": "Why we (Gitlab) spent the last month eliminating PostgreSQL subtransactions",
+      "description": "Gitlab noticed that the database of Gitlab.com would stall for minutes sometimes, giving users the error-message 500.  \n⚠️Not good⚠️  \nThrough a long debugging they found that it was a `SAVEPOINT SQL Query` that was the root cause.\n\nWhat is a `SAVEPOINT`? Why did this impact? How do we fix it?  \nRead to learn! (and make sure to join [#bokcirkel](https://buitsouth.slack.com/archives/C010WHF80RF) or [#technical-discussions](https://buitsouth.slack.com/archives/C019L2218Q6) if you'd like to discuss this further)",
+      "category": "BACKEND",
+      "link": "https://about.gitlab.com/blog/2021/09/29/why-we-spent-the-last-month-eliminating-postgresql-subtransactions/"
+    },
+    {
+      "title": "Waydroid",
+      "description": "Simply put this is a new way to run Android on Linux, by their own words:\n\n>A container-based approach to boot a full Android system on a regular GNU/Linux system like Ubuntu.\n\nHave you used Waydroid? Or another emulator/virtualization tech? Let us know more about your experiences on slack in [#technical-discussions](https://buitsouth.slack.com/archives/C019L2218Q6)!",
+      "category": "RANDOM",
+      "link": "https://waydro.id/"
+    },
+    {
+      "title": "Sustainable ☕ on a new level",
+      "description": "This news made me really excited - a Finnish company has successfully created lab-grown coffee.  \n\nPersonally I believe that one of multiple things that needs to accelerate for us to \nput a brake on the environmental impact is lab-grown groceries.  \nCoffee is a great step forward which shows us the possibilities.  ",
+      "category": "RANDOM",
+      "link": "https://www.vttresearch.com/en/news-and-ideas/sustainable-coffee-grown-finland-land-drinks-most-coffee-capita-produces-its-first"
+    }
+  ]
+}
