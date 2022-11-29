@@ -1,0 +1,36 @@
+{
+  "number": 53,
+  "introduction": "The sun is shining, flowers are bloomig, code is written and Tipsrundan 53 is here!",
+  "godisboxen": [
+    {
+      "title": "Using Java 9 Modularization to Ship Zero-Dependency Native Apps",
+      "description": "Not a lot of people are following the Java releases, but way back something rather interesting hit the fan. Java 9 became modularized through [Project Jigsaw](http://openjdk.java.net/projects/jigsaw/).\n\n**What does this mean?**  \nIn practise we can now chop our standard library into the only modules we use rather than including everything. Our JVM-apps can now be '.exe'-files with an included JVM using <20MB (unless you use a lot of libraries). Crazy? Wanna learn more? Go ahead!",
+      "category": "BACKEND",
+      "link": "https://steveperkins.com/using-java-9-modularization-to-ship-zero-dependency-native-apps/"
+    },
+    {
+      "title": "Deep Neural Nets: 33 years ago and 33 years from now",
+      "description": "> The Yann LeCun et al. (1989) paper Backpropagation Applied to Handwritten Zip Code Recognition is I believe of some historical significance because it is, to my knowledge, the earliest real-world application of a neural net trained end-to-end with backpropagation. Except for the tiny dataset (7291 16x16 grayscale images of digits) and the tiny neural network used (only 1,000 neurons), this paper reads remarkably modern today, 33 years later - it lays out a dataset, describes the neural net architecture, loss function, optimization, and reports the experimental classification error rates over training and test sets. It’s all very recognizable and type checks as a modern deep learning paper, except it is from 33 years ago. So I set out to reproduce the paper 1) for fun, but 2) to use the exercise as a case study on the nature of progress in deep learning.\n\nAn _excellent_ blog by Andrej Karpathy!",
+      "category": "MACHINELEARNING",
+      "link": "https://karpathy.github.io/2022/03/14/lecun1989/"
+    },
+    {
+      "title": "I Liked The Idea Of Carbon Offsets, Until I Tried To Explain It",
+      "description": "> Avoided emissions seem like a (well-intentioned?) shell game\n\nPersonally I found out about the implementation Google et. all uses to do Carbon Offsets, and like this blog propose it's a very good intention but perhaps weird implementation. Buying offsets is more complicated than one might think, or organizations suggests. If you're interested make sure to read the blog which is incredibly insightful!",
+      "category": "RANDOM",
+      "link": "https://climateer.substack.com/p/avoided-emissions"
+    },
+    {
+      "title": "I Liked The Idea Of Carbon Offsets, Until I Tried To Explain It",
+      "description": "> Avoided emissions seem like a (well-intentioned?) shell game\n\nPersonally I found out about the implementation Google et. all uses to do Carbon Offsets, and like this blog propose it's a very good intention but perhaps weird implementation. Buying offsets is more complicated than one might think, or organizations suggests. If you're interested make sure to read the blog which is incredibly insightful!",
+      "category": "RANDOM",
+      "link": "https://climateer.substack.com/p/avoided-emissions"
+    },
+    {
+      "title": "Post Mortem: Slack",
+      "description": "Just as any other dev I love Post Mortem. Especially when they're written by someone who actually know what they're talking about (technical depth) and with some laid-back writing it's like a great novella! I think the cascading failure found in Slack was incredibly interesting and shows of complexity in software in bigger system when it becomes its own system engineering with all services interacting.",
+      "category": "RANDOM",
+      "link": "https://slack.engineering/slacks-incident-on-2-22-22/"
+    }
+  ]
+}

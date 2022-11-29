@@ -1,0 +1,54 @@
+{
+  "number": 46,
+  "introduction": "For today we've a variety of goodies \uD83C\uDF6C Did you know that React 18 (!) is in beta? Or did you miss the very expensive ML-related failure that's Zillow? Read today's issue for this and much more! \uD83E\uDD73",
+  "godisboxen": [
+    {
+      "title": "GraalVM tips n' tricks",
+      "description": "James Ward shows some cool tricks for optimizing GraalVM.  \nFor those that don't know what GraalVM is.  \n> GraalVM is an optimizing compiler that generates smarter code. Including Ahead-of-Time (AoT) Compile to native binaries allow **instant boot, peak performance** with **no warmup time**.  \n\nThis guide includes clever flags to use, how to solve reflection issues (as reflection is _runtime_).  \nJames ended up with a small & fast image to use in production based on these premises! \uD83E\uDD73",
+      "category": "BACKEND",
+      "link": "https://jamesward.com/2020/05/07/graalvm-native-image-tips-tricks/"
+    },
+    {
+      "title": "Zillow to stop flipping home as it stands to lose > $550 million (Machine Learning failure)",
+      "description": "For those that missed this news I'll give you a few seconds to laugh or smug.  \nOne of the first public huge failures of a machine learning algorithm. In summary they are set to loose up towards $550 million and have to lay off 25% of the staff.  \nPredicting house prices 6 months in advance is a really tough problem which requires non-automatic system, which most likely was applied by Zillow. Trusting yourself too much, especially in times as covid, might hit back. Real hard.",
+      "category": "MACHINELEARNING",
+      "link": "https://www.nytimes.com/2021/11/02/business/zillow-q3-earnings-home-flipping-ibuying.html"
+    },
+    {
+      "title": "1.1.1.1 - CloudFlares DNS now introduce Family",
+      "description": "1.1.1.1 is CloudFlares secure, fast & privacy-first DNS resolver free for anyone to use.  \n> Introducing 1.1.1.1 for Families — the easiest way to add a layer of protection to your home network and protect it from malware and adult content. 1.1.1.1 for... includes the same strong privacy guarantees... we're providing it for free ...   \n\nAwesome? Figure out how to set it up yourself at home!",
+      "category": "RANDOM",
+      "link": "https://blog.cloudflare.com/introducing-1-1-1-1-for-families/"
+    },
+    {
+      "title": "React 18 in Beta!",
+      "description": "React 18 is finally entering beta-stage after being alpha for a while. One of the cooler hooks added is `useSyncExternalStore`. Another interesting feature is batching stuffs before rendering.  \n[List](https://reactjs.org/blog/2021/06/08/the-plan-for-react-18.html) of some features.",
+      "category": "FRONTEND",
+      "link": "https://github.com/reactwg/react-18/discussions/112"
+    },
+    {
+      "title": "CloudFlare Pages goes Full-Stack",
+      "description": "JAM-Stack to Full-stack. Essentially CloudFlare Pages now allows you to simply use their cloudworkers through adding files with functions in `./functions`, e.g.  \n```js  \n// GET requests to /filename would return \"Hello, world!\"  \nexport const onRequestGet = () => {  \n  return new Response(\"Hello, world!\")  \n}  \n```  \nCloudFlare has a pretty cool free package, so for you all your private projects this is very exciting!",
+      "category": "RANDOM",
+      "link": "https://blog.cloudflare.com/cloudflare-pages-goes-full-stack/"
+    },
+    {
+      "title": "Story time: How I helped build a profitable MVP over a weekend",
+      "description": "I think this story is more telling than one would guess. It's about how you can take a step back, deliver something which really might not be up to your standards but does fit the bill and include simply the **necessary** logic and functionality. ",
+      "category": "RANDOM",
+      "link": "https://mzrn.sh/2021/11/14/how-i-helped-build-a-profitable-mvp-over-a-weekend"
+    },
+    {
+      "title": "Prettymaps - Rendering your map cool",
+      "description": "Did you know that it's now possible to simply draw your village, neighbourhood or whatever on a map in a very stylistic sense? `prettymaps` by marceloprates gives this functionality and it looks great! Perfect for a painting at home or some cool story-telling map.  \n![macao](https://github.com/marceloprates/prettymaps/blob/main/prints/macao.png?raw=true)\n![heerhugowaard](https://github.com/marceloprates/prettymaps/blob/main/prints/heerhugowaard.png?raw=true)",
+      "category": "RANDOM",
+      "link": "https://github.com/marceloprates/prettymaps"
+    },
+    {
+      "title": "LMGrep - For all you terminal freaks",
+      "description": "TL;DR  \n> What if `grep` supported the functionality of a proper search engine like [Elasticsearch](https://www.elastic.co/elasticsearch/) without a need to install any servers or index the files before searching? [`lmgrep`](https://github.com/dainiusjocas/lucene-grep) aims to provide you just that. It is installed as just one executable file without any dependencies, provides a command-line interface, starts-up instantly, and works on macOS, Linux, and, yes, even Windows.\n> \n> See the source code [here](https://github.com/dainiusjocas/lucene-grep).  \n\nIn short `lmgrep` includes fancy stuffs like stemming, tokenization and much more to reduce the need of using a lot of regexps while grepping. For full-text search `lmgrep` will most likely be very helpful for you!  \nThe blog is indeed very interesting and 100% worth the read!",
+      "category": "RANDOM",
+      "link": "https://www.jocas.lt/blog/post/intro-to-lucene-grep/"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "number": 60,
+  "introduction": "Tipsrundan 60 is here! ",
+  "godisboxen": [
+    {
+      "title": "Why are you so busy?",
+      "description": "I'll start this article with the conclusion,  \n> You and your team should never be so busy that you can't do your job properly or that you begin to hate your work. Especially if you're a leader or a leader-of-leaders, then you should actually (yes you should, I'll die on this hill) have free time to think alone, and to talk and ideate organically with peers. Contrary to popular belief: back-to-back meetings isn't a badge of honour, it's a red flag.\n\nIf you wanna learn more about why being to busy to do work is absurd make sure to read this great article ",
+      "category": "SOFTVALUES",
+      "link": "https://tomlingham.com/articles/why-are-you-so-busy"
+    },
+    {
+      "title": "Things not available when someone blocks all cookies",
+      "description": "Interestingly blocking cookies block a ton of things, which is good don't get me wrong, that ends up hamstring developers.\nHere's a story about a developer who goes out of his way to allow users to block cookies but still use his app \uD83E\uDD73",
+      "link": "https://blog.tomayac.com/2022/08/30/things-not-available-when-someone-blocks-all-cookies",
+      "category": "FRONTEND"
+    },
+    {
+      "title": "Performance Improvements in .NET 7",
+      "description": ".NET have these blogs with each release now, and I love it! \uD83D\uDE0D  \n.NET 7 is nothing short of impressive, it seems they include a opponent of the JVMs GraalVM.  \nMore than 1000 PRs related to performance (which might tell us a different story, but it's a immensely large project ).  \nJIT improvements, AOT compilation, better JSON-serializarion & much more!\nSimple things like sum & loops is multiple times faster, which ends up affecting s large part of your code-base.\n\nDo you enjoy benchmarks, diving into de-compiled code etc? This is certainly for you then! \uD83E\uDD13",
+      "link": "https://devblogs.microsoft.com/dotnet/performance_improvements_in_net_7/",
+      "category": "BACKEND"
+    },
+    {
+      "title": "Compressing images with Stable Diffusion - Stavros' Stuff",
+      "description": "♾️ Compression? Yes?  \nA joke? Yes and no!\nWanna learn about how AI achieve this? Read the blog!",
+      "link": "https://www.stavros.io/posts/compressing-images-with-stable-diffusion/",
+      "category": "MACHINELEARNING"
+    },
+    {
+      "title": "PostgreSQL 15: Stats Collector Gone? What's New? - Percona Database Performance Blog",
+      "description": "A new PostgreSQL is here, with some big improvements through the stats collector removal \nLearn how it can impact your work!",
+      "link": "https://www.percona.com/blog/postgresql-15-stats-collector-gone-whats-new/",
+      "category": "BACKEND"
+    },
+    {
+      "title": "Jonas Hietala: Rewriting my blog in Rust for fun and profit",
+      "description": "Jonas seems to be a great person, he does things because it's fun and enjoyable. Why not rewrite your own blog into Rust (or any language)?\nDid you know I wrote the email-generator which generated this email of Tipsrundan? Well, I did because it's fun \uD83D\uDE05\uD83E\uDD13.\n",
+      "link": "https://www.jonashietala.se/blog/2022/08/29/rewriting_my_blog_in_rust_for_fun_and_profit/",
+      "category": "BACKEND"
+    },
+    {
+      "title": "Weird monitor bugs people sent me in the last 5 years | Hacker News",
+      "description": "Did you know office chairs and a bag of coins might impact your screens negatively? Read this hilarious, though sad, HN thread!",
+      "link": "https://news.ycombinator.com/item?id=32629669"
+    }
+  ]
+}

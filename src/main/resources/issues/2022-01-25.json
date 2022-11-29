@@ -1,0 +1,35 @@
+{
+  "number": 48,
+  "introduction": "Hi and welcome to the first Tipsrundan of 2022! I hope you all had a great vacation and are back fighting work!",
+  "supertips": {
+    "title": "Scala Love 2022",
+    "description": "Scala Love is back 2022 (18th February)!\n\nLast year I personally thought it was really fun to tune in, and this year I'm sure I'll do it again.  \nIt's already known that people from **Disney Streaming**, **Netflix** and **Comcast** are attending as speakers, \nwhich I know will be interesting to hear stories by. \n\nThrough live QA, Spatial Chats and interesting topics you'll get to know the cutting-edge of Scala better. make sure to tune in!\n\nRead about speakers [here](https://2022.scala.love/speakers/).  \nFree Tickets can be found [here](https://2022.scala.love/tickets)!"
+  },
+  "godisboxen": [
+    {
+      "title": "Fly.io – Free Postgres Databases",
+      "description": "Fly.io now includes up to 3GB total storage on top of the free CPU/RAM that was previously included.  \nThis is **great** for your private projects!\n\nSo what is fly.io?  \nFly.io is a way to deploy your servers (and databases!) close to your users, all over the world. No ops required.  \nHow is this possible? Simply write your code, package into Docker and deploy it to Fly's platform. Fly will make sure it's snappy by \nhaving your code close to your users by scaling it to cities where your app is the busiest. Automagically.\n\nI think that the [introduction](https://fly.io/docs/introduction/) greatly handles the why and how's, but to keep it simple they're optimizing \nthe old way of duplicating data all over the world to instead simply exist where it's most needed. The drawback would be that users that are rare in their \ngeographical location has a poorer experience, but that might be worth the total cost.",
+      "category": "BACKEND",
+      "link": "https://fly.io/blog/free-postgres/"
+    },
+    {
+      "title": "Developer Tools secrets that shouldn’t be secrets",
+      "description": "Blowing up on Hacker News is cool, and so is this post that did.\n\nDid you know about `console.group`? `console.log({width})`? `console.table`? If not you're missing out.\n\nOn top of incredible tips in the Developer Tools it's shown how you can debug directly from VS.Code, which is really cool.",
+      "category": "FRONTEND",
+      "link": "https://christianheilmann.com/2021/11/01/developer-tools-secrets-that-shouldnt-be-secrets/"
+    },
+    {
+      "title": "Large files + Google Drive => Faster Please",
+      "description": "I for one have had the issue of downloading public weights for Machine Learning models from Google Drive from time to time.   \n`gdown` is hands down an amazing tool to download from Google Drive. Make sure to add it to your toolkit if you ever see yourself in this situation!",
+      "category": "RANDOM",
+      "link": "https://github.com/wkentaro/gdown"
+    },
+
+    {
+      "title": "Patterns in confusing explanations",
+      "description": "Julia Evans goes through common patterns in confusing explanation. Julia breaks down components like missing context, assumption about knowledge and bad examples.",
+      "category": "RANDOM",
+      "link": "https://jvns.ca/blog/confusing-explanations/"
+    }
+  ]
+}

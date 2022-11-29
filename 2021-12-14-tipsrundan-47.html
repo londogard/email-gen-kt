@@ -1,0 +1,84 @@
+<table border="0" cellspacing="0" width="100%">
+<tr>
+<td></td>
+<td width="800"><html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+  <body style="background: #fff;color: #000;font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif;line-height: 150%;margin: 0 auto;overflow-x: hidden;padding: 0.5rem 0.25rem;max-width: 800px;">
+    <div class="section" style="width: 100%;justify-content: center;">
+      <div class="header" style="margin: 0 auto;max-width: 800px;padding: 0.5rem 0.25rem;width: 100%;text-align: center;color: #edf2f4;background-color: #2b2d42;padding-top: 0;">
+        <p style="margin: 0.75rem 0;padding: 0;color: #8d99ae;">2021-12-14 - Issue #47 - <a href="https://buitsyd.com/" style="color: #920de9;font-weight: bold;text-decoration: none;">Blog ✍️</a></p>
+        <h1 style="margin: 0;text-align: center;line-height: 150%;"> Tipsrundan</h1>
+        <p style="margin: 0.75rem 0;padding: 0;color: #8d99ae;">Your biweekly newsletter of 'Tips' from <b>AFRY IT South</b> with ❤️ <br><small style="color: #999;">(🗳️ Tipsboxen (<a href="mailto:it.south.competence@afconsult.com?subject=Tipsbox&amp;body=Title%0D%0ASummary%0D%0ALink" style="color: #920de9;font-weight: bold;text-decoration: none;">Email</a>, <a href="https://github.com/afry-south/afry-south.github.io/issues/1" target="_blank" style="color: #920de9;font-weight: bold;text-decoration: none;">GitHub</a> &amp; <a href="https://buitsouth.slack.com/archives/CPK80KX0W" target="_blank" style="color: #920de9;font-weight: bold;text-decoration: none;">Slack</a>) - All tips are appreciated! 🙏)</small></p>
+      </div>
+    </div>
+    <div class="section" style="width: 100%;justify-content: center;">
+      <div class="aside" style="justify-content: center;text-align: start;padding: 0.5rem;">
+        <p style="text-align: center;width: 75%;margin: 0.75rem auto;padding: 0;">👋<i> Welcome to Tipsrundan! <br>git, data and it security sprinkled with some architecture - sounds good? Then dive in! 🤿 P.S. this is the final Tipsrundan before Christmas, see you next year!</i></p>
+<a href="https://buitsyd.com/tipsrundan/47" style="margin: 0.5rem auto;color: #920de9;font-weight: bold;text-decoration: none;"><button style="border-radius: 5px;font-size: medium;display: block;font-weight: bold;margin: 0.5rem auto;padding: 1rem 2rem;background-color: #2b2d42;border: 2px solid #d99ae;color: #fff;">Take me to pretty version!</button></a></div>
+    </div>
+    <hr style="background-color: #e9e9e9;border: none;height: 1.5px;width: 50%;margin: 0.5rem auto;">
+    <h1 style="margin: 0;text-align: center;line-height: 150%;">Supertipset 💡</h1>
+    <div class="section" style="width: 100%;justify-content: center;">
+      <div class="aside" style="justify-content: center;text-align: start;padding: 0.5rem;">
+        <h3 style="margin: 0;text-align: center;line-height: 150%;">git restore - Martin Furmanskis new (or old?) favorite</h3>
+<p style="margin: 0.75rem 0;padding: 0;">Do you need to restore files from staging in git?</p><p style="margin: 0.75rem 0;padding: 0;">We have <code style="background-color: #118bee0b;border-radius: 5px;color: #000;display: inline-block;margin: 0 0.1rem;padding: 0rem 0.5rem;text-align: left;">working directory</code>, <code style="background-color: #118bee0b;border-radius: 5px;color: #000;display: inline-block;margin: 0 0.1rem;padding: 0rem 0.5rem;text-align: left;">staging</code> and commited files if you've used <code style="background-color: #118bee0b;border-radius: 5px;color: #000;display: inline-block;margin: 0 0.1rem;padding: 0rem 0.5rem;text-align: left;">git add</code> and have something currently in <code style="background-color: #118bee0b;border-radius: 5px;color: #000;display: inline-block;margin: 0 0.1rem;padding: 0rem 0.5rem;text-align: left;">staging</code> and then do more changes.<br>
+This is sometimes a bit &quot;blocking&quot; as you want to revert to what we had in  <code style="background-color: #118bee0b;border-radius: 5px;color: #000;display: inline-block;margin: 0 0.1rem;padding: 0rem 0.5rem;text-align: left;">staging</code> and you're not sure how...</p><p style="margin: 0.75rem 0;padding: 0;">That's when <code style="background-color: #118bee0b;border-radius: 5px;color: #000;display: inline-block;margin: 0 0.1rem;padding: 0rem 0.5rem;text-align: left;">git restore</code> comes to the rescue!</p><p style="margin: 0.75rem 0;padding: 0;">The description from git-scm.com:</p><blockquote style="display: block;font-style: italic;line-height: 150%;max-width: 460px;text-align: center;"><p style="margin: 0.75rem 0;padding: 0;">Restore specified paths in the working tree with some contents from a restore source. If a path is tracked but does not exist in the restore source, it will be removed to match the source.</p><p style="margin: 0.75rem 0;padding: 0;">The command can also be used to restore the content in the index with --staged, or restore both the working tree and the index with --staged --worktree.</p><p style="margin: 0.75rem 0;padding: 0;">By default, if --staged is given, the contents are restored from HEAD, otherwise from the index. Use --source to restore from a different commit.</p></blockquote><p style="margin: 0.75rem 0;padding: 0;">For more information head to <a href="https://git-scm.com/docs/git-restore" style="color: #920de9;font-weight: bold;text-decoration: none;">git-scm.com/docs/git-restore</a>!</p>      </div>
+    </div>
+    <main style="margin: 0 auto;max-width: 800px;padding: 0.5rem 0.25rem;">
+      <hr style="background-color: #e9e9e9;border: none;height: 1.5px;width: 50%;margin: 0.5rem auto;">
+      <h1 style="margin: 0;text-align: center;line-height: 150%;">Godisboxen 🍭</h1>
+      <div class="section" style="width: 100%;justify-content: center;">
+        <div class="aside" style="justify-content: center;text-align: start;padding: 0.5rem;">
+          <h3 style="margin: 0;text-align: center;line-height: 150%;">[AFRY]  Lunchbox / Lightning Talk: Oscar Carlsson on Security 101</h3>
+<p style="margin: 0.75rem 0;padding: 0;">Make sure to <em>not</em> miss out on the Lightning Talk by Oscar Carlsson (IT Syd) on Wednesday 12:00 (15/12 2021)!</p><p style="margin: 0.75rem 0;padding: 0;">Minor description of the presentation:</p><blockquote style="display: block;font-style: italic;line-height: 150%;max-width: 460px;text-align: center;"><p style="margin: 0.75rem 0;padding: 0;">My name is Oscar Carlsson and I have almost 10 years’ experience working with IT security of which 5 was spent identifying and exploiting vulnerabilities for companies in a wide range of sizes and sectors.</p><p style="margin: 0.75rem 0;padding: 0;">In this presentation I will perform a short introduction and demonstration of some of the most common vulnerabilities used by hackers on the Internet.</p><p style="margin: 0.75rem 0;padding: 0;">The presentation will try to keep it as non-technical as possible in order for everyone regardless of prior knowledge can join in.</p></blockquote>          <hr style="width: 10%;background-color: #e9e9e9;border: none;height: 1.5px;margin: 0.5rem auto;">
+        </div>
+        <div class="aside" style="justify-content: center;text-align: start;padding: 0.5rem;">
+          <h3 style="margin: 0;text-align: center;line-height: 150%;">🔀 SQLMap - Automatic SQL injection and database takeover tool</h3>
+<p style="margin: 0.75rem 0;padding: 0;">Oscar Carlsson and IT Sec, name a more iconic duo at IT Syd.<br>
+Oscar introduced me to a really cool tool called SQLMap which tries to automatically hack a database by using heuristics and smart features to pen-test a DB.</p><p style="margin: 0.75rem 0;padding: 0;">Really, it's pretty amazing. Make sure to check it out if you like compsec!</p>          <hr style="width: 10%;background-color: #e9e9e9;border: none;height: 1.5px;margin: 0.5rem auto;">
+        </div>
+        <div class="aside" style="justify-content: center;text-align: start;padding: 0.5rem;">
+          <h3 style="margin: 0;text-align: center;line-height: 150%;">[AFRY]  Ho Ho Holy Data by Øredev</h3>
+<p style="margin: 0.75rem 0;padding: 0;">Did you miss out on Ho Ho Holy Data? Fear not!<br>
+Hampus has done a very rough summary of the event and is happy to discuss more in details with the interested ones!</p><a href="https://buitsyd.com/blog/2021/12/06/ho-ho-holy-data" target="blank" style="width: 100%;color: #920de9;font-weight: bold;text-decoration: none;"><small style="color: #999;">buitsyd.com↗</small></a>
+          <hr style="width: 10%;background-color: #e9e9e9;border: none;height: 1.5px;margin: 0.5rem auto;">
+        </div>
+        <div class="aside" style="justify-content: center;text-align: start;padding: 0.5rem;">
+          <h3 style="margin: 0;text-align: center;line-height: 150%;">🔀 When Is the Revolution in Architecture Coming?</h3>
+<p style="margin: 0.75rem 0;padding: 0;">Architecture, bland and gray according to many. When is the Revolution coming?
+<img src="https://images.currentaffairs.org/2021/10/Gaudi-1024x563.jpg" alt="image of building" style="max-width: 100%;"></p><p style="margin: 0.75rem 0;padding: 0;">Historically many beautiful buildings has been built, not so much anymore according to many.</p><p style="margin: 0.75rem 0;padding: 0;">Nathan argues that &quot;<em>We need to build places we can’t stop looking at. It will involve lots of plants.</em>&quot; and I think I agree.<br>
+The article itself lays down some good points and has beautiful pictures of places you might wish to travel once possible.<br>
+If you like architecture and good reading make sure to view this post!</p><a href="https://www.currentaffairs.org/2021/04/when-is-the-revolution-in-architecture-coming" target="blank" style="width: 100%;color: #920de9;font-weight: bold;text-decoration: none;"><small style="color: #999;">currentaffairs.org↗</small></a>
+          <hr style="width: 10%;background-color: #e9e9e9;border: none;height: 1.5px;margin: 0.5rem auto;">
+        </div>
+        <div class="aside" style="justify-content: center;text-align: start;padding: 0.5rem;">
+          <h3 style="margin: 0;text-align: center;line-height: 150%;">🔀 [StackOverflow] Introducing Content Health, a new way to keep the knowledge base up-to-date</h3>
+<p style="margin: 0.75rem 0;padding: 0;">StackOverflow are thrilled to announce a new and foundational feature, Content Health, that helps to intelligently identify and surface potentially outdated or inaccurate knowledge—content that needs to change.</p><p style="margin: 0.75rem 0;padding: 0;">I think it's a great initiative to keep data fresh and something that's dearly needed.<br>
+As libraries launch breaking versions it keeps getting harder to find the right functions, parameters or even API calls.</p><p style="margin: 0.75rem 0;padding: 0;">What do you think about the Content Health features?</p><a href="https://stackoverflow.blog/2021/11/17/introducing-content-health-a-new-way-to-keep-the-knowledge-base-up-to-date/" target="blank" style="width: 100%;color: #920de9;font-weight: bold;text-decoration: none;"><small style="color: #999;">stackoverflow.blog↗</small></a>
+          <hr style="width: 10%;background-color: #e9e9e9;border: none;height: 1.5px;margin: 0.5rem auto;">
+        </div>
+        <div class="aside" style="justify-content: center;text-align: start;padding: 0.5rem;">
+          <h3 style="margin: 0;text-align: center;line-height: 150%;">🎒 DuckDB quacks Arrow: A zero-copy data integration between Arrow and DuckDB</h3>
+<blockquote style="display: block;font-style: italic;line-height: 150%;max-width: 460px;text-align: center;"><p style="margin: 0.75rem 0;padding: 0;">TLDR: The zero-copy integration between DuckDB and Apache Arrow allows for rapid analysis of larger than memory datasets in Python and R using either SQL or relational APIs.</p></blockquote><p style="margin: 0.75rem 0;padding: 0;">A few of you have seen DuckDB mentioned previously, and there's a good reason as of why.<br>
+DuckDB is SQLite for columnar data. It's an amazing piece of technology.</p><p style="margin: 0.75rem 0;padding: 0;">For those that are not aware of (Apache) Arrow it's a project that is a in-memory data format optimized for analytical libraries.<br>
+It's blazing fast and can optimize column-data like crazy. Combining it with Parquet makes things even better..!</p><p style="margin: 0.75rem 0;padding: 0;">By combining DuckDB and Arrow you get an amazing result that speaks for itself in terms of performance.<br>
+Allowing streaming data can reduce total peak memory by infinite essentially (0.3GB vs 248GB in example) and speed by magnitudes (showcasing benchmark with 11x-3000x faster depending on use-case and filter).</p><p style="margin: 0.75rem 0;padding: 0;">Make sure to check this new zero-copy integration out!</p><a href="https://duckdb.org/2021/12/03/duck-arrow.html" target="blank" style="width: 100%;color: #920de9;font-weight: bold;text-decoration: none;"><small style="color: #999;">duckdb.org↗</small></a>
+          <hr style="width: 10%;background-color: #e9e9e9;border: none;height: 1.5px;margin: 0.5rem auto;">
+        </div>
+      </div>
+    </main>
+    <div class="footer" style="margin: 0 auto;max-width: 800px;padding: 0.5rem 0.25rem;width: 100%;text-align: center;color: #edf2f4;background-color: #2b2d42;">
+      <div class="section" style="width: 100%;justify-content: center;">
+        <p style="margin: 0.75rem 0;padding: 0;color: #8d99ae;"><b style="color: #8d99ae;">Thank you for this time see you in two weeks</b><br>- Hampus Londögård @ IT South</p>
+      </div>
+    </div>
+  </body>
+</html>
+</td>
+<td></td>
+</tr>
+</table>

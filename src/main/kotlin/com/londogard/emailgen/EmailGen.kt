@@ -1,3 +1,5 @@
+@file:OptIn(ExperimentalSerializationApi::class)
+
 package com.londogard.emailgen
 
 import io.ktor.client.*
@@ -6,17 +8,28 @@ import io.ktor.http.*
 import kotlinx.coroutines.runBlocking
 import kotlinx.html.*
 import kotlinx.html.stream.appendHTML
+import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import java.io.File
+import java.nio.file.Files
+import java.nio.file.Paths
 
 fun main() = runBlocking {
-    val filename = "2021-10-05"
-    generateMd(filename)
-    generateHtml(filename)
+    val filenameExt = Paths.get(javaClass.getResource("/issues")!!.toURI()).toFile().listFiles()!!.sortedBy { it.name }.last()
+    val filename = filenameExt.nameWithoutExtension
+    if (filenameExt.extension == "json") {
+        generateMdByJSON(filename)
+        generateHtmlByJSON(filename)
+    } else {
+        generateMdByMd(filename)
+        generateHtmlByMd(filename)
+    }
 }
 
-fun generateMd(filename: String) {
+
+
+fun generateMdByJSON(filename: String) {
     val issue = Json.decodeFromString<Issue>(EmailHelper.getFullFileText("/issues/$filename.json"))
     val mdFilename = "$filename-tipsrundan-${issue.number}.md"
     val md = """
@@ -26,7 +39,7 @@ description: "${issue.introduction}"
 slug: ${issue.number}
 authors: [hlondogard]
 ---
-_👋 Welcome to [Tipsrundan](https://afry-south.github.io/tipsrundan/$filename-tipsrundan-${issue.number}/)! A biweekly newsletter by AFRY IT South with ❤️_  
+_👋 Welcome to [Tipsrundan](https://buitsyd.com/tipsrundan/${issue.number}/)! A biweekly newsletter by AFRY IT South with ❤️_
 _${issue.introduction}_
 <!--truncate-->
 
@@ -42,14 +55,14 @@ ${
 ${issue.supertips.description}
 
 ---
-    """.trimIndent()
+""".trimIndent()
         } else ""
     }
 
 
 
 ## Godisboxen 🍭
-        
+    
 ${
         issue
             .godisboxen
@@ -61,16 +74,26 @@ ${
 
 **Thank you for this time see you in two weeks**   
 - Hampus Londögård @ AFRY IT South
-    """.trimIndent()
+""".trimIndent()
 
     File(mdFilename).writeText(md)
+}
+
+fun generateMdByMd(filename: String) {
+    val file = EmailHelper.getFullFileText("/issues/$filename.md")
+    val result =  Regex("title: \"Tipsrundan (\\d+)\"").find(file)
+    if (result ==  null) {
+        println("Require metadata to be filled")
+    }
+
+    File("$filename-tipsrundan-$result.md").writeText(file)
 }
 
 fun Item.toItemMd(): String {
     return """
 ### ${this.getEmojifiedTitle()}
 
-${this.description}
+${this.description.replace("([^\n])\n([^\n])".toRegex(), "$1  \n$2")}
 
 ${this.link?.toLink() ?: ""}
     """.trimIndent()
@@ -82,7 +105,28 @@ fun String.toLink(): String {
     return "[$simplifiedLink↗]($this)"
 }
 
-fun generateHtml(filename: String) = runBlocking {
+fun generateHtmlByMd(filename: String) {
+    val file = EmailHelper.getFullFileText("/issues/$filename.md")
+    val result =  Regex("title: \"Tipsrundan (\\d+)\"").find(file)
+    if (result ==  null) {
+        println("Require metadata to be filled")
+    }
+    val inlinedHtml = EmailHelper.markdownToHtml(file.split("---").drop(2).joinToString { "\n" })
+
+    val fullHtml = """
+<table border="0" cellspacing="0" width="100%">
+<tr>
+<td></td>
+<td width="800">$inlinedHtml</td>
+<td></td>
+</tr>
+</table>
+    """.trimIndent()
+
+    File("$filename-tipsrundan-$result.html").writeText(fullHtml)
+}
+
+fun generateHtmlByJSON(filename: String) = runBlocking {
     val issue = Json.decodeFromString<Issue>(EmailHelper.getFullFileText("/issues/$filename.json"))
     val htmlFilename = "$filename-tipsrundan-${issue.number}.html"
     val html = StringBuilder()
@@ -101,7 +145,7 @@ fun generateHtml(filename: String) = runBlocking {
                                 +issue.introduction
                             }
                         }
-                        a(href = "https://afry-south.github.io/tipsrundan/${htmlFilename.removeSuffix(".html")}") {
+                        a(href = "https://buitsyd.com/tipsrundan/${issue.number}") {
                             style = "margin:0.5rem auto;"
                             button {
                                 +"Take me to pretty version!"
@@ -112,7 +156,7 @@ fun generateHtml(filename: String) = runBlocking {
 
 
                 hr { }
-                createSuperTips(issue.supertips!!)
+                issue.supertips?.let { createSuperTips(it) }
                 createBody(issue)
                 createFooter()
             }
@@ -144,17 +188,12 @@ fun BODY.createHeader(issue: String, date: String) {
         div("header") {
             p {
                 +"$date - Issue #$issue - "
-                a(href = "https://afry-south.github.io/") { +"Blog ✍️" }
+                a(href = "https://buitsyd.com/") { +"Blog ✍️" }
             }
-            h1 {
-                a("https://afry-south.github.io/", target = "blank") {
-                    img(src = "https://raw.githubusercontent.com/afry-south/afry-south.github.io/master/afry.png")
-                }
-                +" Tipsrundan"
-            }
+            h1 { +" Tipsrundan" }
             p {
                 +"Your biweekly newsletter of 'Tips' from "
-                b { +"IT South@AFRY" }
+                b { +"AFRY IT South" }
                 +" with ❤️ "
                 br { }
                 small {
@@ -211,7 +250,7 @@ fun BODY.createFooter() = div("footer") {
 
 fun DIV.createCard(item: Item): Unit = div("aside") {
     h3 { +item.getEmojifiedTitle() }
-    unsafe { raw(EmailHelper.markdownToHtml(item.description)) }
+    unsafe { raw(EmailHelper.markdownToHtml(item.description.replace("([^\n])\n([^\n])".toRegex(), "$1  \n$2"))) }
 
     item.link?.let { link ->
         val simplifiedLink = link.replace("https?://(www.)?".toRegex(), "").split("/").first()

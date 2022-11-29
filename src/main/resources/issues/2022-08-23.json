@@ -1,0 +1,40 @@
+{
+  "number": 59,
+  "introduction": "Tipsrundan 59 is here! We got a new blog, updated website and competence incoming!",
+  "godisboxen": [
+    {
+      "title": "Cypress JS Testing E2E",
+      "description": "Are you doing front-end? Do you've any tips of E2E tests? We are currently looking for a good solution, and think Cypress will do. This is for a small Python Fullstack app.",
+      "category": "FRONTEND",
+      "link": "https://www.cypress.io/"
+    },
+    {
+      "title": "AWS SageMaker Immersion Day",
+      "description": "The analytics team had a AWS Immersion Day focusing on SageMaker and its capabilities. Daniel Odin and Maggie Tran did a quick write-up with differences compared to Azure **on our blog**!",
+      "link": "https://buitsyd.com/blog/2022/08/19/aws-immersion-day"
+    },
+    {
+      "title": "buitsyd.com getting a refresh",
+      "description": "Olle Johansson has taken a little time to make our buitsyd look nicer and the code look cleaner, find the updated look at buitsyd.com. Make sure to give Olle a thanks! 🤗",
+      "link": "https://buitsyd.com/"
+    },
+    {
+      "title": "Competence: Snowflake (teaser)",
+      "description": "Ever heard about Snowflake? Well we have.  \n\nFor anyone that doesn’t know what it is here’s a TL;DR:\n\n> - Democratize Data across your organization making it explorable\n> - Share Data easily\n> - Unify your data across solutions to easier comply with regulations such as GDPR\n> - Connect locally or globally\n> - Auto-scaling\n\n  \n\nObviously this is from a sellers perspective, but we thought that we might as well dive into it and figure out what it is.    \nMore information will come, but for now all you need to know is that Snowflake is coming and anyone that’s willing will go through a core course.",
+      "link": "https://www.snowflake.com/"
+    },
+    {
+      "title": "Competence: Polars and Altair (24/8)",
+      "description": "Tomorrows the day! Kontorsdag at Malmö office!  \nWe'll have a competence evening 13:00-15:00 focusing on exploring a incredibly efficent DataFrame library (polars) and simple graphing/plotting tool (altair).\n\nInterested? Ping Hampus Londögård to join!"
+    },
+    {
+      "title": "Artikelcirkel: Docker (30/8)",
+      "description": "At the Analytics South team we ran a 'Artikelcirkel' where we usually go through blogs or papers, but this time it's a bit different. We'll explore Docker and what it is briefly.  \nInterested? Reach out to Heidi Mach for an invite!"
+    },
+    {
+      "title": "Why React Re-Renders",
+      "description": "I'll simply take an excerpt to get your interested!\n\nSo, I'll be honest. I had been working professionally with React _for years_ without really understanding how React's re-rendering process worked. \uD83D\uDE05  \nI think this is true for lots of React developers. We understand enough to get by, but if you ask a group of React developers a question like _“What triggers a re-render in React?”_, you'll likely get a handful of different hand-wavy answers.",
+      "link": "https://www.joshwcomeau.com/react/why-react-re-renders/"
+    }
+  ]
+}

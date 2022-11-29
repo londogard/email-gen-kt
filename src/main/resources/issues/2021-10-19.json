@@ -1,0 +1,24 @@
+{
+  "number": 43,
+  "introduction": "For todays Tipsrundan it's pretty short. It's a long time ago I received any tips from you (the reader) and as such this one is kept small. I hope file-sync, hacking hardware or checkboxes is your thing!",
+  "godisboxen": [
+    {
+      "title": "Syncthing - Syncing differently",
+      "description": "Open (Source|Protocol|Development) and private continuous file synchronization made simple. Personally I use Syncthing to sync my markdown notes and it works very well.  \nIf you wish to make it more complex you can add 1-way sync or bidirectional. Add custom filters and much more!",
+      "category": "RANDOM",
+      "link": "https://syncthing.net/"
+    },
+    {
+      "title": "Hackers Unite - The first iPhone with USB C",
+      "description": "Kenny Pi is pretty famous in the hardware hacking circles. In this video he showcase the iPhone he modified to use USB-C. Have you ever hacked/modded hardware like this? Make sure to share on Slack ([#technical_discussions](https://buitsouth.slack.com/archives/C019L2218Q6))",
+      "category": "RANDOM",
+      "link": "https://www.youtube.com/watch?v=SAekbJf4Gsw"
+    },
+    {
+      "title": "Bryan keep making things out of checkboxes",
+      "description": "This might just be one of the most random things I've included this far. Imagine combining a visual computer lab from school with checkboxes. Then imagine doing that now. That's essentially what we have, some really fun ways to visualize and interact with checkboxes (creating graphics!).",
+      "category": "RANDOM",
+      "link": "https://www.bryanbraun.com/2021/09/21/i-keep-making-things-out-of-checkboxes/"
+    }
+  ]
+}

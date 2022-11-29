@@ -1,0 +1,36 @@
+{
+  "number": 64,
+  "introduction": "The weeks flies by and we're at Tipsrundan 64!",
+  "godisboxen": [
+    {
+      "title": "---MOVED--- Foo Café: AFRY (10/11) - \"TIMESERIES + DATA SCIENCE = <3\"",
+      "description": "(10th of November, previously 3rd) We'll do two talks on Timeseries. One by Gaston Holmén and one by Hampus Londögård.  \n- Things we've learned working with a lot of Timeserieses  \n-Surface classification with radar data\n\nOh, and there's free Pizza & Drinks! Make sure to join 🥳",
+      "category": "MACHINELEARNING",
+      "link": "https://foocafe.org/event/timeseries-data-science"
+    },
+    {
+      "title": "Python 3.11 - Speedups and Variadic Generics!",
+      "description": "Taken from a twitter thread;\n\n1. Faster CPython, 10-60% faster and 25% on average compared to Python 3.10\n2. Error Handling\n\n- Better error messaging (showing exact location of error)\n- Grouped exceptions available!\n- Possible to add notes to an existing error through `e.add_note(<insert-note>)` \n\n4. Type Hints\n\n- Now has even better support\n- Variadic Generics!\n\n    ```python\n    Shape = TypeVarTuple('Shape')\n    Batch = NewType('Batch', int)\n    Channels = NewType('Channels', int)\n    \n    def add_batch_axis(x: Array[*Shape]) -> Array[Batch, *Shape]: ...\n    def del_batch_axis(x: Array[Batch, *Shape]) -> Array[*Shape]: ...\n    def add_batch_channels(\n      x: Array[*Shape]\n    ) -> Array[Batch, *Shape, Channels]: ...\n    \n    a: Array[Height, Width]\n    b = add_batch_axis(a)      # Inferred type is Array[Batch, Height, Width]\n    c = del_batch_axis(b)      # Array[Height, Width]\n    d = add_batch_channels(a)  # Array[Batch, Height, Width, Channels]\n    \n    ```",
+      "category": "MACHINELEARNING",
+      "link": "https://twitter.com/marktenenholtz/status/1584927749168250881?s=20&t=fB4tMlLuzJE7h1vaGTA1lA"
+    },
+    {
+      "title": "From 0 to 10 million Kotlin LOC at META",
+      "description": "META shares their experience of translating their Java code into Kotlin. I’m not sure I’d be proud about having 10 million LOC as that’s a massive beast of a code-base, but they sure have learned a lot on the way!",
+      "category": "BACKEND",
+      "link": "https://engineering.fb.com/2022/10/24/android/android-java-kotlin-migration/"
+    },
+    {
+      "title": "Keynote: Why web tech is like this - Steve Sanderson",
+      "description": "Wanna learn the history of the web? From CERN to todays crazy WASM modules?\nThen I found the thing for you, Steve is a phenomenal speaker with live-coding (even in the old OS:ses like Windows 98 etc). \nIt’s hard to understate how well done this presentation was, I highly recommend it to all of you!",
+      "category": "FRONTEND",
+      "link": "https://www.youtube.com/watch?v=3QEoJRjxnxQ&themeRefresh=1"
+    },
+    {
+      "title": "State of CSS 2022",
+      "description": "A lot of us know that CSS is now able to do magical things, with great performance as it’s built into the browsers! \n\nEarlier webdeveloper had to rely on JS to do crazy things to be able to transition things and much more, which is now freely available in CSS. \n\n  \n\nIf I’m to be honest, as a non webdeveloper it’s really hard to follow what CSS can and cannot do today, and that’s why I think this presentation is in place!",
+      "category": "FRONTEND",
+      "link": "https://web.dev/state-of-css-2022/"
+    }
+  ]
+}

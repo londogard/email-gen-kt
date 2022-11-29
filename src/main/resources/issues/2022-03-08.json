@@ -1,0 +1,51 @@
+{
+  "number": 50,
+  "introduction": "Tipsrundan 50 is finally here 🥳 The previous issue got scrapped because of personal reasons taking all my time. But Tipsrundan is back stronger than before!",
+  "supertips": {
+    "title": "Courses, courses everywhere!",
+    "description": "No one is happier than me to announce that more and more people are picking up courses! \uD83D\uDCDA\n\nInterested in doing a course? Or joining one of the ones below? Reach out to Hampus Londögård.\n\n- Advanced Natural Language Processing\n  - Nellie is doing a advanced course on Natural Language Processing which includes Deep Learning approaches and deploying models on AWS.  \n- Deep Learning by fast.AI\n  - Heidi Mach is growing her Deep Learning knowledge by doing the fast.AI course that goes through everything, from building a Linear Block to State-of-the-Art networks.  \n- Flutter\n  - Dennis Londögård & Erik Rosengren  tries to bend the rules and apply frontend on all platforms at once. One codebase to rule the all. It's flutter time.! \uD83D\uDE0E  \n- AWS\n  - Oscar Odeståål has set his eyes on AWS and wants to tame the wild cloud."
+  },
+  "godisboxen": [
+    {
+      "title": "Blogging is catching \uD83D\uDD25",
+      "description": "Our blog has picked up some steam, with multiple new blogs there has not been a better moment to go through the latest ones!\n\n- Dimuthu Perera _MonoRepos with NX_\n- Ronnie Heimer _Vilka värderingar låter du påverka ditt arbete?_\n- Hampus Londögård _KotlinJS, ONNX and Deep Learning in the browser_",
+      "category": "REGIONAL",
+      "link": "http://buitsyd.com/"
+    },
+    {
+      "title": "Scala Love in the City aftermath",
+      "description": "Now that the dust has settled. What was your favorite presentation? Share on Slack!",
+      "category": "REGIONAL"
+    },
+    {
+      "title": "Illustrations, Design & Making Things Pretty™ - the ever long problem as a Backender (...& perhaps others).",
+      "description": "Have you ever had a great idea but felt let down by the Terminal UI you built?  \nDo you feel like most designs you find are a one-off, which you cannot build into something cohesive or fitting your colour-scheme?  \n \nIRA Design by Creative Tim is one way to solve this issue. With a colour-selection tool, open free license you're good to go for your project.  \n\n...Do you know another free great art-place? Please share on Slack!",
+      "category": "RANDOM",
+      "link": "https://iradesign.io/"
+    },
+    {
+      "title": "Android 13 virtualization lets Android run Windows 11",
+      "description": "Windows now runs Android, Google said \"Hold my beer\" and made Android run Windows 11!  \nPreviously it was possible to run Linux through `termux` (awesome app, and btw I run Arch) but with Android 13 Google enabled virtualization.  \nThis change was most likely not done to enable this kind of OS-virtualization but rather to improve security, but I'll take the side-effect!\n\nExcerpt:\n\n> As far as I can tell, we can pretty much get full EL2 on production devices now. Protected KVM is optional and can be enabled on a per-VM basis, but for non-protected VMs, it looks like full KVM functionality is available.\n",
+      "category": "RANDOM",
+      "link": "https://www.cnx-software.com/2022/02/14/android-13-virtualization-lets-pixel-6-run-windows-11-linux-distributions/"
+    },
+    {
+      "title": "Psychological safety is critical for high-performing teams",
+      "description": "Does your team celebrate success stories, failure or both?  \nIf not you should!\n\nTo embrace risks, failures and shots in the dark is not only something I myself believe required to move forward but also psychology and risk management stands behind this. That is theoretical approaches also propose the same.\n\nTo allow failures means to allow new ways of thinking, being brave, and finding future paths.  \nTo not allow failures lead to a culture of silence, which will be a house of cards ready to fall any second. Like a domino brick pushed, donezo.\n\nStack Overflows blog goes deeper into this and how to build a space of reflection, safety and to be the best.\n\n> An introduction to psychological safety and ways to evaluate the level of safety in your organization.",
+      "category": "SOFTVALUES",
+      "link": "https://stackoverflow.blog/2022/01/27/psychological-safety-is-critical-for-high-performing-teams/"
+    },
+    {
+      "title": "How do Mac's get on the network so fast?",
+      "description": "Following last weeks great program recommendation to shut that pesky Bluetooth down on Macs that's are sleeping our very own Fredrik Strandin shared a very interesting story.\n\nIt seems Apple has used similar behaviour to quickly connect to network, which might end up in chaos on large networks \uD83E\uDD2F\n",
+      "category": "RANDOM",
+      "link": "https://cafbit.com/post/rapid_dhcp_or_how_do/"
+    },
+    {
+      "title": "Google is bringing Chrome OS to PCs and Macs",
+      "description": "Chrome OS Flex is a new version of Chrome OS designed to run on PCs and Macs. It is designed for businesses and schools and can be installed within minutes. The OS looks and feels identical to Chrome OS on a Chromebook, but some features may be dependent on the hardware that it is running on. Chrome OS Flex is still in early access mode. It can be booted from a USB drive without being installed",
+      "category": "RANDOM",
+      "link": "https://cloud.google.com/blog/products/chrome-enterprise/chrome-os-flex"
+    }
+  ]
+}

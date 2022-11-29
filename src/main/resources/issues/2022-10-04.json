@@ -1,0 +1,45 @@
+{
+  "number": 62,
+  "introduction": "Today we got Java 19, Akka, Foo Café and much more!",
+  "godisboxen": [
+    {
+      "title": "Foo Café: Data Alliance",
+      "description": "_TWO TALKS ON DATA_   \n\nNext week (12/10 17:30) there’ll be a new Data Alliance event at Foo Café. This time there’ll be **two talks on data**  presented by **Hampus Londögård @ AFRY** and **Johnny Dang @ DataDao.**\n\nFoo Café is structured in the following way:\n\n- Presentation(s)\n- (Free) Food, Drinks & Mingling\n\nIt’s really awesome as you get to meet likeminded people who’re interested in the same tech as you’re!\n\n  \n\nMake sure to join!",
+      "category": "MACHINELEARNING",
+      "link": "https://foocafe.org/event/two-talks-data"
+    },
+    {
+      "title": "Snowflake Study Circle (BU South) ❄️",
+      "description": "Did you miss out on the Snowflake Study Circle? If you’re interested in joining the Snowflake certification make sure to reach out to Hampus Londögård."
+    },{
+      "title": "Quarto",
+      "description": "I’m in love! \uD83D\uDE0D\n\nQuarto is an amazing tool to build reports/books, blogs or presentations!\n\n**What is Quarto?**   \n\nQuarto® is an open-source scientific and technical publishing system built on [Pandoc](https://pandoc.org/)\n\n**In other words**  \nQuarto is a system which allows you to build interactive documents that **can execute Python, R, Julia,**  etc including dynamic rendering of plots (if website-based).  \nQuarto allows you to **combine the best of LaTeX with the simplicity of markdown,** \n\n- Bibtex? ✅ \n- Figure/Table references? ✅ \n- Beautiful documents? ✅ \n- Math? ✅ \n- Advanced layouts in a simple way? ✅ \n- A rocket flying to the moon? ✅\n\n  \n\nBut really. It’s awesome! Make sure to check it out!\n\nP.S. one of our clients is soon receiving their report written through Quarto! \uD83E\uDD13",
+      "category": "RANDOM",
+      "link": "https://quarto.org/"
+    },
+    {
+      "title": "Akka, Pekko or what?",
+      "description": "The ones of us who enjoys writing Scala are most likely sad to hear about the license changes that Akka recently announced.  \n\nThe community has been fierce even if the licensing changes might make sense from a (lightbend’s) business perspective, and recently there’s been an initiative started to build a Open Source version of Akka named [Pekko](https://cwiki.apache.org/confluence/display/INCUBATOR/PekkoProposal) that’d reside under the Apache umbrella. Even with this initiative the future is unsure as first-movers advantage is a real thing and Pekko might simply slide into nothingness..\n\nWhat’s your opinion?",
+      "category": "BACKEND",
+      "link": "https://www.lightbend.com/blog/why-we-are-changing-the-license-for-akka"
+    },
+    {
+      "title": "Java 19 🥳",
+      "description": "Omg omg omg! It’s here, it’s really here!  \n\nVirtual Threads. Nuff’ said!\n\n  \n\nReally, this update is **huge** and **Project Loom is finally merged**. What does it mean in practice though?  \nVirtual Threads leans close to _goroutines in golang_ which is near-zero-overhead threads.   \nWhy is it huge though? Because this update affect ALL current thread usage across the JVM. That means your old blocking API’s are now _much more efficient_.   \n  \nIs it only Java with it’s old blocking API that has gains to do? No, all new things like reactive approaches can tap into this power-source. So can Scala, Kotlin and more!",
+      "category": "BACKEND",
+      "link": "https://alexn.org/blog/2022/09/21/java-19/"
+    },
+    {
+      "title": "Ads, Youtube and other things",
+      "description": "I think the intro tells the grand story;  \n\n> The biggest trick the Devil ever played was convincing people that online stuff is free. But the Devil always collects, sooner or later—and we are starting to learn the actual terms of this cursed deal.",
+      "category": "RANDOM",
+      "link": "https://tedgioia.substack.com/p/youtube-may-force-you-to-watch-10"
+    }
+    ,{
+      "title": "Outdated vs. Complete",
+      "description": "The App Stores are known to be vile in many cases. Here’s one such case where a Indie-Developer almost reach a soul-crushing amount of work to keep their apps up-to-date with the rules and guidelines of App Store(s).\n\nIf an app is complete the maintenance should, in my opinion, be close-to-zero but that’s not the case. Apple and others keep pushing more and more work onto the developers and they’re not afraid to deactivate apps making it even harder to get back in the game.\n\nRead more about these problems in this great write-up!",
+      "category": "RANDOM",
+      "link": "https://vivqu.com/blog/2022/09/25/outdated-apps/"
+    }
+  ]
+}

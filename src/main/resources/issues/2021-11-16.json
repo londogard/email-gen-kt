@@ -1,0 +1,33 @@
+{
+  "number": 45,
+  "introduction": "Tipsrundan is back! \uD83D\uDDDE️  \nAfter DevFest 2021 conferences is all over my mind and in this Tipsrundan I wish all of you to summarize the best conferences available!",
+  "supertips": {
+    "title": "What's New In Python?",
+    "description": "Python 3 was launched in 2008, officially becoming the default language starting 2020.  \nA lot of us know about most relevant changes in Python 3 like basic typing, multiprocesses, new utf-8 strings, print as a function, and much more.\n\nBut what has happened since? A lot. Pattern-Matching, simple Union Types, F-strings and much more!  \nIn [this blog](https://buitsyd.com/blog/2021/11/03/whats-new-in-python) by Hampus Londögård you'll learn the most essential parts!"
+  },
+  "godisboxen": [
+    {
+      "title": "Question of the Day: What is the best conference(s)?",
+      "description": "Do you know about an awesome conference?  \nI'm looking at creating the Conference List and I'm now trying to find the best ones!\n\nPlease make sure to share on Slack (#bu_competence) or email me (hampus.londogard@afry.com), with a short summary if possible!",
+      "category": "REGIONAL"
+    },
+    {
+      "title": "Excalidraw, Excalideck & great painting!",
+      "description": "Do you like to draw?  \nDo you miss MS Paint on Linux and MacOS?  \n\nThen [jspaint](https://jspaint.app/) is for you!  \n...But do you wish to take it one step further? Paint was released the first time in 1985, and even with its updates it's pretty dated after all.  \n\nIntroducing [Excalidraw](http://excalidraw.com/)! Excalidraw is a really slick online \ndrawing-pad which enables you to draw shapes and text both in \"straight computerish\" manner and a \"hand-made\" one.\n![excalidraw image](https://pakstech.com/images/blog/2020/01/diagrams.png)\n\nExtending its usecase we got [Excalidec](https://excalideck.com/) which allows you to create a presentation from multiple \nExcalidraws, directly in the brower.  \nReally Excalidraw is smooth and I think the graphics give you a better feel!\n\nEnjoy drawing simple things again!  \nExtra Reading: [Why is Excalidraw so fucking good?](https://offbyone.us/posts/why-is-excalidraw-so-good).",
+      "category": "RANDOM",
+      "link": "http://excalidraw.com/"
+    },
+    {
+      "title": "Cooking for Engineers \uD83D\uDC69\u200D\uD83C\uDF73",
+      "description": "Do you like to cook and bake? Do you want to make it a little bit more engineery, i.e. efficient and simple?  \nWorry no more! cookingforengineers.com actually have a lot of recipes in a format that I instantly fell in love with! See below.\n\n![image](https://user-images.githubusercontent.com/7490199/141444382-6ef50e11-b7d2-43e9-bf4a-25f0a44fad2d.png)\n\nAwesome right?",
+      "category": "RANDOM",
+      "link": "http://www.cookingforengineers.com/recipe/108/Banana-Nut-Bread"
+    },
+    {
+      "title": "How to build a CPU (Picture Based)",
+      "description": "Have you ever wondered how to cook your own CPU at home? Well... It might not be possible but Robert Elder makes a damn good try!  \nFunny, light and visual blog that's certainly worth a read!",
+      "category": "RANDOM",
+      "link": "https://blog.robertelder.org/how-to-make-a-cpu/"
+    }
+  ]
+}

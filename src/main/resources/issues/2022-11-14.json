@@ -1,0 +1,42 @@
+{
+  "number": 65,
+  "introduction": "The weeks flies by and we're at Tipsrundan 65!",
+  "godisboxen": [
+    {
+      "title": "Manifesto for Minimal Software Engineers",
+      "description": "Do we agree or not? I think especially _Pareto's Law_ (80% of results come from 20% of the features) is a law that might uphold, or maybe not. Sometimes my initial feel is that without certain features it's actually worth 0%.",
+      "category": "RANDOM",
+      "link": "http://minifesto.org/"
+    },
+    {
+      "title": "The Birth & Death of JavaScript (PyCon 2014)",
+      "description": "If you've missed this amazing talk you're in for a ride!\n\n> This science fiction / comedy / completely serious talk traces the history of JavaScript, and programming in general, from 1995 until 2035.\n\n![](https://lh3.googleusercontent.com/5M7lhTvBZtyB9fm_SVLW7ENcJxV3tXYNkY2GlxQbH9JO6TkYnaXSNiW05UTE_78X2mQXcE5WjZGXH0BLSUriK1RTg7TviUDCGIZEHh3lW-28-tGbvltPthq3pv7b79PVKwe0YWueu8gsEeuoj3aM5deBkDP1vxGgQkYX745wfyobEfthJuqKaBqm__1kWZ2waA7Rt6lPSNbDyBC707onhX2-XXQza0OLDnajrr6XimV4fAKqwGyNpqm5W1d7VraCRrXKQmiM6LMusEs-Xfz2e7Ag8Iqw-Y5URXyPMoD4rwEPOjOLz0Ju6mWEPEUgEH9WZymNeTEDd1MasEIyzZ93qRV4-uLstbgDySDRuKxy2WTQ27Ssz-6h-PjKaQTezln-TtaxupJ4b28yWCA8_jnoU5Hz8R_NssByZowP6-xq-r83-pM7WLf_UR4a12DzpBKHGQdU5yzslpnPcPH1iTvx0P7739-NB-g7MjU7iBWlOCpWrD0OXJ469uyOT89wwBpQxz_XOVrdxznmF6aTOzPV-2Fv6QsiX0_R1RvbeCTUZJQ4psrBJ1OClKIWGspfR69j6FFADvPlN_y8587wECTlLR12jtDiBGmvpvmhHc7RZDnz0QMYkyGzfRsyk6OV9LfzHcmEi12j2vI8EiP1vWTAT_82O-jaJ7bpig8D20fRjTJpr0o2YisVfnCTQ1y9s2gnQz8xJYvzaXD6bFLw8KVFdkHUBQWQMlE3uG5_2U3IYm_W9j-paMpAFox9gumaxNyK1Apd9jSawa3StjtFNV9WsVFwPIU6lrVZQ0Sdid4-qQdhXc8seWwrWJwCDDBZf9AFwv2ioL2gFtZA4gXEWqShwHrV5ub1TRGN9NTXSgn3iFdlXNLpQ-jo-7vZC2qvyTghGt3p9lvQaqFXHKz_hGNkORIO4eXq89-4W6ps6vRZroWlqIR9Cw=w2400-h1080-no?authuser=0)",
+      "category": "RANDOM",
+      "link": "https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript"
+    },
+    {
+      "title": "Why Functional Programming Should Be the Future of Software Development",
+      "description": "I agree with the overall sentiment of this blog, but then of course I'm biased. \nI believe that embracing Functional Programming over all will lead to a lot of happiness among coders, as the code becomes much easier to reason about the moment you \"get it\".\n\n> **Imagine if every time you ran your microwave, your dishwasher’s settings changed from Normal Cycle to Pots and Pans. In software, this kind of thing goes on all the time.**\n\nThis quote really stuck with me, it's perfect!",
+      "category": "RANDOM",
+      "link": "https://spectrum.ieee.org/functional-programming"
+    },
+    {
+      "title": "Why does zsh start slowly",
+      "description": "- I think this blog was an interesting read, especially where I learned about how to profile a shell (zsh in this case). Never even thought about it previously!  ",
+      "category": "RANDOM",
+      "link": "https://pickard.cc/posts/why-does-zsh-start-slowly"
+    },
+    {
+      "title": "(JVM) Seeing through hardware counters: a journey to threefold performance increase",
+      "description": "Optimizing Native Byte Code to improve the JVM latency? Count me in!\n\nThese kinds of blogs are like candy to me, I love it!\n\n> We tend to think of modern JVMs as highly optimized runtime environments, in many cases rivaling more “performance-oriented” languages like C++. While it holds true for the majority of workloads, we were reminded that performance of certain workloads running within JVMs can be affected not only by the design and implementation of the application code, but also by the implementation of the JVM itself.",
+      "category": "RANDOM",
+      "link": "https://netflixtechblog.com/seeing-through-hardware-counters-a-journey-to-threefold-performance-increase-2721924a2822"
+    },
+    {
+      "title": "Show HN: Docker in the browser using x86-to-WASM recompilation",
+      "description": "To a nerd this is incredibly cool! Running docker inside the browser using WASM, wow! \uD83E\uDD13  \nYou can run multiple OS:es!",
+      "category": "RANDOM",
+      "link": "https://news.ycombinator.com/item?id=33424299"
+    }
+  ]
+}

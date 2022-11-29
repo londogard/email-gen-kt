@@ -1,0 +1,45 @@
+{
+  "number": 57,
+  "introduction": "Tipsrundan 57",
+  "godisboxen": [
+    {
+      "title": "Foo Café: Data Alliance First Event (MLOps, Cowait & Domain Driven Design)",
+      "description": "- Free beer ✅\n- Free pizza ✅\n- Interesting event ✅\n\nFoo Café introduces their newest User Group - _Data Alliance_  \n\nI (Hampus Londögård) think this event seems incredibly exciting and will join in person!  \nIt’ll focus on three (3) topics, MLOps, Cowait (”Kubernetes made simple”) and Domain Driven Design combined with Data.\n\n  \n\nInterested to join? Simply sign up, it’s free!  \nLet’s join forces and show AFRY’s face in the Data sphere of Malmö!",
+      "link": "https://foocafe.org/event/data-alliance-first-event"
+    },
+    {
+      "title": "Alternative Google Search: Brave Search",
+      "description": "[Brave Search](https://search.brave.com/) has previously been recommended, and there exists some other Search Engines that are really cool too. \n\n1. [Kagi](https://kagi.com/) a paid really good and fast search engine\n2. [You](https://you.com/) a free really cool search engine which builds on a new layout. I never got used to it, but it’s interesting with the dense layout. A lot of people claim to enjoy it a lot!\n\nAnyhow, back to Brave they’ve now added _Goggles_ which allows you to add rules, filters and alter search rankings. This is really cool and seems to be close to what Kagi did with their Lenses.\n\nHow about a _Goggle_ that _Prioritize pages often used on ycombinator_? It’s possible and [exist](https://github.com/brave/goggles-quickstart/blob/main/goggles/hacker_news.goggle).\n\nWanna learn more about the “_Goggle-language”_ to write your own? See [this](https://github.com/brave/goggles-quickstart/blob/main/goggles/quickstart.goggle).\n\nAdding Goggles feels like a superpower!  \uD83E\uDDB8\u200D♂️",
+      "link": "https://news.ycombinator.com/item?id=31837986"
+    },
+    {
+      "title": "C#: IEnumerable, yield return, and lazy evaluation",
+      "description": "Lazy evaluations are wonderful, although sometimes tricky, and it was really interesting reading up on how C# solves this. ",
+      "link": "https://stackoverflow.blog/2022/06/15/c-ienumerable-yield-return-and-lazy-evaluation/"
+    },
+    {
+      "title": "Cache made consistent: Meta’s cache invalidation solution",
+      "description": "Caching is much harder than you might think, as soon as you scratch under the surface you’ll notice all weird edge-cases and scenarios that never was expected. Even large companies such as Meta (previously Facebook) has issues, and they’ve set up a way  as soon as you scratch the surface, and Meta (previously Facebook) has a way of solving it. Very interesting and well written blog by engineering.fb.com!",
+      "link": "https://engineering.fb.com/2022/06/08/core-data/cache-invalidation/"
+    },
+    {
+      "title": "Ante - A functional low-level language",
+      "description": "This is much cooler that I expected! Do you like functional languages and low-level code? Then this is a must!",
+      "link": "https://antelang.org/"
+    },
+    {
+      "title": "Deploying Transformers on the Apple Neural Engine - Apple Machine Learning Research",
+      "description": "Optimizations? Machine Learning? Math? I’m drooling!\n\nApple has made some really impressive work by doing something that perhaps not most of us do, trying to find the simple wins.  \n\nThey spent some time on the math and neurons validating what types of optimizations could be done before moving it onto the Neural Chip on the iPhone. Their Transformer model compared to the baseline HuggingFace ended up having forward-passes, inference-mode only uses forward pass, that is 10x faster and peak-memory that is 14x lower on an iPhone 13.\n\nWhat’s even more interesting? They looked at power usage! On iPhone 13 they can optimize speed (3.47ms @ 0.454W) or battery (9.44ms @ 0.072W).  \n\nWanna learn more? Check the blog out!",
+      "link": "https://machinelearning.apple.com/research/neural-engine-transformers"
+    },
+    {
+      "title": "How to build undo/redo in a multiplayer environment - Liveblocks blog",
+      "description": "Interested in learning more about game development? I think Liveblocks gave a great introduction to how you could implement _Undu/Redo._",
+      "link": "https://liveblocks.io/blog/how-to-build-undo-redo-in-a-multiplayer-environment"
+    },
+    {
+      "title": "More tips",
+      "description": "More tips for the autumn to come!\n\n All help is greatly appreciated to keep this paper diverse. Myself I'm a JVM+Deep Learning nerd who loves most code, but frontend/C#/compsci etc is not something that hits my flow too often.\n\nIf you want to share even more news in your domain make sure to join #learn-*"
+    }
+  ]
+}

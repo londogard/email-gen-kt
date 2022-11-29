@@ -1,0 +1,34 @@
+{
+  "number": 49,
+  "introduction": "Tipsrundan 49 (!), nearing 50 and still going strong. 💪",
+  "supertips": {
+    "title": "Advanced Natural Language Processing",
+    "description": "Nellie Cerleke is gonna do a course on the 'competence-bank' with some extra hours included, are you interested? Reach out to Hampus Londögård and we'll get it set up! 📚"
+  },
+  "godisboxen": [
+    {
+      "title": "Feeling Inspired? - Ask HN: Programming talks that made something click for you? ",
+      "description": "Hacker News, the place to be, had a great discussion thread about the programming talks that made something click.  \nThe moment something clicks is almost a bit philosphical to me, sometimes things clicks that didn't before - why? Is it based on the current context of life and experiences? Is it that someone simply explains something the right way? What do you think? Post on Slack to create a discussion!",
+      "category": "RANDOM",
+      "link": "https://news.ycombinator.com/item?id=29032176"
+    },
+    {
+      "title": "MacBook + Bluetooth + Sleeping mode = steals my headphones",
+      "description": "Anyone else that is annoyed about your bluetooth headphones or even speakers being connected to the sleeping MacBook?\n\nI for one was. I could not force my smartphone to be the connected party, unless I walked 30 meters away. One day I finally google'd and found the answer... 'BlueSnooze'!  \nSimply install this program and it'll handle it for you. Back to the music 🎧",
+      "category": "RANDOM",
+      "link": "https://github.com/odlp/bluesnooze/"
+    },
+    {
+      "title": "Talk of the month: Wordle, simply implemented in Kotlin using JavaFX",
+      "description": "Do you wish to build your own Wordle? Perhaps earning a few millions through a buy-out like the original Worlde? Here you can either follow a implementation or be inspired to build your own!",
+      "category": "FRONTEND",
+      "link": "https://www.pragmaticcoding.ca/javafx/wordle"
+    },
+    {
+      "title": "Building a modern home in the forest",
+      "description": "A few out there are currently looking at building or buying houses. In this blog you'll not only get inspired but perhaps also a bit in awe.\n\nA beautiful home in a inspiring location (although lonely perhaps).",
+      "category": "RANDOM",
+      "link": "https://johnnyrodgers.is/building-a-modern-home"
+    }
+  ]
+}

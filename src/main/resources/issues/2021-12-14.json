@@ -1,0 +1,46 @@
+{
+  "number": 47,
+  "introduction": "git, data and it security sprinkled with some architecture - sounds good? Then dive in! \uD83E\uDD3F P.S. this is the final Tipsrundan before Christmas, see you next year!",
+  "supertips": {
+    "title": "git restore - Martin Furmanskis new (or old?) favorite",
+    "description": "Do you need to restore files from staging in git?\n\nWe have `working directory`, `staging` and commited files if you've used `git add` and have something currently in `staging` and then do more changes.  \nThis is sometimes a bit \"blocking\" as you want to revert to what we had in  `staging` and you're not sure how...\n\nThat's when `git restore` comes to the rescue!\n\nThe description from git-scm.com:\n> Restore specified paths in the working tree with some contents from a restore source. If a path is tracked but does not exist in the restore source, it will be removed to match the source.\n> \n> The command can also be used to restore the content in the index with --staged, or restore both the working tree and the index with --staged --worktree.\n>\n> By default, if --staged is given, the contents are restored from HEAD, otherwise from the index. Use --source to restore from a different commit.\n\nFor more information head to [git-scm.com/docs/git-restore](https://git-scm.com/docs/git-restore)!"
+  },
+  "godisboxen": [
+    {
+      "title": "Lunchbox / Lightning Talk: Oscar Carlsson on Security 101",
+      "description": "Make sure to _not_ miss out on the Lightning Talk by Oscar Carlsson (IT Syd) on Wednesday 12:00 (15/12 2021)!\n\nMinor description of the presentation:\n>My name is Oscar Carlsson and I have almost 10 years’ experience working with IT security of which 5 was spent identifying and exploiting vulnerabilities for companies in a wide range of sizes and sectors.\n> \n>In this presentation I will perform a short introduction and demonstration of some of the most common vulnerabilities used by hackers on the Internet.\n>\n> The presentation will try to keep it as non-technical as possible in order for everyone regardless of prior knowledge can join in.",
+      "category": "REGIONAL",
+      "afry": true
+    },
+    {
+      "title": "SQLMap - Automatic SQL injection and database takeover tool",
+      "description": "Oscar Carlsson and IT Sec, name a more iconic duo at IT Syd.  \nOscar introduced me to a really cool tool called SQLMap which tries to automatically hack a database by using heuristics and smart features to pen-test a DB.\n\nReally, it's pretty amazing. Make sure to check it out if you like compsec!",
+      "category": "RANDOM"
+    },
+    {
+      "title": "Ho Ho Holy Data by Øredev",
+      "description": "Did you miss out on Ho Ho Holy Data? Fear not!  \nHampus has done a very rough summary of the event and is happy to discuss more in details with the interested ones!",
+      "category": "REGIONAL",
+      "afry": true,
+      "link": "https://buitsyd.com/blog/2021/12/06/ho-ho-holy-data"
+    },
+    {
+      "title": "When Is the Revolution in Architecture Coming?",
+      "description": "Architecture, bland and gray according to many. When is the Revolution coming?\n![image of building](https://images.currentaffairs.org/2021/10/Gaudi-1024x563.jpg)\n\nHistorically many beautiful buildings has been built, not so much anymore according to many.\n\nNathan argues that \"_We need to build places we can’t stop looking at. It will involve lots of plants._\" and I think I agree.   \nThe article itself lays down some good points and has beautiful pictures of places you might wish to travel once possible.  \nIf you like architecture and good reading make sure to view this post!",
+      "category": "RANDOM",
+      "link": "https://www.currentaffairs.org/2021/04/when-is-the-revolution-in-architecture-coming"
+    },
+    {
+      "title": "[StackOverflow] Introducing Content Health, a new way to keep the knowledge base up-to-date",
+      "description": "StackOverflow are thrilled to announce a new and foundational feature, Content Health, that helps to intelligently identify and surface potentially outdated or inaccurate knowledge—content that needs to change.\n\nI think it's a great initiative to keep data fresh and something that's dearly needed.  \nAs libraries launch breaking versions it keeps getting harder to find the right functions, parameters or even API calls.\n\nWhat do you think about the Content Health features?",
+      "category": "RANDOM",
+      "link": "https://stackoverflow.blog/2021/11/17/introducing-content-health-a-new-way-to-keep-the-knowledge-base-up-to-date/"
+    },
+    {
+      "title": "DuckDB quacks Arrow: A zero-copy data integration between Arrow and DuckDB",
+      "description": "> TLDR: The zero-copy integration between DuckDB and Apache Arrow allows for rapid analysis of larger than memory datasets in Python and R using either SQL or relational APIs.\n\nA few of you have seen DuckDB mentioned previously, and there's a good reason as of why.  \nDuckDB is SQLite for columnar data. It's an amazing piece of technology.  \n\nFor those that are not aware of (Apache) Arrow it's a project that is a in-memory data format optimized for analytical libraries.  \nIt's blazing fast and can optimize column-data like crazy. Combining it with Parquet makes things even better..!  \n\nBy combining DuckDB and Arrow you get an amazing result that speaks for itself in terms of performance.  \nAllowing streaming data can reduce total peak memory by infinite essentially (0.3GB vs 248GB in example) and speed by magnitudes (showcasing benchmark with 11x-3000x faster depending on use-case and filter).\n\nMake sure to check this new zero-copy integration out!",
+      "category": "BACKEND",
+      "link": "https://duckdb.org/2021/12/03/duck-arrow.html"
+    }
+  ]
+}

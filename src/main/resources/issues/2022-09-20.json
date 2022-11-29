@@ -1,0 +1,23 @@
+{
+  "number": 61,
+  "introduction": "Tipsrundan 61 is finally here! Got any good ideas? Make sure to share them!",
+  "godisboxen": [
+    {
+      "title": "Datastream for BigQuery",
+      "description": ">Seamless replication from relational databases directly to BigQuery, enabling near real-time insights on operational data.  \nThis might be a deal-breaker to a lot of companies out there. It's very cool how Google in one sweep made analytics so much easier in combination with traditional databases!",
+      "category": "MACHINELEARNING",
+      "link": "https://cloud.google.com/datastream-for-bigquery"
+    },
+    {
+      "title": "git bisect",
+      "description": "`git bisect <subcommand> <options>`\n\n>git-bisect - Use binary search to find the commit that introduced a bug  \nThis is a really cool tool in `git` that I wasn't aware off which I learned through a friend of mine. Know any other cool git-commands that we should share with each-other? Please share!",
+      "category": "RANDOM",
+      "link": "https://git-scm.com/docs/git-bisect"
+    },{
+      "title": "Hot take: Why Group Brainstorming Is a Waste of Time",
+      "description": "Shared recently by Pontus Wärnestål (InUse). It's an interesting article which brings forth studies that shows that Group Brainstorming is a waste of time.. Do you agree or not? Share on Slack!\n\n>To grow and innovate, organizations have to come up with creative ideas. At the employee level, creativity results from a combination of expertise, motivation, and thinking skills. At the team level, it results from the synergy between team members, which allows the group to produce something greater than the sum of its parts.,",
+      "category": "SOFTVALUES",
+      "link": "https://hbr.org/2015/03/why-group-brainstorming-is-a-waste-of-time"
+    }
+  ]
+}

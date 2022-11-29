@@ -1,0 +1,52 @@
+{
+  "number": 52,
+  "introduction": "Tipsrundan 52 is here! ",
+  "supertips": {
+    "title": "Azure Pipelines version deprecated!",
+    "description": "Tobias Olsson noted that Azure Pipelines has some issues, here's the following breakdown:\n\nHi! While trying to do a production release last Wednesday (March 30th) I got shutdown by Microsoft!\n    Deployment canceled by Microsoft.VisualStudio.Services.ReleaseManagement\n\nAfter some expert googling I found out that: **_The windows-2016 environment is deprecated and will be removed on April 1st, 2022_**. Now I had to find out if we were using the windows 2016 version somewhere.\n\nI found out that we were using \"**Agent Specification: vs2017-win2016**\" on our release-pipeline, so now I had to change this to something that worked. \n\nThis link will explain a bit more about the changes to the agent: [Windows-2016 environment removal postponed until April 1st, 2022 · Issue #5238 · actions/virtual-environments](https://github.com/actions/virtual-environments/issues/5238) \n\nBy using this link (with edits): https://dev.azure.com/{organization}/{project}/_settings/agentqueues I found out which project were using the deprecated Agent.\n\nThis link shows how and what to change to: [Azure DevOps: Migrating to windows-latest](https://blog.novacare.no/devops-change-agent-specification-to-windows-latest/)\n\n**TL;DR; change it to \"windows-2022\"** - this will be the \"*windows-latest*\" as of March 6th."
+  },
+  "godisboxen": [
+    {
+      "title": "Music lover? Know Roland? Either way this is for you!",
+      "description": "Roland releases their famous Roland 50 as a digital tool in the browser which works incredibly well and is very fun to play around in!\n![image](https://user-images.githubusercontent.com/7490199/161707400-2368224d-2622-45c4-8edc-3ff2771c471b.png)\n",
+      "category": "RANDOM",
+      "link": "https://roland50.studio/"
+    },
+    {
+      "title": "What's inside a digital pregnancy test? (2020)",
+      "description": "Aware of digital pregnancy tests? Expensive yeah? Well it's the usual stick with a lot of bad tech put on top. No kidding, it's actually worse than a usual stick because of all Added complexity!",
+      "category": "RANDOM",
+      "link": "https://twitter.com/Foone/status/1301707401024827392"
+    },
+    {
+      "title": "What Python Formatter are you using? - Django: Reformatted code with Black",
+      "description": "Seeing this change will make anyone’s eyes pop \uD83D\uDE31![image](https://user-images.githubusercontent.com/7490199/161718378-91bfac3e-b63d-4b97-9de9-950fec1e4434.png)But recently Django got reformatted using Black. During the Ericsson assignment we also decided to go with Black (before seeing this news). **What formatter are you using?**",
+      "category": "BACKEND",
+      "link": "https://github.com/django/django/pull/15387"
+    },
+    {
+      "title": "Github Actions by Example",
+      "description": "Haven’t gotten around to learn CI/CD yet? Want to start by using a free service that’s easily integrated with your GitHub repo? Then you should try GitHub Actions which is excellent for what it provides (I highly recommend).  \nThe following webpage shows multiple common GH Actions actions that you can do by example!",
+      "category": "RANDOM",
+      "link": "https://www.actionsbyexample.com"
+    },
+    {
+      "title": "Churn - How it works operationally and ways to calculate it",
+      "description": "Churn is a special thing and I believ you can learn a lot by reading about the experiences here.  \nAnyone who has spent more than 5 minutes thinking or hearing about SaaS companies has certainly bumped into churn. Having spent the last 6+ years neck deep in SaaS companies and their metrics, it is something that I am constantly looking at to assess the health of a business. Three important things to consider when it comes to churn: what does it mean, why does it matter, and how to evaluate it.\nIt was very interesting learning about different churns, at least in my opinion! Essentially understanding the delicate differences in how to think.\n",
+      "category": "RANDOM",
+      "link": "https://www.causal.app/blog/churn-how-it-works-operationally-and-ways-to-calculate-it\n"
+    },
+    {
+      "title": "AI Lund network",
+      "description": "Rasmus Ros spread the word about “AI Lund”-network that has a mailing list with their news & events.",
+      "category": "MACHINELEARNING",
+      "link": "https://www.ai.lu.se/about/join"
+    },
+    {
+      "title": "Fig - Making your terminal great",
+      "description": "Björn Pedersen recommends adding Fig to your terminal! This looks to be a real solid improvement over the ordinary tab autocomplete.\n\nOnly for MacOS right now.",
+      "category": "RANDOM",
+      "link": "https://fig.io/"
+    }
+  ]
+}

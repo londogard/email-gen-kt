@@ -1,0 +1,40 @@
+{
+  "number": 44,
+  "introduction": "And it's Tueeeesday! Happy Tipsrundan Tuesday! Today we got a AFRY supertips and then some interesting topics like Meow Hash, breaking unicodes, React Hooks and Android for Windows!",
+  "supertips": {
+    "title": "Citrix - be at AFRY from home",
+    "description": "Fredrik Strandin shared a _supertips_ at the Smygehus-konferens two weeks ago.  \n**Citrix** is a tool that that allows you to log onto a standard computer (or pay for CAD). Putting it plain it's a remote \ncomputer inside the AFRY network. This can be very useful when you're blocked from some services. \n\nIt might lag a little using _Citrix Light_, but it works. Read more about Citrix [here](https://afonline.sharepoint.com/sites/VirtualWorkplace-Stage).\n\nYou can log onto the computers at [connect.afconsult.com](https://connect.afconsult.com/). The downloaded program might be a bit \nfaster than the light version in the browser."
+  },
+  "godisboxen": [
+    {
+      "title": "Meow Hash",
+      "description": "The Meow hash is a high-speed hash function named after the character Meow in [Meow the Infinite](https://meowtheinfinite.com/).  \n\nA nicely written article that takes you through the story of how mollyrocket created a incredibly \nfast hash that is not cryptographic. Essentially it's used to validate diffs between large assets.\n\nDo you know about another good fast hash function? Share!",
+      "category": "RANDOM",
+      "link": "https://mollyrocket.com/meowhash"
+    },
+    {
+      "title": "Unicodes, Japanese and all hell breaks loose",
+      "description": "Languages and letters are complicated. It gets even more complicated on computers.  \nFirst off, we need to support Left-To-Right (LTR) and Right-To-Left (RTL) which is a beast in itself.  \nThen comes new characters, and finally the codes which produces these.\n\n> In short, from a native Japanese eye, yѳur ҭєxҭ lѳѳκs κιnd ѳf lικє ҭЋιs. This page will give you a brief description of the glyph appearance problems that often arise with implementations of Asian text display, why it happens, why it’s a big deal, and how to fix it.\n\nWhat is the problem then?  \nIn short all characters are represented by a digit, but some characters actually _share_ the same digit. This is really \nproblematic as you can guess.  \n\nIf you either want to learn more about this or actually get to know how to fix it, read the post below! \uD83D\uDC47",
+      "category": "RANDOM",
+      "link": "https://heistak.github.io/your-code-displays-japanese-wrong/"
+    },
+    {
+      "title": "Why hooks are the best thing to happen to React",
+      "description": "Anyone even remotely interested in frontend and React should take a look at this, unless you're intermediate experienced in React, and realize a few things:\n1. What are React Hooks?\n2. Why do they matter?\n3. How can they help me?\n\nReact Hooks are the 'new' way of writing React-code.\n\nOver all a good blog brought by Stack Overflow.",
+      "category": "FRONTEND",
+      "link": "https://stackoverflow.blog/2021/10/20/why-hooks-are-the-best-thing-to-happen-to-react"
+    },
+    {
+      "title": "Android™ apps on Windows 11",
+      "description": "Windows is going headstrong into the 'Subsystem' space and are now announcing Android Apps for their latest OS (Windows 11).  \nOn top of this new Subsystem for Android Windows actually added default CUDA support for WSL2 in Windows 11 which is a reason to upgrade, no more dev-builds!",
+      "category": "RANDOM",
+      "link": "https://blogs.windows.com/windows-insider/2021/10/20/announcing-android-apps-on-windows-11-preview-for-windows-insiders-in-the-beta-channel/"
+    },
+    {
+      "title": "Smart CSS Solutions For Common UI Challenges",
+      "description": "As a 'non-frontender' I found this post refreshing, seeing new optimized CSS that's now available.\n\n>It’s incredible to see what we can do with CSS today, especially if you still remember how difficult it once was to figure out stacking contexts or why margins collapsed and why top: float didn’t work. In this post, we’ll look at just that: **exciting and fun things we can do with CSS**, exploring common problems and use cases we all have to face in our work.",
+      "category": "FRONTEND",
+      "link": "https://blogs.windows.com/windows-insider/2021/10/20/announcing-android-apps-on-windows-11-preview-for-windows-insiders-in-the-beta-channel/"
+    }
+  ]
+}
